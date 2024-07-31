@@ -1,34 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:lows_app/pages/main_page.dart';
 
-class DushanbePage extends StatefulWidget {
-  const DushanbePage({super.key});
+class Dushanbe11RuPage extends StatefulWidget {
+  const Dushanbe11RuPage({super.key});
 
   @override
-  State<DushanbePage> createState() => _DushanbePageState();
+  State<Dushanbe11RuPage> createState() => _Dushanbe11RuPageState();
 }
 
-class _DushanbePageState extends State<DushanbePage> {
+class _Dushanbe11RuPageState extends State<Dushanbe11RuPage> {
   Widget _dushanbeContainer(String value) {
     return Container(
+      padding: const EdgeInsets.all(18),
       height: 140,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
         borderRadius: BorderRadius.circular(25),
       ),
-      child: Padding(
-          padding: const EdgeInsets.all(18.0),
-          child: Center(
-            child: Text(
-              textAlign: TextAlign.center,
-              value,
-              style: const TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.white),
-            ),
-          )),
+      child: Center(
+        child: Text(
+          textAlign: TextAlign.center,
+          value,
+          style: const TextStyle(
+              fontSize: 22, fontWeight: FontWeight.w800, color: Colors.white),
+        ),
+      ),
     );
   }
 
@@ -54,17 +51,16 @@ class _DushanbePageState extends State<DushanbePage> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _dushanbeContainer('Дастгохи маркази\n221-34-71;227-17-41;\n227-10-31'),
+              _dushanbeContainer('Шохмансур-1\nул. Валаматзода 12\n900-46-46-91'),
               const SizedBox(height: 20),
-              _dushanbeContainer('шахри Душанбе\n221-30-57; 918-70-81-43'),
+              _dushanbeContainer('Шохмансур-2\nул. Бустон 1\n939-22-34-37'),
               const SizedBox(height: 20),
-              _dushanbeContainer('н. Фирдавсй\n233-89-48; 900-08-91-25'),
+              _dushanbeContainer('Фирдавси-1\nул. Н. Карабаев 44\n988-508-088'),
               const SizedBox(height: 20),
-              _dushanbeContainer('н. Шохмансур\n227-61-66; 917-40-97-45'),
+              _dushanbeContainer('Фирдавси-2\nул. Р. Амакиев, г. 4, и. 20\n903-33-44-63'),
               const SizedBox(height: 20),
-              _dushanbeContainer('н. И. Сомони\n221-05-36; 917-14-14-02'),
+              _dushanbeContainer('Сино-2 \nул. Н. Махсум 95/1\n933-16-50-25'),
               const SizedBox(height: 20),
-              _dushanbeContainer('н. Сино\n235-06-73; 98-915-12-08'),
             ],
           ),
         ),

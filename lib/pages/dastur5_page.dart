@@ -25,8 +25,8 @@ class Dastur5Page extends StatelessWidget {
                 children: [
                   Container(
                     width: 326,
-                    height: 160,
-                    color: Theme.of(context).colorScheme.primary,
+                    height: 130,
+                    color: Theme.of(context).colorScheme.secondary,
                   ),
                   Positioned(
                     bottom: 10,
@@ -34,16 +34,16 @@ class Dastur5Page extends StatelessWidget {
                     right: 10,
                     top: 0,
                     child: Container(
-                      width: 330,
+                      width: 284,
                       height: 120,
-                      color: Theme.of(context).colorScheme.secondary,
+                      color: Theme.of(context).colorScheme.primary,
                       padding: const EdgeInsets.all(16),
                       child: const Text(
-                        'Агар шумо шоҳиди зӯроварӣ шудед, эҳтимолан, масъала барои шумо дар маводи ҷинсӣ дароз аст. Дар ин ҳолат, зарур аст, ки шумо амалиётҳои дароварданӣ ва таъмини ҳифзи худро баромада диҳед:',
+                        'Чӣ гуна бояд муайян кард, шиноси Шумо ба зӯроварии оилавӣ дучор шудааст?',
                        
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 14,
+                            fontSize: 20,
                             fontWeight: FontWeight.w800),
                       ),
                     ),
@@ -79,14 +79,6 @@ class Dastur5Page extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        Text(
-                          textAlign: TextAlign.center,
-                          'Чӣ гуна ба худ ёрӣ расонид?',
-                          style: TextStyle(
-                              color: Theme.of(context).colorScheme.primary,
-                              fontSize: 31,
-                              fontWeight: FontWeight.w800),
-                        ),
                         Column(
                           children: [
                             Row(
@@ -105,9 +97,9 @@ class Dastur5Page extends StatelessWidget {
                                   width: 10,
                                 ),
                                 Container(
-                                  width: 330,
+                                  width: 284,
                                   child: const Text(
-                                    'Муайян кардани воситаҳои тамос: Таъмин кардани маълумот ва дастурҳо барои ҳифзи саломати шумо ва тавсияҳои дар бораи барқароршавии ва барномаҳои ба фарзандон ва хомӯшӣ аз таҳаммули тарзиҳои бардоштӣ.',
+                                    'Худбаҳодиҳии шахс, ки қаблан ба худ эътимод дошт, хеле паст шудааст;',
                                     style: TextStyle(
                                         color: Color(0xff654900),
                                         fontSize: 18,
@@ -132,9 +124,9 @@ class Dastur5Page extends StatelessWidget {
                                   width: 10,
                                 ),
                                 Container(
-                                  width: 330,
+                                  width: 284,
                                   child: const Text(
-                                    'Тавсияи фаъолии ҳуқуқӣ: Таъмини маслиҳатҳои ёриш ва дастгирии лозимӣ дар рамзи ташкилотҳои ҷомеавӣ ва ҳуқуқӣ, ки метавонад дар пешравии дастурҳо ва тавсияҳои аз тарафи марказҳои ҳуқуқӣ мешавад.',
+                                    'Дигар дигаргуниҳо дар шахсият мушоҳида мегардад (масалан, хушмуомилагӣ ба худсарӣ табдил меебад);',
                                     style: TextStyle(
                                         color: Color(0xff654900),
                                         fontSize: 18,
@@ -159,9 +151,139 @@ class Dastur5Page extends StatelessWidget {
                                   width: 10,
                                 ),
                                 Container(
-                                  width: 330,
+                                  width: 284,
                                   child: const Text(
-                                    'Ҳимояи дурустии тавсияҳо: Барпо кардани тавсияҳо ва дастурҳо барои дурустӣ ва тавсияи муайян ба шумо ва аҳли шумо.',
+                                    'Шахс дар депрессия ва ҳолати изтироби зиед қарор дорад, дар бораи худкушӣ сухан меронад',
+                                    style: TextStyle(
+                                        color: Color(0xff654900),
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w800),
+                                  ),
+                                ),
+                              ],
+                            ),Row(
+                              // mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  width: 20,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(3),
+                                    color: Theme.of(context).colorScheme.secondary,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                Container(
+                                  width: 284,
+                                  child: const Text(
+                                    'Аксар вақт дар ӯ ҷароҳатҳоро дидан мумкин аст;',
+                                    style: TextStyle(
+                                        color: Color(0xff654900),
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w800),
+                                  ),
+                                ),
+                              ],
+                            ),Row(
+                              // mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  width: 20,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(3),
+                                    color: Theme.of(context).colorScheme.secondary,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                Container(
+                                  width: 284,
+                                  child: const Text(
+                                    'Ба ҷои кор ва таҳсил бе шарҳи сабаб ҳозир намешавад;',
+                                    style: TextStyle(
+                                        color: Color(0xff654900),
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w800),
+                                  ),
+                                ),
+                              ],
+                            ),Row(
+                              // mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  width: 20,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(3),
+                                    color: Theme.of(context).colorScheme.secondary,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                Container(
+                                  width: 284,
+                                  child: const Text(
+                                    'Либоси ғайримавсимии пӯшида ва айнаки офтобиро ҳатто дар дохили бино намекашад;',
+                                    style: TextStyle(
+                                        color: Color(0xff654900),
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w800),
+                                  ),
+                                ),
+                              ],
+                            ),Row(
+                              // mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  width: 20,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(3),
+                                    color: Theme.of(context).colorScheme.secondary,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                Container(
+                                  width: 284,
+                                  child: const Text(
+                                    'Бо хешу табор ва дӯстон муоширатро кам кардааст;',
+                                    style: TextStyle(
+                                        color: Color(0xff654900),
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w800),
+                                  ),
+                                ),
+                              ],
+                            ),Row(
+                              // mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  width: 20,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(3),
+                                    color: Theme.of(context).colorScheme.secondary,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 10,
+                                ),
+                                Container(
+                                  width: 284,
+                                  child: const Text(
+                                    'Ба маблағҳои пулӣ, кортҳои бонкӣ, ва дигар манбаъҳои иқтисодӣ дастрасӣ надорад.',
                                     style: TextStyle(
                                         color: Color(0xff654900),
                                         fontSize: 18,
@@ -177,7 +299,8 @@ class Dastur5Page extends StatelessWidget {
                   ),
                   const SizedBox(
                     height: 40,
-                  ),
+                  ),//
+
                 ],
               ),
             ),

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:lows_app/pages/main_page.dart';
 
-class NTMPage extends StatefulWidget {
-  const NTMPage({super.key});
+class Ntm11RuPage extends StatefulWidget {
+  const Ntm11RuPage({super.key});
 
   @override
-  State<NTMPage> createState() => _NTMPageState();
+  State<Ntm11RuPage> createState() => _Ntm11PageState();
 }
 
-class _NTMPageState extends State<NTMPage> {
+class _Ntm11PageState extends State<Ntm11RuPage> {
   Widget _ntmContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(18),
@@ -51,35 +51,22 @@ class _NTMPageState extends State<NTMPage> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _ntmContainer('н. Рудакй\n(8-3137) 2-18-78;\n904-48-84-55'),
+              _ntmContainer('г. Турсунзода\nул. Б. Гафуров 22\n(+9923130) 22-841'),
               const SizedBox(height: 20),
-              _ntmContainer('н. Вахдат\n(8-3136) 225-00;\n900-66-77-78'),
+              _ntmContainer('р. Рудаки, г. Сомониен\nул. Бустон-65\n(8-3137) 22-210'),
               const SizedBox(height: 20),
-              _ntmContainer('н. Рудаки\n900-27-81-81'),
+              _ntmContainer('г. Таджикабад\nул. Сомониен 12\n(8-3154) 21-525'),
               const SizedBox(height: 20),
-              _ntmContainer('ш. Хисор\n907-17-36-36'),
+              _ntmContainer('г. Pогун,\nул. Норакиен 54/1\n(8-3134) 21-358'),
               const SizedBox(height: 20),
-              _ntmContainer('н. Варзоб\n(8-3153) 2-10-54;\n93-888-54-23'),
+              _ntmContainer('г. Шахринав\nул. М. Турсунзода 71\n(+992 3155) 31-494; 32-106'),
               const SizedBox(height: 20),
-              _ntmContainer('н. Хиссор\n(8-3139) 2-77-39;\n93-744-19-42'),
+              _ntmContainer('г. Файзабад\nул. И. Сомони 40\n(8-3135) 32-234'),
               const SizedBox(height: 20),
-              _ntmContainer('н. Шахринав\n(8-3155) 316-15;\n909-19-09-37'),
+              _ntmContainer('р. Лахш, г. Вахдат\nул. Сомониен-33\n(8-3132) 22-534'),
               const SizedBox(height: 20),
-              _ntmContainer('н. Турсунзода\n(8-3130) 2-16-47;\n907-19-68-68'),
+              _ntmContainer('р. Сангвор, ул. Восеъ\n(8-3156) 22-157'),
               const SizedBox(height: 20),
-              _ntmContainer('н. Файзобод\n(8-3135) 3-23-84;\n93-564-62-68'),
-              const SizedBox(height: 20),
-              _ntmContainer('н. Рогун\n(8-3134) 2-11-44;\n93-829-16-66'),
-              const SizedBox(height: 20),
-              _ntmContainer('н. Нуробод\n(8-3133) 300-97;\n988-76-76-64'),
-              const SizedBox(height: 20),
-              _ntmContainer( 'н. Точикобод\n(8-3154) 214-73;\n937-18-02-89'),
-              const SizedBox(height: 20),
-              _ntmContainer('н. Сангвор\n(8-3156) 223-70\n987-97-66-13'),
-              const SizedBox(height: 20),
-              _ntmContainer('н. Рашт\n(8-3131) 223-397'),
-              const SizedBox(height: 20),
-              _ntmContainer('н. Лахш\n(8-3132) 224-69'),
             ],
           ),
         ),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lows_app/components/navigation_menu_ru.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
 class TanzimotPage extends StatelessWidget {
   const TanzimotPage({super.key});
@@ -6,7 +8,9 @@ class TanzimotPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.background,),
+        appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.background,
+        ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(children: [
@@ -29,16 +33,23 @@ class TanzimotPage extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            const Row(
+            Row(
               children: [
                 Text(
-                  'Темаи шабона/рузона',
+                  'Change language',
                   style: TextStyle(
                       color: Color(0xff654900),
                       fontSize: 22,
                       fontWeight: FontWeight.w800),
                 ),
-                Icon(Icons.dark_mode)
+                IconButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const NavigationMenuRu()));
+                    },
+                    icon: Icon(Icons.language))
               ],
             ),
             const SizedBox(
@@ -49,13 +60,15 @@ class TanzimotPage extends StatelessWidget {
               height: 18,
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.secondary,
-                border: Border.all(color: Theme.of(context).colorScheme.primary, width: 3),
+                border: Border.all(
+                    color: Theme.of(context).colorScheme.primary, width: 3),
               ),
             ),
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                border: Border.all(color: Theme.of(context).colorScheme.primary, width: 3),
+                border: Border.all(
+                    color: Theme.of(context).colorScheme.primary, width: 3),
                 borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(10),
                   bottomRight: Radius.circular(10),

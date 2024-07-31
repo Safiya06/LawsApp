@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lows_app/pages/main_page.dart';
 
-class Dastur8Page extends StatelessWidget {
-  const Dastur8Page({super.key});
+class Dastur7Page extends StatelessWidget {
+  const Dastur7Page({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,14 +18,14 @@ class Dastur8Page extends StatelessWidget {
           iconSize: 40,
         ),
       ),
-      body: SingleChildScrollView(
+       body: SingleChildScrollView(
         child: Column(children: [
            Center(
               child: Stack(
                 children: [
                   Container(
                     width: 326,
-                    height: 120,
+                    height: 160,
                     color: Theme.of(context).colorScheme.secondary,
                   ),
                   Positioned(
@@ -39,7 +39,7 @@ class Dastur8Page extends StatelessWidget {
                       color: Theme.of(context).colorScheme.primary,
                       padding: const EdgeInsets.all(16),
                       child: const Text(
-                        'Агар шумо аз синни 18 сола поён ҳастед, метавонед худро аз зӯроварии оилавӣ ҳимоя кунед пас аз чунин амалҳо:',
+                        'Барои шиносоии зӯроварии оилавӣ ва муайян кардани идентитети шахсӣ, шумо метавонед он кадоми амалҳоиро иҷро намоед:',
                        
                         style: TextStyle(
                             color: Colors.white,
@@ -99,7 +99,7 @@ class Dastur8Page extends StatelessWidget {
                                 Container(
                                   width: 330,
                                   child: const Text(
-                                    'Тавсияи ҳуқуқӣ ва ёри: Шумо метавонед ба марказҳои маълумотӣ ва ҳуқуқӣ муроҷиат кунед, ки тавсияҳо ва дастурҳои муайян барои ҳимояи зӯроварии оилавӣ пешниҳод кунанд.',
+                                    'Гузаштавӣ ва алоқа: Муҳим аст, ки шумо маълумоти зарур дар бораи гузаштавӣ ва алоқаи аз пасшиносон ва аҳли шумо, ки метавонанд маълумот доданд, дар ҷавобгӯӣ ба саволҳо ва аз рӯйдодҳои худ гузошта шаванд.',
                                     style: TextStyle(
                                         color: Color(0xff654900),
                                         fontSize: 18,
@@ -126,7 +126,7 @@ class Dastur8Page extends StatelessWidget {
                                 Container(
                                   width: 330,
                                   child: const Text(
-                                    'Маълумотҳои шахсӣ ва семьявӣ: Барои муайян кардани зӯроварии оилавӣ, шумо бояд маълумотҳои шахсӣ, маълумоти паспорти, ва маълумоти шахсӣ додани дошта бошед.',
+                                    'Дастгирӣ ва тавсияҳо: Шумо метавонед ба марказҳои маълумотӣ ва таълимии ҳайотии муҳофизатӣ муроҷиат кунед. Онҳо метавонанд тавсияҳо ва дастурҳои барои гузоштан ва ҳифзи зӯроварии оилавӣ пешниҳод кунанд.',
                                     style: TextStyle(
                                         color: Color(0xff654900),
                                         fontSize: 18,
@@ -153,7 +153,7 @@ class Dastur8Page extends StatelessWidget {
                                 Container(
                                   width: 330,
                                   child: const Text(
-                                    'Муҳофизат ва ҳифзи зӯроварии оилавӣ: Метавонед дархости кардани ҳифзи зӯроварии оилавӣ бо маслиҳати юридикӣ, медицини ва социалӣ иҷро намоед.',
+                                    'Шуносоии маълумоти ҳуқуқӣ: Барои муайян кардани зӯроварии оилавӣ, шумо бояд маълумотҳои паспорти, маълумоти шахсӣ, ҳуқуқҳои амрӯзӣ, ва иборати маълумоти таҳти кор кунед.',
                                     style: TextStyle(
                                         color: Color(0xff654900),
                                         fontSize: 18,
@@ -180,7 +180,7 @@ class Dastur8Page extends StatelessWidget {
                                 Container(
                                   width: 330,
                                   child: const Text(
-                                    'Маслиҳат ва дастгирии юридикӣ: Шумо метавонед маслиҳат ва дастгирии юридикӣ аз муайян кардани хусусиятҳои оилавӣ ё маслиҳатҳои дигар кор бароед.',
+                                    'Маслиҳат ва дархост: Бо маслиҳати маҳаллиён, марказҳои медицини, юридикӣ, ва ҷамъиятӣ, шумо метавонед дархости кардани зӯроварии оилавӣ ё маслиҳатҳои дигарро ба даст оваред.',
                                     style: TextStyle(
                                         color: Color(0xff654900),
                                         fontSize: 18,
@@ -198,7 +198,42 @@ class Dastur8Page extends StatelessWidget {
                     height: 40,
                   ),
 
-                 
+                  Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    height: 11,
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.secondary,
+                      border: Border.all(
+                          color: Theme.of(context).colorScheme.primary,
+                          width: 3),
+                    ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                          color: Theme.of(context).colorScheme.primary,
+                          width: 3),
+                      borderRadius: const BorderRadius.only(
+                        bottomLeft: Radius.circular(10),
+                        bottomRight: Radius.circular(10),
+                      ),
+                    ),
+                       child: 
+                        const Text(
+                          'Иловагӣ, муайян кардани зӯроварии оилавӣ тавонист муҳимати муҳимро бармегардонад, ки ба ҳифзи маънавӣ ва ҷисмонӣ шумо муайян карда мешавад ва тавсияҳои дар бораи рафтани бо ташкилотҳо ва идораҳои муштарӣ медиҳад.',
+                          style: TextStyle(
+                              color: Color(
+                                0xff654900,
+                              ),
+                              fontSize: 18,
+                              fontWeight: FontWeight.w700),
+                        )
+                  ),
+                ],
+              ),
                 ],
               ),
             ),

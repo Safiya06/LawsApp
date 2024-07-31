@@ -21,12 +21,12 @@ class Dastur2Page extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(28),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
               Container(
-                padding: const EdgeInsets.all(28),
-                height: 390,
+                padding: const EdgeInsets.all(18),
+                // height: 390,
                 decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.primary,
                     borderRadius: const BorderRadius.all(Radius.circular(20))),
@@ -37,13 +37,14 @@ class Dastur2Page extends StatelessWidget {
                     ),
                     Center(
                       child: Text(
-                        'Тартиб додани накшаи амал хангоми вазъияти бухрони - бехатар ва хар чй зудтар хонаро тарк намудан.\n\n                                              ➡️',
+                        'Тартиб додани накшаи амал хангоми вазъияти бухрони - бехатар ва хар чй зудтар хонаро тарк намудан.\n',
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 24,
                             fontWeight: FontWeight.w800),
                       ),
                     ),
+                    Text('                               ➡️', style: TextStyle(fontSize: 20),)
                   ],
                 ),
               ),

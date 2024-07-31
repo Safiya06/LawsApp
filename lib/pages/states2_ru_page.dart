@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/dushanbe_page.dart';
 import 'package:lows_app/pages/main_page.dart';
-import 'package:lows_app/pages/ntm_page.dart';
-import 'package:lows_app/pages/vmkb_page.dart';
 
-class StatesPage extends StatefulWidget {
-  const StatesPage({super.key});
+class States2RuPage extends StatefulWidget {
+  const States2RuPage({super.key});
 
   @override
-  State<StatesPage> createState() => _StatesPageState();
+  State<States2RuPage> createState() => _States2RuPageState();
 }
 
-class _StatesPageState extends State<StatesPage> {
+class _States2RuPageState extends State<States2RuPage> {
   Widget _stateContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(18),
@@ -68,33 +65,30 @@ class _StatesPageState extends State<StatesPage> {
             children: [
               GestureDetector(
                   onTap: () {
-                   Navigator.pushNamed(context, '/Khujand');
+                   Navigator.pushNamed(context, '/Khujand2Ru');
                   },
-                  child: _stateContainer('вилояти Сугд')),
+                  child: _stateContainer('Согдийская область')),
               const SizedBox(height: 20),
                GestureDetector(
                   onTap: () {
-                   Navigator.pushNamed(context, '/Khatlon');
+                   Navigator.pushNamed(context, '/Khatlon2Ru');
                   },
-                  child: _stateContainer('вилояти Хатлон')),
+                  child: _stateContainer('Хатлонская область')),
               const SizedBox(height: 20), GestureDetector(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const VMKBPage()));
+                    Navigator.pushNamed(context,'/Vmkb2Ru');
                   },
-                  child: _stateContainer('ВМКБ')),
+                  child: _stateContainer('ГБАО')),
               const SizedBox(height: 20), GestureDetector(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const NTMPage()));
+                    Navigator.pushNamed(context,'/Ntm2Ru');
                   },
-                  child: _stateContainer('нохияхои тобеъи\nмарказ')),
+                  child: _stateContainer('Районы\nреспубликанского\nподчинения')),
               const SizedBox(height: 20), GestureDetector(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const DushanbePage()));
+                    Navigator.pushNamed(context,'/Dushanbe2Ru');
                   },
-                  child: _stateContainer('ш.Душанбе')),
+                  child: _stateContainer('г.Душанбе')),
                 
             ],
           ),

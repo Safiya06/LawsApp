@@ -228,7 +228,7 @@ class Dastur1Page extends StatelessWidget {
                                   width: 10,
                                 ),
                                 Container(
-                                  width: 330,
+                                  width: 280,
                                   child: const Text(
                                     'Оиди ҳолати шуда истода ба шахсони Шуморо дастгирӣ мекарда гуед ва рақамҳои телефони онҳоро сабт карда монед.',
                                     style: TextStyle(
@@ -255,7 +255,7 @@ class Dastur1Page extends StatelessWidget {
                                   width: 10,
                                 ),
                                 Container(
-                                  width: 330,
+                                  width: 280,
                                   child: const Text(
                                     'Телефони шахсии худро истифода баред.',
                                     style: TextStyle(
@@ -282,7 +282,7 @@ class Dastur1Page extends StatelessWidget {
                                   width: 10,
                                 ),
                                 Container(
-                                  width: 330,
+                                  width: 280,
                                   child: const Text(
                                     'Ҳуҷҷатҳои лозимаро (ҳуҷҷатҳо, шаҳодатномаи таваллуд, кортҳои бонкӣ, шиноснома, калидҳо, доруҳо, либосҳои лозима) дар ҷои дастрас монед.',
                                     style: TextStyle(
@@ -309,7 +309,7 @@ class Dastur1Page extends StatelessWidget {
                                   width: 10,
                                 ),
                                 Container(
-                                  width: 330,
+                                  width: 280,
                                   child: const Text(
                                     'Ба фарзандон фаҳмонед, ки дар ҳолатҳои зуроварии оилавӣ ба куҷо муроҷиат намояд.',
                                     style: TextStyle(
@@ -336,7 +336,7 @@ class Dastur1Page extends StatelessWidget {
                                   width: 10,
                                 ),
                                 Container(
-                                  width: 330,
+                                  width: 280,
                                   child: const Text(
                                     'Ҷойҳоеро ёбед, ки бо фарзандон онҷо пинҳон шуда метавонед.',
                                     style: TextStyle(

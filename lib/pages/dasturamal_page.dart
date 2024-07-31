@@ -8,7 +8,7 @@ class DasturamalPage extends StatefulWidget {
 }
 
 class _DasturamalPageState extends State<DasturamalPage> {
-  Widget _dasturContainer(String value) {
+  Widget _dasturContainer(String value, double size) {
     return Container(
       height: 300,
       width: MediaQuery.of(context).size.width,
@@ -20,18 +20,15 @@ class _DasturamalPageState extends State<DasturamalPage> {
         padding: const EdgeInsets.all(8.0),
         child: Expanded(
           child: Center(
-            // child: FittedBox(
-            // fit:  BoxFit.scaleDown,
             child: Text(
               textAlign: TextAlign.center,
               value,
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.white,
-                fontSize: 31,
+                fontSize: size,
                 fontWeight: FontWeight.w800,
               ),
             ),
-            // ),
           ),
         ),
       ),
@@ -64,58 +61,80 @@ class _DasturamalPageState extends State<DasturamalPage> {
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur1');
                 },
-                child: _dasturContainer('Чи гуна зуровари дар оиларо аник кард?'),
+                child: _dasturContainer('Чӣ тавр зӯроварӣ дар оиларо метавон муайян намуд?',31),
               ), 
                const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur2');
                 },
-                child: _dasturContainer('Агар шумо тахти зуроварй дар оила карор дошта бошед, чй бояд кард?'),
+                child: _dasturContainer('Агар шумо таҳти зӯроварӣ дар оила қарор дошта бошед, чӣ бояд кард? ',31),
               ), 
                 const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
                    Navigator.pushNamed(context, '/Dastur3');
                 },
-                child: _dasturContainer('Ҳангоми ба зӯроварии ҷинсӣ дучор шудан чӣ бояд кард?'),
+                child: _dasturContainer('Ҳангоми ба зӯроварии шаҳвонӣ дучор шудан чӣ бояд кард?',31),
               ), 
                 const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
                    Navigator.pushNamed(context, '/Dastur4');
                 },
-                child: _dasturContainer('Дастурамалҳо дар формати видео барои ҷабрдидагон'),
+                child: _dasturContainer('Чӣ бояд кард, агар Шумо шоҳиди зӯроварӣ шудед?',31),
               ), 
                 const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
                    Navigator.pushNamed(context, '/Dastur5');
                 },
-                child: _dasturContainer('Чӣ бояд кард, агар Шумо шоҳиди зӯроварӣ шудед?'),
+                child: _dasturContainer('Чӣ гуна бояд муайян кард, шиноси Шумо ба зӯроварии оилавӣ дучор шудааст?',31),
               ), 
                 const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
                    Navigator.pushNamed(context, '/Dastur6');
                 },
-                child: _dasturContainer('Зӯроварии оилавӣ: афсонаҳо ва ҳақиқатҳо'),
+                child: _dasturContainer('Қонунгузории\nмиллӣ',31),
               ), 
                 const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
                    Navigator.pushNamed(context, '/Dastur7');
                 },
-                child: _dasturContainer('Чӣ гуна бояд муайян кард, шиноси Шумо ба зӯроварии оилавӣ дучор шудааст?'),
+                child: _dasturContainer('Қонунгузории байналмилалӣ',31),
               ), 
               
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
-                   Navigator.pushNamed(context, '/Dastur8');
+                   Navigator.pushNamed(context, '/Dastur61');
                 },
-                child: _dasturContainer('Чӣ гуна худро аз зӯроварии оилавӣ ҳимоя кард, агар Шумо аз синни 18 сола поён ҳастед?'),
+                child: _dasturContainer('Зӯроварӣ аз нигоҳи дини Ислом',40),
               ), 
+                const SizedBox(height: 20),
+              // GestureDetector(
+              //   onTap: () {
+              //      Navigator.pushNamed(context, '/Dastur9');
+              //   },
+              //   child: _dasturContainer('НАЦИОНАЛЬНОЕ ЗАКОНОДАТЕЛЬСТВО',23),
+              // ), 
+              //   const SizedBox(height: 20),
+              // GestureDetector(
+              //   onTap: () {
+              //      Navigator.pushNamed(context, '/Dastur10');
+              //   },
+              //   child: _dasturContainer('МЕЖДУНАРОДНОЕ ЗАКОНОДАТЕЛЬСТВО',23),
+              // ), 
+              
+              // const SizedBox(height: 20),
+              // GestureDetector(
+              //   onTap: () {
+              //      Navigator.pushNamed(context, '/Dastur91');
+              //   },
+              //   child: _dasturContainer('ДРУГОЕ',42),
+              // ), 
             ],
           ),
         ),

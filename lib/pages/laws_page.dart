@@ -232,19 +232,34 @@ class LawsPage extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              Container(
+             Container(
+                // padding: EdgeInsets.all(18),
                 width: 360,
                 height: 120,
                 color: Theme.of(context).colorScheme.secondary,
                 child: const Center(
-                    child: Text(
-                  textAlign: TextAlign.center,
-                  'Чабрдидагони зуроварй дар оила хамчунин хукук ба гирифтани кумак ба тарики ройгон доранд.',
+                    child: Text.rich(
+                  TextSpan(
+    text: 'Ҷабрдидагони зӯроварӣ дар оила ҳамчунин ҳуқуқ ба гирифтани кумак ба тариқи ',
+    children: <TextSpan>[
+      TextSpan(
+        text: 'ройгон ',
+        style: TextStyle(color: Color(0xffFF7A00)),
+      ),
+      TextSpan(
+        text: 'доранд.',
+      ),
+    ],
+  ),
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
                       fontWeight: FontWeight.w800),
-                )),
+                      textAlign : TextAlign.center
+                ),
+                    
+
+                ),
               )
             ],
           ),
@@ -253,83 +268,4 @@ class LawsPage extends StatelessWidget {
     );
   }
 }
-
-
-
-
-// import 'package:flutter/material.dart';
-
-
-// class LawsPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         leading: Icon(Icons.arrow_back),
-//         title: Row(
-//           mainAxisAlignment: MainAxisAlignment.center,
-//           children: [
-//             Text('Қонун '),
-//             Icon(Icons.gavel),
-//           ],
-//         ),
-//         backgroundColor: Colors.orange,
-//       ),
-//       body: Padding(
-//         padding: const EdgeInsets.all(16.0),
-//         child: Column(
-//           crossAxisAlignment: CrossAxisAlignment.start,
-//           children: [
-//             Text(
-//               'Оё барои зӯроварӣ дар оила дар Қонуни ЧТ чӣ ҷазо пешбинӣ карда шудааст?',
-//               style: TextStyle(
-//                 fontSize: 18,
-//                 fontWeight: FontWeight.bold,
-//                 color: Colors.blue,
-//               ),
-//             ),
-//             SizedBox(height: 16),
-//             Container(
-//               padding: EdgeInsets.all(16),
-//               decoration: BoxDecoration(
-//                 border: Border.all(color: Colors.orange, width: 2),
-//                 borderRadius: BorderRadius.circular(10),
-//               ),
-//               child: Text(
-//                 'Зӯроварӣ дар оила ҳуқуқвайронкунии ҷиддӣ мебошад, ки муқаррароти Кодекси ЧТ дар бораи ҳуқуқвайронкуниҳои маъмурӣ ва дар Кодекси ҷиноятии ЧТ барои он ҷазо пешбинӣ шудааст. Мувофиқи Қонуни ЧТ «Дар бораи пешгирии зӯроварӣ дар оила», чораҳои информӣ, ҳифзи ҷабрдидагон, додани Амрномаи муҳофизатӣ аз тарафи Шӯъбаҳои корҳои дохилӣ дар асоси аризаи ҷабрдидагон дар бар мегирад. Амрномаи муҳофизатӣ, чораҳои маҳдудкунӣ махсусро нисбат ба хушунатгар таъин мекунанд ва ба муҳлати 15 шабонарӯз дода мешавад. Дар асоси аризаи ҷабрдида ё...',
-//                 style: TextStyle(
-//                   fontSize: 16,
-//                   color: Colors.black,
-//                 ),
-//               ),
-//             ),
-//           ],
-//         ),
-//       ),
-//       // bottomNavigationBar: BottomNavigationBar(
-//       //   items: [
-//       //     BottomNavigationBarItem(
-//       //       icon: Icon(Icons.home),
-//       //       label: 'Асосӣ',
-//       //     ),
-//       //     BottomNavigationBarItem(
-//       //       icon: Icon(Icons.help),
-//       //       label: 'Кӯмак',
-//       //     ),
-//       //     BottomNavigationBarItem(
-//       //       icon: Icon(Icons.menu),
-//       //       label: 'Дастурамал',
-//       //     ),
-//       //     BottomNavigationBarItem(
-//       //       icon: Icon(Icons.settings),
-//       //       label: 'Танзимот',
-//       //     ),
-//       //   ],
-//       //   selectedItemColor: Colors.orange,
-//       //   unselectedItemColor: Colors.grey,
-//       //   type: BottomNavigationBarType.fixed,
-//       // ),
-//     );
-//   }
-// }
 

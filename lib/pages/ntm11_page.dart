@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:lows_app/pages/main_page.dart';
 
-class VMKBPage extends StatefulWidget {
-  const VMKBPage({super.key});
+class Ntm11Page extends StatefulWidget {
+  const Ntm11Page({super.key});
 
   @override
-  State<VMKBPage> createState() => _VMKBPageState();
+  State<Ntm11Page> createState() => _Ntm11PageState();
 }
 
-class _VMKBPageState extends State<VMKBPage> {
-  Widget _vmkbContainer(String value) {
+class _Ntm11PageState extends State<Ntm11Page> {
+  Widget _ntmContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(18),
       height: 140,
@@ -51,24 +51,22 @@ class _VMKBPageState extends State<VMKBPage> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _vmkbContainer('ВМКБ\n(8-3522) 248-80;\n507-77-04-32'),
+              _ntmContainer('ш. Турсунзода, к. Б. Гафуров, 22. (+9923130) 22-841'),
               const SizedBox(height: 20),
-               _vmkbContainer('ш. Xopуг\n(8-3522) 268-77;\n93-585-40-01'),
+              _ntmContainer('н. Рудаки, ш. Сомониён, к. Бустон-65. (8-3137) 22-210'),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Дарвоз\n(8-3552) 215-87\n93-480-13-44'),
+              _ntmContainer('ш. Точикобод, к. Сомониён, 12. (8-3154) 21-525'),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Ванч\n(8-3551) 213-52;\n93-924-29-34'),
+              _ntmContainer('ш. Poгун, к. Норакиён 54/1. (8-3134) 21-358'),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Рошткальа\n(8-3555) 210-33;\n93-771-05-53'),
+              _ntmContainer('ш. Шахринав，к. М. Турсунзода, 71. (+992 3155) 31-494; 32-106'),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Рушон\n(8-3556) 217-40\n93-812-33-22'),
+              _ntmContainer('ш. Файзобод, к. И. Сомонй, 40. (8-3135) 32-234'),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Ишкошим\n(8-3553) 210-24;\n93-408-66-31'),
+              _ntmContainer('н. Лахш, ш. Вахдат, к. Сомониён-33. (8-3132) 22-534'),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Шугнон\n(8-3522) 305-36;\n501-55-19-11'),
+              _ntmContainer('н. Сангвор, к. Восеъ (8-3156) 22-157'),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Мургоб\n(8-3554) 212-32\n502-8-58-08'),
-            
             ],
           ),
         ),
