@@ -134,7 +134,7 @@ class Dastur1Page extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.all(16),
-              height: 800,
+              // height: 800,
               decoration:
                   BoxDecoration(color: Theme.of(context).colorScheme.primary),
               child: const Column(
@@ -227,8 +227,8 @@ class Dastur1Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 280,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Оиди ҳолати шуда истода ба шахсони Шуморо дастгирӣ мекарда гуед ва рақамҳои телефони онҳоро сабт карда монед.',
                                     style: TextStyle(
@@ -254,8 +254,8 @@ class Dastur1Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 280,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Телефони шахсии худро истифода баред.',
                                     style: TextStyle(
@@ -281,8 +281,8 @@ class Dastur1Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 280,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Ҳуҷҷатҳои лозимаро (ҳуҷҷатҳо, шаҳодатномаи таваллуд, кортҳои бонкӣ, шиноснома, калидҳо, доруҳо, либосҳои лозима) дар ҷои дастрас монед.',
                                     style: TextStyle(
@@ -308,8 +308,8 @@ class Dastur1Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 280,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Ба фарзандон фаҳмонед, ки дар ҳолатҳои зуроварии оилавӣ ба куҷо муроҷиат намояд.',
                                     style: TextStyle(
@@ -335,8 +335,8 @@ class Dastur1Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 280,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Ҷойҳоеро ёбед, ки бо фарзандон онҷо пинҳон шуда метавонед.',
                                     style: TextStyle(
@@ -370,7 +370,7 @@ class Dastur1Page extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: 416,
+                      height: MediaQuery.of(context).size.height* 0.25,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),

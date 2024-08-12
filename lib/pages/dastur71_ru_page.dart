@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
 class Dastur71RuPage extends StatelessWidget {
   const Dastur71RuPage({super.key});
@@ -12,7 +12,7 @@ class Dastur71RuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context,
-                MaterialPageRoute(builder: (context) => const MainPage()));
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -26,14 +26,14 @@ class Dastur71RuPage extends StatelessWidget {
               padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: [
-                  Text(
+                  const Text(
                       textAlign: TextAlign.center,
                       'Конвенция о ликвидации всех форм дискриминации в отношении женщин',
                       style: TextStyle(
                           color: Color(0xFF654900),
                           fontSize: 17,
                           fontWeight: FontWeight.w800)),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Container(
@@ -57,7 +57,7 @@ class Dastur71RuPage extends StatelessWidget {
                         bottomRight: Radius.circular(10),
                       ),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Международный правовой документ, который, в отличие от декларации или обращения, имеет статус закона, обязательного для исполнения теми государствами (членами соответствующих международных структур), которые их подписали и ратифицировали - то есть одобрили в своих парламентах.',
                       style: TextStyle(
                           color: Color(0xff654900),
@@ -71,7 +71,7 @@ class Dastur71RuPage extends StatelessWidget {
             Container(
               decoration:
                   BoxDecoration(color: Theme.of(context).colorScheme.primary),
-              child: Padding(
+              child: const Padding(
                 padding: EdgeInsets.all(20),
                 child: Text(
                   'Государства -участники Конвенции обязаны, помимо провозглашения принципа равенства мужчин и женщин в своих Конституциях, принимать специальные меры в политической, социальной, экономической и культурной сферах для реального обеспечения равных прав для женщин. Конвенция является одним из базовых документов для разработки стратегий по улучшению положения женщин. Обеспечение соблюдения Конвенции осуществляется Комитетом по ликвидации дискриминации женщин (Комитет CEDAW).',
@@ -82,21 +82,21 @@ class Dastur71RuPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Padding(
-              padding: EdgeInsets.all(25),
+              padding: const EdgeInsets.all(25),
               child: Container(
                 height: 45,
-                width: 300,
+                width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.primary,
                     borderRadius: BorderRadius.circular(46)),
-                    child: Center(child: Text(textAlign: TextAlign.center,'https://www.ohchr.org/ru/treaty-bodies/cedaw',style: TextStyle(color: Colors.white,fontSize: 11,fontWeight: FontWeight.w800),)),
+                    child: const Center(child: Text(textAlign: TextAlign.center,'https://www.ohchr.org/ru/treaty-bodies/cedaw',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w800),)),
               ),
             ),
-            SizedBox(height: 40,)
+            const SizedBox(height: 40,)
           ],
         ),
       ),

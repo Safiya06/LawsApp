@@ -26,14 +26,14 @@ class Dastur71Page extends StatelessWidget {
               padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: [
-                  Text(
+                  const Text(
                       textAlign: TextAlign.center,
                       'Конвенсия дар бораи барҳам додани ҳама гуна шаклҳои табъиз нисбати\nзанон',
                       style: TextStyle(
                           color: Color(0xFF654900),
                           fontSize: 17,
                           fontWeight: FontWeight.w800)),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Container(
@@ -57,7 +57,7 @@ class Dastur71Page extends StatelessWidget {
                         bottomRight: Radius.circular(10),
                       ),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Санади ҳуқуқии байналмилалие, ки бар хилофи эъломия ё муроҷиатнома мақоми қонунро дошта, иҷрои он аз ҷониби давлатҳое, ки онро имзо намудаанд ва ба тасвиб расондаанд, яъне дар парламентҳои худ маъқул донистаанд (аъзоёни сохторҳои дахлдори байналмилалӣ), ҳатмӣ мебошад. ',
                       style: TextStyle(
                           color: Color(0xff654900),
@@ -71,7 +71,7 @@ class Dastur71Page extends StatelessWidget {
             Container(
               decoration:
                   BoxDecoration(color: Theme.of(context).colorScheme.primary),
-              child: Padding(
+              child: const Padding(
                 padding: EdgeInsets.all(20),
                 child: Text(
                   'Давлатҳо – иштирокчиёни Конвенсия вазифадоранд, ки ғайр аз эълом доштани принсипи баробарии мардҳо ва занҳо дар Конститутсияҳои худ, барои таъмини воқеии ҳуқуқҳои баробар барои занон дар соҳаҳои сиёсӣ, иҷтимоӣ, иқтисодӣ ва фарҳангӣ тадбирҳои махсус андешанд. Конвенсия яке аз ҳуҷҷатҳои асосиест барои таҳияи стратегияҳои беҳтар намудани вазъи занон. Риояи Конвенсияро Кумита оид ба барҳам додани табъиз нисбати занон (Кумитаи CEDAW) таъмин менамояд.',
@@ -82,21 +82,31 @@ class Dastur71Page extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Padding(
-              padding: EdgeInsets.all(25),
+              padding: const EdgeInsets.all(25),
               child: Container(
                 height: 45,
-                width: 300,
+                width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.primary,
                     borderRadius: BorderRadius.circular(46)),
-                    child: Center(child: Text(textAlign: TextAlign.center,'https://www.ohchr.org/ru/treaty-bodies/cedaw',style: TextStyle(color: Colors.white,fontSize: 11,fontWeight: FontWeight.w800),)),
+                child: const Center(
+                    child: Text(
+                  textAlign: TextAlign.center,
+                  'https://www.ohchr.org/ru/treaty-bodies/cedaw',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w800),
+                )),
               ),
             ),
-            SizedBox(height: 40,)
+            const SizedBox(
+              height: 40,
+            )
           ],
         ),
       ),

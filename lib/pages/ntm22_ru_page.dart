@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
-class Vmkb14Page extends StatefulWidget {
-  const Vmkb14Page({super.key});
+class Ntm22RuPage extends StatefulWidget {
+  const Ntm22RuPage({super.key});
 
   @override
-  State<Vmkb14Page> createState() => _Vmkb14PageState();
+  State<Ntm22RuPage> createState() => _Ntm22RuPageState();
 }
 
-class _Vmkb14PageState extends State<Vmkb14Page> {
-  Widget _khatlonContainer(String value) {
+class _Ntm22RuPageState extends State<Ntm22RuPage> {
+  Widget _ntmnContainer(String value) {
     return Container(
-      padding: const EdgeInsets.only(left: 25,right: 25,top: 18,bottom: 18),
-      height: 146,
+      padding: const EdgeInsets.all(18),
+      height: 140,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -23,7 +23,7 @@ class _Vmkb14PageState extends State<Vmkb14Page> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );
@@ -42,7 +42,7 @@ class _Vmkb14PageState extends State<Vmkb14Page> {
           ),
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -51,10 +51,13 @@ class _Vmkb14PageState extends State<Vmkb14Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _khatlonContainer('ш. Хоруг, бинои Раёсати адлияи ВМКБ, к. Гагарин-14, ошёнаи 3 93-534-25-99; 93-501-05-91'),
+              _ntmnContainer('М33 «Маркази дастгирии Fap», н. Рашт, ш. Fapm, к. Сомонй-29. 918-21-47-37; 907-74-22-96 matlubar@mail.ru'),
               const SizedBox(height: 20),
-              _khatlonContainer('н. Ванч, к. М. Рахмоншо-36 (Фурудгох) 93-355-95-73'),
-              ],
+              _ntmnContainer('М33 «Хингоб», Химмати айрат, н. Сангвор, к. Сино-36. 918-26-42-22: 987-21-50-26 npo.khingob@mail.ru'),
+              const SizedBox(height: 20),
+              _ntmnContainer('М33 «Рохнамо», н. Лахш, ш. Вахдат, к. Сомониён-55 . 93-889-57-12 rohnamo@mail.ru'),
+              const SizedBox(height: 20),
+            ],
           ),
         ),
       ),

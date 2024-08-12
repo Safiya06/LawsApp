@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
-class Ntm21Page extends StatefulWidget {
-  const Ntm21Page({super.key});
+class Vmkb11RuPage extends StatefulWidget {
+  const Vmkb11RuPage({super.key});
 
   @override
-  State<Ntm21Page> createState() => _Ntm21PageState();
+  State<Vmkb11RuPage> createState() => _Vmkb11RuPageState();
 }
 
-class _Ntm21PageState extends State<Ntm21Page> {
-  Widget _ntmContainer(String value) {
+class _Vmkb11RuPageState extends State<Vmkb11RuPage> {
+  Widget _khatlonContainer(String value) {
     return Container(
-      padding: const EdgeInsets.all(18),
-      height: 140,
+      padding: const EdgeInsets.only(left: 25,right: 25,top: 18,bottom: 18),
+      height: 146,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -23,7 +23,7 @@ class _Ntm21PageState extends State<Ntm21Page> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 22, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );
@@ -42,7 +42,7 @@ class _Ntm21PageState extends State<Ntm21Page> {
           ),
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -51,11 +51,9 @@ class _Ntm21PageState extends State<Ntm21Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _ntmContainer('ТЧ «Мададгор», ш. Вахдат, к. Тугдона-3. 907-84-81-91; 93-506-37-64'),
+              _khatlonContainer('г. Хоруг, ул. Ленин 935-55-35-34'),
               const SizedBox(height: 20),
-              _ntmContainer('ТЧ «Мумтоз», н. Рудакй, к. Бустон-13. (8-3137) 22-698; 907-84-43-94'),
-              const SizedBox(height: 20),
-            ],
+              ],
           ),
         ),
       ),

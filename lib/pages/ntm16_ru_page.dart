@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
-class Ntm16Page extends StatefulWidget {
-  const Ntm16Page({super.key});
+class Ntm16RuPage extends StatefulWidget {
+  const Ntm16RuPage({super.key});
 
   @override
-  State<Ntm16Page> createState() => _Ntm16PageState();
+  State<Ntm16RuPage> createState() => _Ntm16RuPageState();
 }
 
-class _Ntm16PageState extends State<Ntm16Page> {
+class _Ntm16RuPageState extends State<Ntm16RuPage> {
   Widget _ntmnContainer(String value) {
     return Container(
       padding: const EdgeInsets.only(left: 25,right: 25,top: 18,bottom: 18),
@@ -42,7 +42,7 @@ class _Ntm16PageState extends State<Ntm16Page> {
           ),
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -51,21 +51,19 @@ class _Ntm16PageState extends State<Ntm16Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _ntmnContainer('н. Шаҳринав, бинои Маркази адлия, кӯчаи И.Сомонӣ 933-55-36-39'),
+              _ntmnContainer('р. Шахринав, здание Центра юстиции, ул. И.Сомони\n933-55-36-39'),
               const SizedBox(height: 20),
-              _ntmnContainer('ш.Ваҳдат, бинои Маркази адлия, х.Рудакӣ 933-55-59-94'),
+              _ntmnContainer('г.Вахдат, здание Центра юстиции, п.Рудаки\n933-55-59-94'),
               const SizedBox(height: 20),
-              _ntmnContainer('н. Нуробод, бинои «Тоҷиксуғурта», кӯчаи И. Ҳалимов-11 933-55-78-20'),
+              _ntmnContainer('р. Нурабад\nздание «Тоҷиксуғурта»,\nул. И. Ҳалимов-11\n933-55-78-20'),
               const SizedBox(height: 20),
-              _ntmnContainer('н. Тоҷикобод, бинои Бонки молиявии хурд, кӯчаи Сомонӣ-21 933-55-49-87'),
+              _ntmnContainer('р. Таджикабад\nздание Микрофинансового банка\nул. Сомони-21\n933-55-49-87'),
               const SizedBox(height: 20),
-              _ntmnContainer('н. Файзобод, бинои МИҲД-2. кӯчаи И. Сомонӣ-49 935-54-32-19'),
+              _ntmnContainer('р. Файзабад, здание\nИсполнительного органа государственной власти-2, ул. И. Сомони-49\n935-54-32-19'),
               const SizedBox(height: 20),
-              _ntmnContainer('ш. Турсунзода, бинои САҲШ, маҳ. 2 933-55-59-93'),
+              _ntmnContainer('г. Гисар \nздание Исполнительного органа государственной власти\nул. И. Сомони, 1-ый этаж, 10,  933-55-95-72)'),
               const SizedBox(height: 20),
-              _ntmnContainer('ш. Ҳиссор, кӯчаи И. Сомонӣ, ошёнаи 1-ум, 10, бинои МИҲД 933-55-95-72'),
-              const SizedBox(height: 20),
-              _ntmnContainer('н. Рӯдакӣ, ш. Сомониён, кӯчаи И. Сомонӣ, бинои Маркази адлия (ошёнаи 1-ум) 930-10-01-67'),
+              _ntmnContainer('р. Рудаки\nг. Сомониён, ул. И. Сомони\nздание центра юстиции (1 эаж)\n930-10-01-67'),
               const SizedBox(height: 20),
               ],
           ),

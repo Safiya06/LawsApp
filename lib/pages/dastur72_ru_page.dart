@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
 class Dastur72RuPage extends StatelessWidget {
   const Dastur72RuPage({super.key});
@@ -12,7 +12,7 @@ class Dastur72RuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context,
-                MaterialPageRoute(builder: (context) => const MainPage()));
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -24,20 +24,20 @@ class Dastur72RuPage extends StatelessWidget {
           children: [
             Column(
               children: [
-                Text(
+                const Text(
                     textAlign: TextAlign.center,
                     'Пекинская декларация и Платформа действий',
                     style: TextStyle(
                         color: Color(0xFF654900),
                         fontSize: 22,
                         fontWeight: FontWeight.w800)),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
             decoration:
                 BoxDecoration(color: Theme.of(context).colorScheme.primary),
-            child: Padding(
+            child: const Padding(
               padding: EdgeInsets.all(20),
               child: Text(
                 'Четвёртая Всемирная конференция по положению женщин состоялась в Пекине в 1995 году. Несмотря на то, что усилия, которые предпринимались начиная с конференции в Мехико в 1975 году, помогли улучшить положение женщин и расширить их доступ к ресурсам, они не коснулись структурной основы неравенства в отношениях между мужчинами и женщинами.',
@@ -74,7 +74,7 @@ class Dastur72RuPage extends StatelessWidget {
                         bottomRight: Radius.circular(10),
                       ),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Принимая Пекинскую платформу действий, правительства взяли на себя обязательства по эффективному включению гендерного аспекта во все государственные институты, стратегии, планирование и процесс принятия решений. Это означало, что до принятия решений или начала реализации планов всегда необходимо проводить анализ их последствий как для женщин, так и для мужчин. Основное внимание больше не сосредоточивалось на женщинах и их положении в обществе, а было перенесено на перестройку институтов и процесса принятия политических и экономических решений в обществе в целом. Пекинская конференция имела большой успех как в смысле масштаба и представленности на ней огромного количества стран, так и в плане результативности. Это было самое большое в истории собрание представителей правительств и НПО, на котором присутствовали 17000 делегатов, представители 189 стран.',
                       style: TextStyle(
                           color: Color(0xff654900),
@@ -86,21 +86,21 @@ class Dastur72RuPage extends StatelessWidget {
               ],
             ),
             
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Padding(
-              padding: EdgeInsets.all(25),
+              padding: const EdgeInsets.all(25),
               child: Container(
                 height: 45,
-                width: 300,
+                width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.primary,
                     borderRadius: BorderRadius.circular(46)),
-                    child: Center(child: Text(textAlign: TextAlign.center,'https://www.un.org/ru/documents/decl_conv/declarations/womdecl.shtml',style: TextStyle(color: Colors.white,fontSize: 11,fontWeight: FontWeight.w800),)),
+                    child: const Center(child: Text(textAlign: TextAlign.center,'https://www.un.org/ru/documents/decl_conv/declarations/womdecl.shtml',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w800),)),
               ),
             ),
-            SizedBox(height: 40,)
+            const SizedBox(height: 40,)
           ],
         ),
       ),

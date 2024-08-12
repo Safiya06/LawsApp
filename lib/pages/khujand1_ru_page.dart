@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
 class Khujand1RuPage extends StatefulWidget {
   const Khujand1RuPage({super.key});
@@ -23,7 +23,7 @@ class _Khujand1RuPageState extends State<Khujand1RuPage> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 11, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );
@@ -42,7 +42,7 @@ class _Khujand1RuPageState extends State<Khujand1RuPage> {
           ),
           onPressed: () {
             Navigator.pop(context,
-                MaterialPageRoute(builder: (context) => const MainPage()));
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),

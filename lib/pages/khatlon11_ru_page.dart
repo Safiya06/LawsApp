@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
 class Khatlon11RuPage extends StatefulWidget {
   const Khatlon11RuPage({super.key});
@@ -42,7 +42,7 @@ class _Khatlon11RuPageState extends State<Khatlon11RuPage> {
           ),
           onPressed: () {
             Navigator.pop(context,
-                MaterialPageRoute(builder: (context) => const MainPage()));
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),

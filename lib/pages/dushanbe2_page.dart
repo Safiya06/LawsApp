@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
 
 class Dushanbe2Page extends StatefulWidget {
@@ -25,7 +23,7 @@ class _Dushanbe2PageState extends State<Dushanbe2Page> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 11, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );

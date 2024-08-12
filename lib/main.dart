@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lows_app/components/navigation_menu.dart';
+import 'package:lows_app/pages/dastur63_ru_page.dart';
 import 'package:lows_app/pages/dastur71_page.dart';
 import 'package:lows_app/pages/dastur71_ru_page.dart';
 import 'package:lows_app/pages/dastur72_page.dart';
@@ -86,22 +87,36 @@ import 'package:lows_app/pages/ntm12_ru_page.dart';
 import 'package:lows_app/pages/ntm13_page.dart';
 import 'package:lows_app/pages/ntm13_ru_page.dart';
 import 'package:lows_app/pages/ntm14_page.dart';
+import 'package:lows_app/pages/ntm14_ru_page.dart';
 import 'package:lows_app/pages/ntm15_page.dart';
+import 'package:lows_app/pages/ntm15_ru_page.dart';
 import 'package:lows_app/pages/ntm16_page.dart';
+import 'package:lows_app/pages/ntm16_ru_page.dart';
 import 'package:lows_app/pages/ntm1_page.dart';
 import 'package:lows_app/pages/ntm1_ru_page.dart';
 import 'package:lows_app/pages/ntm21_page.dart';
+import 'package:lows_app/pages/ntm21_ru_page.dart';
 import 'package:lows_app/pages/ntm22_page.dart';
+import 'package:lows_app/pages/ntm22_ru_page.dart';
 import 'package:lows_app/pages/ntm2_page.dart';
+import 'package:lows_app/pages/ntm2_ru_page.dart';
 import 'package:lows_app/pages/states1_page.dart';
 import 'package:lows_app/pages/states1_ru_page.dart';
 import 'package:lows_app/pages/vmkb11_page.dart';
+import 'package:lows_app/pages/vmkb11_ru_page.dart';
 import 'package:lows_app/pages/vmkb12_page.dart';
+import 'package:lows_app/pages/vmkb12_ru_page.dart';
 import 'package:lows_app/pages/vmkb13_page.dart';
+import 'package:lows_app/pages/vmkb13_ru_page.dart';
+import 'package:lows_app/pages/vmkb14_ru_page.dart';
 import 'package:lows_app/pages/vmkb1_page.dart';
+import 'package:lows_app/pages/vmkb1_ru_page.dart';
 import 'package:lows_app/pages/vmkb21_page.dart';
+import 'package:lows_app/pages/vmkb21_ru_page.dart';
 import 'package:lows_app/pages/vmkb22_page.dart';
+import 'package:lows_app/pages/vmkb22_ru_page.dart';
 import 'package:lows_app/pages/vmkb2_page.dart';
+import 'package:lows_app/pages/vmkb2_ru_page.dart';
 import 'package:lows_app/theme/theme.dart';
 
 import 'pages/dastur62_ru_page.dart';
@@ -147,6 +162,7 @@ class MainApp extends StatelessWidget {
         '/Dastur7Ru':(context) => const Dastur7RuPage(),
         '/Dastur61Ru':(context) => const Dastur61RuPage(),
         '/Dastur62Ru':(context) => const Dastur62RuPage(),
+        '/Dastur63Ru':(context) => const Dastur63RuPage(),
         '/Dastur71Ru':(context) => const Dastur71RuPage(),
         '/Dastur72Ru':(context) => const Dastur72RuPage(),
 
@@ -199,6 +215,15 @@ class MainApp extends StatelessWidget {
         '/Vmkb21':(context) => const Vmkb21Page(),
         '/Vmkb22':(context) => const Vmkb22Page(),
 
+        '/Vmkb1Ru':(context) => const Vmkb1RuPage(),
+        '/Vmkb11Ru':(context) => const Vmkb11RuPage(),
+        '/Vmkb12Ru':(context) => const Vmkb12RuPage(),
+        '/Vmkb13Ru':(context) => const Vmkb13RuPage(),
+        '/Vmkb14Ru':(context) => const Vmkb14RuPage(),
+        '/Vmkb2Ru':(context) => const Vmkb2RuPage(),
+        '/Vmkb21Ru':(context) => const Vmkb21RuPage(),
+        '/Vmkb22Ru':(context) => const Vmkb22RuPage(),
+
         '/Ntm1':(context) => const Ntm1Page(),
         '/Ntm11':(context) => const Ntm11Page(),
         '/Ntm12':(context) => const Ntm12Page(),
@@ -214,7 +239,12 @@ class MainApp extends StatelessWidget {
         '/Ntm11Ru':(context) => const Ntm11RuPage(),
         '/Ntm12Ru':(context) => const Ntm12RuPage(),
         '/Ntm13Ru':(context) => const Ntm13RuPage(),
-        // '/Ntm14Ru':(context) => const Ntm14RuPage(),
+        '/Ntm14Ru':(context) => const Ntm14RuPage(),
+        '/Ntm15Ru':(context) => const Ntm15RuPage(),
+        '/Ntm16Ru':(context) => const Ntm16RuPage(),
+        '/Ntm2Ru':(context) => const Ntm2RuPage(),
+        '/Ntm21Ru':(context) => const Ntm21RuPage(),
+        '/Ntm22Ru':(context) => const Ntm22RuPage(),
 
         '/Dushanbe1':(context) => const Dushanbe1Page(),
         '/Dushanbe11':(context) => const Dushanbe11Page(),

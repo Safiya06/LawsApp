@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
 class Dastur61RuPage extends StatefulWidget {
   const Dastur61RuPage({super.key});
@@ -49,7 +49,7 @@ class _Dastur61RuPageState extends State<Dastur61RuPage> {
           ),
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),

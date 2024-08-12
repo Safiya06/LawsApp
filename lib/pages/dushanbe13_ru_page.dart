@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
 class Dushanbe13RuPage extends StatefulWidget {
   const Dushanbe13RuPage({super.key});
@@ -45,7 +45,7 @@ class _Dushanbe13RuPageState extends State<Dushanbe13RuPage> {
           ),
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),

@@ -32,21 +32,16 @@ class TanzimotRuPage extends StatelessWidget {
             ),
              Row(
               children: [
-                Text(
-                  'izmeneniya yazika',
-                  style: TextStyle(
-                      color: Color(0xff654900),
-                      fontSize: 22,
-                      fontWeight: FontWeight.w800),
-                ),
-                IconButton(
-                    onPressed: () {
+                TextButton.icon(onPressed: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => const NavigationMenu()));
-                    },
-                    icon: Icon(Icons.language))
+                    }, icon: const Icon(Icons.language), label: const Text('Изменить язык',style: TextStyle(
+                      color: Color(0xff654900),
+                      fontSize: 22,
+                      fontWeight: FontWeight.w800),))
+               
               ],
             ),
             const SizedBox(
@@ -70,7 +65,7 @@ class TanzimotRuPage extends StatelessWidget {
                 ),
               ),
               child: const Text(
-                'Бехатарии шаҳрвандон барои фароҳам овардани зиндагии ором ва ҳифзи ҳуқуқу озодиҳои инсон аҳамияти калон дорад. Таъмини ин амният ба рушди устувори ҷомеа ва эътимоди байни шаҳрвандон ва давлат мусоидат мекунад.',
+                'Здесь в этих настройках, Вы можете с легкостью изменить язык приложения. Вы можете поменять на русский либо на таджикский язык. Так, как Вам будет удобно.',
                 style: TextStyle(
                     color: Color(0xff654900),
                     fontSize: 22,

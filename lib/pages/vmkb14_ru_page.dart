@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
-class Ntm15Page extends StatefulWidget {
-  const Ntm15Page({super.key});
+class Vmkb14RuPage extends StatefulWidget {
+  const Vmkb14RuPage({super.key});
 
   @override
-  State<Ntm15Page> createState() => _Ntm15PageState();
+  State<Vmkb14RuPage> createState() => _Vmkb14RuPageState();
 }
 
-class _Ntm15PageState extends State<Ntm15Page> {
-  Widget _ntmContainer(String value) {
+class _Vmkb14RuPageState extends State<Vmkb14RuPage> {
+  Widget _khatlonContainer(String value) {
     return Container(
       padding: const EdgeInsets.only(left: 25,right: 25,top: 18,bottom: 18),
       height: 146,
@@ -42,7 +42,7 @@ class _Ntm15PageState extends State<Ntm15Page> {
           ),
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -51,14 +51,9 @@ class _Ntm15PageState extends State<Ntm15Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _ntmContainer('ш. Вахдат, Беморхонаи марказии шахри, к. 20-солагии Истиклолият. 93-526-69-00; 907-94-81-32; 93-526-69-02'),
+              _khatlonContainer('г. Хоруг\nздание Управления юстиции\nГБАО, ул. Гагарина-14, 3 этаж\n935-34-25-99; 935-01-05-91'),
               const SizedBox(height: 20),
-              _ntmContainer('н. Рашт, Беморхонаи марказии нохия, к. И. Сомонй-14. 985-98-52-01; 918-21-55-05; 900-10-34-96; 988-64-44-65: 988-43-99-66'),
-              const SizedBox(height: 20),
-              _ntmContainer('н. Хисор, Беморхонаи марказии нохияви 907-52-51-04'),
-              const SizedBox(height: 20),
-              _ntmContainer('н. Рудаки, Беморхонаи арказии нохиявй 904-02-25-15'),
-              const SizedBox(height: 20),
+              _khatlonContainer('р. Ванч, ул. М. Рахмоншо-36 (Фурудгох)\n933-55-95-73'),
               ],
           ),
         ),

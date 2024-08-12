@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
-class Vmkb22Page extends StatefulWidget {
-  const Vmkb22Page({super.key});
+class Vmkb22RuPage extends StatefulWidget {
+  const Vmkb22RuPage({super.key});
 
   @override
-  State<Vmkb22Page> createState() => _Vmkb22PageState();
+  State<Vmkb22RuPage> createState() => _Vmkb22RuPageState();
 }
 
-class _Vmkb22PageState extends State<Vmkb22Page> {
+class _Vmkb22RuPageState extends State<Vmkb22RuPage> {
   Widget _khatlonContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(18),
@@ -42,7 +42,7 @@ class _Vmkb22PageState extends State<Vmkb22Page> {
           ),
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -51,11 +51,11 @@ class _Vmkb22PageState extends State<Vmkb22Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _khatlonContainer('ТЧ «Занон барои адолат», ш. Хоруг, к. Ш. Шотемур-8 93-593-97-74'),
+              _khatlonContainer('ОО «Занон барои адолат»\nг. Хоруг, ул. Ш. Шотемур-8\n935-93-97-74'),
               const SizedBox(height: 20),
-              _khatlonContainer('ТЧ «Мадина», ш. Хоруг, к. Х. Кирмоншо-66 93-555-47-36; 93-477-97-77'),
+              _khatlonContainer('ОО «Мадина»\nг. Хоруг, ул. Х. Кирмоншо-66\n935-55-47-36; 934-77-97-77'),
               const SizedBox(height: 20),
-              _khatlonContainer('ТЧ «Номус ва инсоф», ш. Хоруг, к. Х. Кирмоншо-1 91-923-00-71'),
+              _khatlonContainer('ОО «Номус ва инсоф»\nг. Хоруг, ул. Х. Кирмоншо-1\n919-23-00-71'),
               const SizedBox(height: 20),
             ],
           ),

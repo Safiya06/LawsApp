@@ -75,7 +75,7 @@ class Dastur3Page extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.all(20),
-              height: 600,
+              // height: 600,
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.primary,
               ),
@@ -171,8 +171,7 @@ class Dastur3Page extends StatelessWidget {
            const SizedBox(height: 20),
             Container(
               padding: const EdgeInsets.only(bottom: 9,top: 9,left: 18,right: 18),
-              height: 260,
-              width: 328,
+              width: MediaQuery.of(context).size.width *0.9,
               decoration:
                   BoxDecoration(color: Theme.of(context).colorScheme.primary,borderRadius: const BorderRadius.all(Radius.circular(20))),
                   child: const Text('Ҳамчунин, машваратчиёни ҳуқуқӣ метавонанд ба шумо дар раванди ҳуқуқӣ кӯмак расонанд ва маслиҳатҳои ҳуқуқии заруриро пешниҳод кунанд. Муроҷиат ба ин марказҳо метавонад ба шумо дарёфти ёрии ҳамаҷониба ва дастгирии лозимиро фароҳам оварад.',
@@ -184,8 +183,8 @@ class Dastur3Page extends StatelessWidget {
               child: Stack(
                 children: [
                   Container(
-                    width: 326,
-                    height: 150,
+                    width: MediaQuery.of(context).size.width*0.9,
+                    height: MediaQuery.of(context).size.height * 0.16,
                     color: Theme.of(context).colorScheme.primary,
                   ),
                   Positioned(
@@ -194,8 +193,6 @@ class Dastur3Page extends StatelessWidget {
                     right: 10,
                     top: 0,
                     child: Container(
-                      width: 326,
-                      height: 160,
                       color: Theme.of(context).colorScheme.secondary,
                       padding: const EdgeInsets.all(16),
                       child: const Center(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
 class Dastur5RuPage extends StatelessWidget {
   const Dastur5RuPage({super.key});
@@ -11,7 +11,7 @@ class Dastur5RuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -24,8 +24,8 @@ class Dastur5RuPage extends StatelessWidget {
               child: Stack(
                 children: [
                   Container(
-                    width: 326,
-                    height: 130,
+                    width: MediaQuery.of(context).size.width*0.7,
+                    height: MediaQuery.of(context).size.height*0.17,
                     color: Theme.of(context).colorScheme.secondary,
                   ),
                   Positioned(
@@ -34,8 +34,6 @@ class Dastur5RuPage extends StatelessWidget {
                     right: 10,
                     top: 0,
                     child: Container(
-                      width: 284,
-                      height: 120,
                       color: Theme.of(context).colorScheme.primary,
                       padding: const EdgeInsets.all(16),
                       child: const Text(
@@ -79,18 +77,9 @@ class Dastur5RuPage extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        // Text(
-                        //   textAlign: TextAlign.center,
-                        //   'Чӣ гуна ба худ ёрӣ расонид?',
-                        //   style: TextStyle(
-                        //       color: Theme.of(context).colorScheme.primary,
-                        //       fontSize: 31,
-                        //       fontWeight: FontWeight.w800),
-                        // ),
                         Column(
                           children: [
                             Row(
-                              // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
@@ -104,8 +93,8 @@ class Dastur5RuPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     ' Очень низкая самооценка у человека, который прежде был уверен в себе;',
                                     style: TextStyle(
@@ -131,8 +120,8 @@ class Dastur5RuPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Любые другие резкие изменения личности (например, в прошлом общительный человек становится замкнутым);',
                                     style: TextStyle(
@@ -158,8 +147,8 @@ class Dastur5RuPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Депрессия, состояние повышенной тревожности, разговоры о самоубийстве.',
                                     style: TextStyle(
@@ -184,8 +173,8 @@ class Dastur5RuPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     ' Часто на ней (нем) можно увидеть следы травм.',
                                     style: TextStyle(
@@ -210,8 +199,8 @@ class Dastur5RuPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     ' Часто пропускает работу, учебу, социальные мероприятия без объяснения причин;',
                                     style: TextStyle(
@@ -236,8 +225,8 @@ class Dastur5RuPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Носить закрытую одежду не по сезону, солнцезащитные очки в помещении.',
                                     style: TextStyle(
@@ -262,8 +251,8 @@ class Dastur5RuPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Все реже встречаться с родственниками и друзьями;',
                                     style: TextStyle(
@@ -288,8 +277,8 @@ class Dastur5RuPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Иметь ограниченный доступ к деньгам, кредитным картам, автомобилю;',
                                     style: TextStyle(

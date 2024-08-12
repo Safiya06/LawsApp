@@ -18,7 +18,7 @@ class _MainRuPageState extends State<MainRuPage> {
         backgroundColor: Theme.of(context).colorScheme.background,
       ),
       body: Padding(
-        padding: const EdgeInsets.only(left: 25, right: 25),
+        padding: const EdgeInsets.only(left: 18, right: 18),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,

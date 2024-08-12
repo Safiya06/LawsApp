@@ -24,8 +24,8 @@ class Dastur5Page extends StatelessWidget {
               child: Stack(
                 children: [
                   Container(
-                    width: 326,
-                    height: 130,
+                    width: MediaQuery.of(context).size.width*0.7,
+                    height: MediaQuery.of(context).size.height*0.17,
                     color: Theme.of(context).colorScheme.secondary,
                   ),
                   Positioned(
@@ -34,8 +34,6 @@ class Dastur5Page extends StatelessWidget {
                     right: 10,
                     top: 0,
                     child: Container(
-                      width: 284,
-                      height: 120,
                       color: Theme.of(context).colorScheme.primary,
                       padding: const EdgeInsets.all(16),
                       child: const Text(
@@ -96,8 +94,8 @@ class Dastur5Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Худбаҳодиҳии шахс, ки қаблан ба худ эътимод дошт, хеле паст шудааст;',
                                     style: TextStyle(
@@ -123,8 +121,8 @@ class Dastur5Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Дигар дигаргуниҳо дар шахсият мушоҳида мегардад (масалан, хушмуомилагӣ ба худсарӣ табдил меебад);',
                                     style: TextStyle(
@@ -150,8 +148,8 @@ class Dastur5Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Шахс дар депрессия ва ҳолати изтироби зиед қарор дорад, дар бораи худкушӣ сухан меронад',
                                     style: TextStyle(
@@ -176,8 +174,8 @@ class Dastur5Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Аксар вақт дар ӯ ҷароҳатҳоро дидан мумкин аст;',
                                     style: TextStyle(
@@ -202,8 +200,8 @@ class Dastur5Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Ба ҷои кор ва таҳсил бе шарҳи сабаб ҳозир намешавад;',
                                     style: TextStyle(
@@ -228,8 +226,8 @@ class Dastur5Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Либоси ғайримавсимии пӯшида ва айнаки офтобиро ҳатто дар дохили бино намекашад;',
                                     style: TextStyle(
@@ -254,8 +252,8 @@ class Dastur5Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Бо хешу табор ва дӯстон муоширатро кам кардааст;',
                                     style: TextStyle(
@@ -280,8 +278,8 @@ class Dastur5Page extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 284,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Ба маблағҳои пулӣ, кортҳои бонкӣ, ва дигар манбаъҳои иқтисодӣ дастрасӣ надорад.',
                                     style: TextStyle(

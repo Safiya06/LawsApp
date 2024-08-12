@@ -1,16 +1,14 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
-class Vmkb1Page extends StatefulWidget {
-  const Vmkb1Page({super.key});
+class Vmkb1RuPage extends StatefulWidget {
+  const Vmkb1RuPage({super.key});
 
   @override
-  State<Vmkb1Page> createState() => _Vmkb1PageState();
+  State<Vmkb1RuPage> createState() => _Vmkb1RuPageState();
 }
 
-class _Vmkb1PageState extends State<Vmkb1Page> {
+class _Vmkb1RuPageState extends State<Vmkb1RuPage> {
   Widget _khujandContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(10),
@@ -25,7 +23,7 @@ class _Vmkb1PageState extends State<Vmkb1Page> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 11, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );
@@ -44,7 +42,7 @@ class _Vmkb1PageState extends State<Vmkb1Page> {
           ),
           onPressed: () {
             Navigator.pop(context,
-                MaterialPageRoute(builder: (context) => const MainPage()));
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -55,31 +53,31 @@ class _Vmkb1PageState extends State<Vmkb1Page> {
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/Vmkb11');
+                  Navigator.pushNamed(context, '/Vmkb11Ru');
                 },
                 child: _khujandContainer(
-                    'ХУЧРАХОИ НОЗИРОНИ МИНТАКАВЙ ОИД БА ПЕШГИРИИ ЗУРОВАРЙ ДАР ОИЛА ДАР ЧУМХУРИИ ТОЧИКИСТОН'),
+                    'КОМНАТЫ ИНСПЕКТОРОВ ПО ПРЕДУПРЕЖДЕНИЮ НАСИЛИЯ В СЕМЬЕ'),
               ),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Vmkb12');
+                    Navigator.pushNamed(context, '/Vmkb12Ru');
                   },
-                  child: _khujandContainer('БАХШХОИ КОР БО ЗАНОН ВА ОИЛА')),
+                  child: _khujandContainer('ОТДЕЛЫ ПО ДЕЛАМ ЖЕНЩИН И СЕМЬИ')),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Vmkb13');
+                    Navigator.pushNamed(context, '/Vmkb13Ru');
                   },
                   child: _khujandContainer(
-                      'ИНСТИТУТИ ВАКОЛАТДОР ОИД БА ХУКУКИ ИНСОН (ВХИ) ВА ВАКОЛАТДОР ОИД БА ХУКУКИ КУДАК (ВХК)')),
+                      ' ИНСТИТУТ УПОЛНОМОЧЕННОГО ПО ПРАВАМ ЧЕЛОВЕКА И ПО ПРАВАМ РЕБЕНКА')),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Vmkb14');
+                    Navigator.pushNamed(context, '/Vmkb14Ru');
                   },
                   child: _khujandContainer(
-                      'БЮРОХОИ ДАВЛАТИИ ХУКУКЙ, МУАССИСАИ ДАВЛАТИИ «МАРКАЗИЁРИИ ХУКУКЙ»-И ВАЗОРАТИ АДЛИЯИ ЧУМХУРИИ ТОЧИКИСТОН')),
+                      'ГОСУДАРСТВЕННЫЕ ЮРИДИЧЕСКИЕ БЮРО «ЦЕНТРА ПРАВОВОЙ ПОМОЩИ» МИНИСТЕРСТВА ЮСТИЦИИ РТ')),
              
             ],
           ),

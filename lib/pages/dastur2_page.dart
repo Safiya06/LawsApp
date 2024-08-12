@@ -26,7 +26,6 @@ class Dastur2Page extends StatelessWidget {
             children: [
               Container(
                 padding: const EdgeInsets.all(18),
-                // height: 390,
                 decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.primary,
                     borderRadius: const BorderRadius.all(Radius.circular(20))),
@@ -51,7 +50,7 @@ class Dastur2Page extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              Container(
+              SizedBox(
                 width: 300,
                 child: Text(
                   textAlign: TextAlign.center,
@@ -74,7 +73,8 @@ class Dastur2Page extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(16),
-                    height: 170,
+                    width: MediaQuery.of(context).size.width,
+                    // height: MediaQuery.of(context).size.height*0.1,
                     decoration: BoxDecoration(
                       border: Border.all(color: Theme.of(context).colorScheme.primary, width: 2),
                       borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(10),bottomRight: Radius.circular(10))

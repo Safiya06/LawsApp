@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
-class Vmkb21Page extends StatefulWidget {
-  const Vmkb21Page({super.key});
+class Vmkb21RuPage extends StatefulWidget {
+  const Vmkb21RuPage({super.key});
 
   @override
-  State<Vmkb21Page> createState() => _Vmkb21PageState();
+  State<Vmkb21RuPage> createState() => _Vmkb21RuPageState();
 }
 
-class _Vmkb21PageState extends State<Vmkb21Page> {
+class _Vmkb21RuPageState extends State<Vmkb21RuPage> {
   Widget _khatlonContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(18),
@@ -42,7 +42,7 @@ class _Vmkb21PageState extends State<Vmkb21Page> {
           ),
           onPressed: () {
             Navigator.pop(context,
-                MaterialPageRoute(builder: (context) => const MainPage()));
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -52,7 +52,7 @@ class _Vmkb21PageState extends State<Vmkb21Page> {
           child: Column(
             children: [
               _khatlonContainer(
-                  'М33 «Сарпараст», н. Ванч, чамоати Абдуллоев, к. 8-уми Март, бинои 9 93-581-96-46; 93-597-09-24; tj_sarparast_vanj@mail. ru'),
+                  'РЦЖ «Сарпараст»\nр. Ванч, джамоати Абдуллаев ул. 8-ое Марта, здание 9\n935-81-96-46; 935-97-09-24; tj_sarparast_vanj@mail. ru'),
               const SizedBox(height: 20),
               
             ],

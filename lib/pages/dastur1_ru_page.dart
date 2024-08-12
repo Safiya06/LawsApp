@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
 class Dastur1RuPage extends StatelessWidget {
   const Dastur1RuPage({super.key});
@@ -12,7 +12,7 @@ class Dastur1RuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -126,7 +126,7 @@ class Dastur1RuPage extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.all(16),
-              height: 860,
+              // height: 860,
               decoration:
                   BoxDecoration(color: Theme.of(context).colorScheme.primary),
               child: const Column(
@@ -219,8 +219,8 @@ class Dastur1RuPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 280,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Запишите в свой телефон номера телефонов лиц, кто может помочь Вам.',
                                     style: TextStyle(
@@ -246,8 +246,8 @@ class Dastur1RuPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 280,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Важные документы (паспорт, свидетельство о рождении, банковские карты,  ключи, лекарства, необходимую одежду) оставьте в доступном месте.',
                                     style: TextStyle(
@@ -273,8 +273,8 @@ class Dastur1RuPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 280,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.7,
                                   child: const Text(
                                     'Объясните детям, чтобы в случаях насилия, куда они могут обратиться.',
                                     style: TextStyle(
@@ -308,7 +308,7 @@ class Dastur1RuPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: 416,
+                      height: MediaQuery.of(context).size.height* 0.25,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),

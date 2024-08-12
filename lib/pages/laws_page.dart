@@ -27,7 +27,7 @@ class LawsPage extends StatelessWidget {
                   textAlign: TextAlign.center,
                   'Конун',
                   style: TextStyle(
-                      color: Color(0xff654900),
+                      color: const Color(0xff654900),
                       fontSize: MediaQuery.of(context).size.width*0.07,
                       fontWeight: FontWeight.w800),
                 ),
@@ -62,6 +62,8 @@ class LawsPage extends StatelessWidget {
                 ),
               ),
               Container(
+                // width: 500,
+                width: MediaQuery.of(context).size.width,
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   border: Border.all(color: Theme.of(context).colorScheme.primary, width: 3),
@@ -92,43 +94,41 @@ class LawsPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    child: Column(
-                      children: [
-                        Image.asset(
-                          'assets/car.png',
-                          width: 50,
-                        ),
-                        const SizedBox(
-                          height: 75,
-                        ),
-                        Image.asset(
-                          'assets/doctor.png',
-                          width: 50,
-                        ),
-                        const SizedBox(
-                          height: 75,
-                        ),
-                        Image.asset(
-                          'assets/low.png',
-                          width: 50,
-                        ),
-                        const SizedBox(
-                          height: 75,
-                        ),
-                        Image.asset(
-                          'assets/hospital.png',
-                          width: 50,
-                        ),
-                        const SizedBox(
-                          height: 75,
-                        ),
-                        Image.asset(
-                          'assets/hands.png',
-                          width: 50,
-                        ),
-                      ],
-                    ),
+                  Column(
+                    children: [
+                      Image.asset(
+                        'assets/car.png',
+                        width: 50,
+                      ),
+                      const SizedBox(
+                        height: 75,
+                      ),
+                      Image.asset(
+                        'assets/doctor.png',
+                        width: 50,
+                      ),
+                      const SizedBox(
+                        height: 75,
+                      ),
+                      Image.asset(
+                        'assets/low.png',
+                        width: 50,
+                      ),
+                      const SizedBox(
+                        height: 75,
+                      ),
+                      Image.asset(
+                        'assets/hospital.png',
+                        width: 50,
+                      ),
+                      const SizedBox(
+                        height: 75,
+                      ),
+                      Image.asset(
+                        'assets/hands.png',
+                        width: 50,
+                      ),
+                    ],
                   ),
                   Container(
                     color: Theme.of(context).colorScheme.primary,

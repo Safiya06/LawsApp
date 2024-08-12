@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:lows_app/components/navigation_menu_ru.dart';
-import 'package:lows_app/pages/main_ru_page.dart';
 
 class TanzimotPage extends StatelessWidget {
   const TanzimotPage({super.key});
@@ -35,21 +34,21 @@ class TanzimotPage extends StatelessWidget {
             ),
             Row(
               children: [
-                Text(
-                  'Change language',
-                  style: TextStyle(
-                      color: Color(0xff654900),
-                      fontSize: 22,
-                      fontWeight: FontWeight.w800),
-                ),
-                IconButton(
+                TextButton.icon(
                     onPressed: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => const NavigationMenuRu()));
                     },
-                    icon: Icon(Icons.language))
+                    icon: const Icon(Icons.language),
+                    label: const Text(
+                      'Иваз намудани забон',
+                      style: TextStyle(
+                          color: Color(0xff654900),
+                          fontSize: 22,
+                          fontWeight: FontWeight.w800),
+                    ))
               ],
             ),
             const SizedBox(
@@ -75,7 +74,7 @@ class TanzimotPage extends StatelessWidget {
                 ),
               ),
               child: const Text(
-                'Бехатарии шаҳрвандон барои фароҳам овардани зиндагии ором ва ҳифзи ҳуқуқу озодиҳои инсон аҳамияти калон дорад. Таъмини ин амният ба рушди устувори ҷомеа ва эътимоди байни шаҳрвандон ва давлат мусоидат мекунад.',
+                'Дар ин ҷо дар ин танзимот шумо метавонед забони барномаро ба осонӣ иваз кунед. Шумо метавонед ба забони русӣ ё тоҷикӣ иваз кунед. Ба тарзе, ки барои шумо қулай аст.',
                 style: TextStyle(
                     color: Color(0xff654900),
                     fontSize: 22,

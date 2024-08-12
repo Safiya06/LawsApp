@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
-class Vmkb13Page extends StatefulWidget {
-  const Vmkb13Page({super.key});
+class Ntm21RuPage extends StatefulWidget {
+  const Ntm21RuPage({super.key});
 
   @override
-  State<Vmkb13Page> createState() => _Vmkb13PageState();
+  State<Ntm21RuPage> createState() => _Ntm21RuPageState();
 }
 
-class _Vmkb13PageState extends State<Vmkb13Page> {
-  Widget _khatlonContainer(String value) {
+class _Ntm21RuPageState extends State<Ntm21RuPage> {
+  Widget _ntmContainer(String value) {
     return Container(
-      padding: const EdgeInsets.only(left: 25,right: 25,top: 18,bottom: 18),
-      height: 146,
+      padding: const EdgeInsets.all(18),
+      height: 140,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -23,7 +23,7 @@ class _Vmkb13PageState extends State<Vmkb13Page> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 22, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );
@@ -42,7 +42,7 @@ class _Vmkb13PageState extends State<Vmkb13Page> {
           ),
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -51,9 +51,11 @@ class _Vmkb13PageState extends State<Vmkb13Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _khatlonContainer('ш. Хоруг, кучаи Ленин-121. Тел.: (8-3322) 232-84; 93-400-74-57'),
+              _ntmContainer('ОО «Мададгор»\nг. Вахдат, ул. Тугдона-3\n907-84-81-91; 935-06-37-64'),
               const SizedBox(height: 20),
-              ],
+              _ntmContainer('ОО «Мумтоз»\nр. Рудаки, ул. Бустон-13\n907-84-43-94'),
+              const SizedBox(height: 20),
+            ],
           ),
         ),
       ),

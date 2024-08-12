@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
 class Dastur3RuPage extends StatelessWidget {
   const Dastur3RuPage({super.key});
@@ -12,7 +12,7 @@ class Dastur3RuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -75,7 +75,7 @@ class Dastur3RuPage extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.all(20),
-              height: 520,
+              // height: 520,
               decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.primary,
               ),
@@ -171,8 +171,7 @@ class Dastur3RuPage extends StatelessWidget {
            const SizedBox(height: 20),
             Container(
               padding: const EdgeInsets.only(bottom: 9,top: 9,left: 18,right: 18),
-              height: 260,
-              width: 328,
+              width: MediaQuery.of(context).size.width *0.9,
               decoration:
                   BoxDecoration(color: Theme.of(context).colorScheme.primary,borderRadius: const BorderRadius.all(Radius.circular(20))),
                   child: const Text('Также юрисконсульты могут помочь Вам в судебном процессе и предоставить необходимую юридическую консультацию. Обращение в эти центры может предоставить вам необходимую всестороннюю помощь и поддержку.',
@@ -184,8 +183,8 @@ class Dastur3RuPage extends StatelessWidget {
               child: Stack(
                 children: [
                   Container(
-                    width: 326,
-                    height: 165,
+                    width: MediaQuery.of(context).size.width*0.9,
+                    height: MediaQuery.of(context).size.height * 0.16,
                     color: Theme.of(context).colorScheme.primary,
                   ),
                   Positioned(
@@ -194,14 +193,11 @@ class Dastur3RuPage extends StatelessWidget {
                     right: 10,
                     top: 0,
                     child: Container(
-                      width: 326,
-                      height: 160,
                       color: Theme.of(context).colorScheme.secondary,
                       padding: const EdgeInsets.all(16),
                       child: const Center(
                         child: Text(
                           'Эти действия могут помочь защитить вас, обеспечить справедливость и помочь вашему психическому восстановлению.',
-                          // textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 18,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
 class Dastur2RuPage extends StatelessWidget {
   const Dastur2RuPage({super.key});
@@ -12,7 +12,7 @@ class Dastur2RuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -26,7 +26,7 @@ class Dastur2RuPage extends StatelessWidget {
             children: [
               Container(
                 padding: const EdgeInsets.all(28),
-                height: 390,
+                // height: 390,
                 decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.primary,
                     borderRadius: const BorderRadius.all(Radius.circular(20))),
@@ -51,7 +51,7 @@ class Dastur2RuPage extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              Container(
+              SizedBox(
                 width: 300,
                 child: Text(
                   textAlign: TextAlign.center,
@@ -74,7 +74,8 @@ class Dastur2RuPage extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(16),
-                    height: 170,
+                    width: MediaQuery.of(context).size.width,
+                    // height: 170,
                     decoration: BoxDecoration(
                       border: Border.all(color: Theme.of(context).colorScheme.primary, width: 2),
                       borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(10),bottomRight: Radius.circular(10))

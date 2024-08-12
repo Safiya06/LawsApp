@@ -47,7 +47,7 @@ class IslamPage extends StatelessWidget {
                         bottomRight: Radius.circular(10),
                       ),
                     ),
-                    child: Column(
+                    child: const Column(
                       children: [
                           Text(
                           'Ислом зӯровариро нисбати занону духтарон маҳкум менамояд, чунин кирдорҳо ба асосҳои таълимоти исломӣ мухолиф мебошанд. Аллоҳи бузург никоҳ ва оиларо барои нигоҳ доштани насл, тарбияи инсоният ва ҳифзи ҷомеа аз ҳар гуна фасодкориву бемориҳои гуногун муқаррар намудааст. Худованд муносибати байни зану шавҳарро аз ҳама олиҳимматона ва афзалиятдошта муайян намуда, онҳоро дар заминаи оромиш, муҳаббат ва меҳрубонӣ бунёд сохтааст. Чунончӣ, дар Қуръони карим омадааст: ',
@@ -59,13 +59,13 @@ class IslamPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 40,),
+                  const SizedBox(height: 40,),
                   Center(
               child: Stack(
                 children: [
                   Container(
-                    width: 326,
-                    height: 180,
+                      width: MediaQuery.of(context).size.width*0.7,
+                    height: MediaQuery.of(context).size.height*0.17,
                     color: Theme.of(context).colorScheme.primary,
                   ),
                   Positioned(
@@ -77,7 +77,7 @@ class IslamPage extends StatelessWidget {
                       color: Theme.of(context).colorScheme.secondary,
                       padding: const EdgeInsets.all(16),
                       child: const Text(
-                        '“Ва аз нишонањои Худо он аст, ки барои шумо аз љинси худатон занон офарид, то бо онњо ором гиред ва дар миёни шумо дўстию мењрубонї пайдо кард. Ба дурустї, дар ин кор барои гурўње, ки андеша мекунанд, нишонањое њаст.” (Сураи Рум, ояти 21)',
+                        '“Ва аз нишонаҳои Худо он аст, ки барои шумо аз ҷинси худатон занон офарид, то бо онњо ором гиред ва дар миёни шумо дӯстию меҳрубонӣ пайдо кард. Ба дурустӣ, дар ин кор барои гурӯҳе, ки андеша мекунанд, нишонаҳое ҳаст.”\n(Сураи Рум, ояти 21)',
                        
                         style: TextStyle(
                             color: Colors.white,
@@ -89,15 +89,15 @@ class IslamPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20,),
-            Text('Меҳри зан барои мард ин оромии дил мебошад, чунончӣ дар Қуръони карим омадааст: ',style: TextStyle(color: Color(0xFF654900),fontSize: 18,fontWeight: FontWeight.w800),),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
+            const Text('Меҳри зан барои мард ин оромии дил мебошад, чунончӣ дар Қуръони карим омадааст: ',style: TextStyle(color: Color(0xFF654900),fontSize: 18,fontWeight: FontWeight.w800),),
+            const SizedBox(height: 20,),
               Center(
               child: Stack(
                 children: [
                   Container(
-                    width: 326,
-                    height: 120,
+                      width: MediaQuery.of(context).size.width*0.7,
+                    height: MediaQuery.of(context).size.height*0.17,
                     color: Theme.of(context).colorScheme.secondary,
                   ),
                   Positioned(
@@ -121,15 +121,15 @@ class IslamPage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20,),
-            Text('Дар ҷои дигар Аллоҳи бузург мефармояд:',style: TextStyle(color: Color(0xFF654900),fontSize: 18,fontWeight: FontWeight.w800),),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
+            const Text('Дар ҷои дигар Аллоҳи бузург мефармояд:',style: TextStyle(color: Color(0xFF654900),fontSize: 18,fontWeight: FontWeight.w800),),
+            const SizedBox(height: 20,),
               Center(
               child: Stack(
                 children: [
                   Container(
-                    width: 326,
-                    height: 240,
+                      width: MediaQuery.of(context).size.width*0.7,
+                    height: MediaQuery.of(context).size.height*0.17,
                     color: Theme.of(context).colorScheme.primary,
                   ),
                   Positioned(
@@ -141,7 +141,7 @@ class IslamPage extends StatelessWidget {
                       color: Theme.of(context).colorScheme.secondary,
                       padding: const EdgeInsets.all(16),
                       child: const Text(
-                        '“Эй мардум, аз Парвардигоратон битарсед, ки шуморо аз як кас биофарид! Ва аз он (як кас) зани ўро офарид; ва аз ин ду (кас) мардуми бисёр ва занони бешумор пароканда сохт. Ва аз Худо битарсед, ки ба (номи) Ў аз якдигар суол мекунед! Ва аз (ќатъи) хешовандї (битарсед!) Ба дурустї ки Худо бар шумо Нигањбон аст.” (Сураи Нисо, ояти 1)',
+                        '“Эй мардум, аз Парвардигоратон битарсед, ки шуморо аз як кас биофарид! Ва аз он (як кас) зани ўро офарид; ва аз ин ду (кас) мардуми бисёр ва занони бешумор пароканда сохт. Ва аз Худо битарсед, ки ба (номи) Ӯ аз якдигар суол мекунед! Ва аз (қатъи) хешовандӣ (битарсед!) Ба дурустӣ ки Худо бар шумо Нигаҳбон аст.”\n(Сураи Нисо, ояти 1)',
                        
                         style: TextStyle(
                             color: Colors.white,
@@ -204,15 +204,7 @@ class IslamPage extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        // Text(
-                        //   textAlign: TextAlign.center,
-                        //   'Чӣ гуна ба худ ёрӣ расонид?',
-                        //   style: TextStyle(
-                        //       color: Theme.of(context).colorScheme.primary,
-                        //       fontSize: 31,
-                        //       fontWeight: FontWeight.w800),
-                        // ),
-                        Text('Ҳамеша дар ёд бояд дошт, ки дар муносибатҳои оилавӣ муҳиманд:',style: TextStyle(
+                        const Text('Ҳамеша дар ёд бояд дошт, ки дар муносибатҳои оилавӣ муҳиманд:',style: TextStyle(
                                         color: Color(0xff654900),
                                         fontSize: 16,
                                         fontWeight: FontWeight.w800),),
@@ -233,8 +225,8 @@ class IslamPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 300,
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width*0.8,
                                   child: const Text(
                                     'Дастгирӣ намудани ҳисси номуси шахсии шавҳар ва зан;',
                                     style: TextStyle(
@@ -260,8 +252,8 @@ class IslamPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 300,
+                                SizedBox(
+                                 width: MediaQuery.of(context).size.width*0.8,
                                   child: const Text(
                                     'Доимо нишон додани иззату ҳурмати ҳамдигар;',
                                     style: TextStyle(
@@ -287,8 +279,8 @@ class IslamPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 300,
+                                SizedBox(
+                                 width: MediaQuery.of(context).size.width*0.8,
                                   child: const Text(
                                     'Кӯшиш намудан ҷиҳати ҷалби таваҷҷуҳи ҳамсар;',
                                     style: TextStyle(
@@ -314,8 +306,8 @@ class IslamPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 300,
+                                SizedBox(
+                                 width: MediaQuery.of(context).size.width*0.8,
                                   child: const Text(
                                     'Дар худ нигоҳ доштан ва хомӯш намудани қаҳру ғазаб, ҷаҳл ва асабоният;',
                                     style: TextStyle(
@@ -340,8 +332,8 @@ class IslamPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 300,
+                                SizedBox(
+                                 width: MediaQuery.of(context).size.width*0.8,
                                   child: const Text(
                                     'Равона накардани эътибори худ танҳо ба камбуду ғалатҳои ҳамсари худ;',
                                     style: TextStyle(
@@ -366,8 +358,8 @@ class IslamPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 300,
+                                SizedBox(
+                                 width: MediaQuery.of(context).size.width*0.8,
                                   child: const Text(
                                     'Маломат накардани ҳамсар бо гузаштааш, махсусан бо хатогиҳои қаблӣ;',
                                     style: TextStyle(
@@ -392,8 +384,8 @@ class IslamPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 300,
+                                SizedBox(
+                                 width: MediaQuery.of(context).size.width*0.8,
                                   child: const Text(
                                     'Пешгирӣ кардани эҳтимоли сар задани низоъҳо бо таваҷҷуҳ зоҳир кардан ба дигар мавзӯъҳои бехавф;',
                                     style: TextStyle(
@@ -418,8 +410,8 @@ class IslamPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 300,
+                                SizedBox(
+                                 width: MediaQuery.of(context).size.width*0.8,
                                   child: const Text(
                                     'Азоб надодани худ ва ҳамсари худ бо гумонҳои бад ба хиёнат ва бевафоӣ, хомӯш намудани бадгумонӣ ва нигоҳ доштани рашки беасос;',
                                     style: TextStyle(
@@ -445,8 +437,8 @@ class IslamPage extends StatelessWidget {
                                 const SizedBox(
                                   width: 10,
                                 ),
-                                Container(
-                                  width: 300,
+                                SizedBox(
+                                 width: MediaQuery.of(context).size.width*0.8,
                                   child: const Text(
                                     'Эрод нагирифтан ва нагуфтани суханҳое, ки метавонанд шаъну шарафи ҳамсарро дар назди бегонагон ва ё кӯдакон паст мезанад ва монанди инҳо.',
                                     style: TextStyle(
@@ -466,16 +458,16 @@ class IslamPage extends StatelessWidget {
                ],
              ),
            ),
-           SizedBox(height: 10,),
+           const SizedBox(height: 10,),
            Container(
             decoration: BoxDecoration(color: Theme.of(context).colorScheme.primary),
-            child: Padding(
-              padding: const EdgeInsets.all(18.0),
+            child: const Padding(
+              padding: EdgeInsets.all(18.0),
               child: Text('Паёмбари гиромӣ лаънат кардан, дуои бад кардан, нафрин кардан ва истифодаи суханҳои кабеҳро манъ намудаанд. Ба фарди мусалмон таҳқир намудани як нафари дигар (аз ҷумла ҳамсари худ, хешутабори худ ва дигар шахсони шинос ва ношинос), дар ҳаққи онҳо гуфтани ҳар гуна саханҳои қабеҳ нораво мебошад. ',
               style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w800),
               ),
             ),
-           ),SizedBox(height: 50,)
+           ),const SizedBox(height: 50,)
                   
           ],
         ),

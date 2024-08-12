@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
 class Dastur6RuPage extends StatefulWidget {
   const Dastur6RuPage({super.key});
@@ -49,7 +49,7 @@ class _Dastur6RuPageState extends State<Dastur6RuPage> {
           ),
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -77,7 +77,7 @@ class _Dastur6RuPageState extends State<Dastur6RuPage> {
                 const SizedBox(height: 20),
                 GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/Dastur63');
+                  Navigator.pushNamed(context, '/Dastur63Ru');
                 },
                 child: _dasturContainer('Наказание за совершение насилия',36),
               ), 

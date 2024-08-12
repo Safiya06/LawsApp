@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
-class Ntm14Page extends StatefulWidget {
-  const Ntm14Page({super.key});
+class Ntm14RuPage extends StatefulWidget {
+  const Ntm14RuPage({super.key});
 
   @override
-  State<Ntm14Page> createState() => _Ntm14PageState();
+  State<Ntm14RuPage> createState() => _Ntm14RuPageState();
 }
 
-class _Ntm14PageState extends State<Ntm14Page> {
+class _Ntm14RuPageState extends State<Ntm14RuPage> {
   Widget _ntmContainer(String value) {
     return Container(
       padding: const EdgeInsets.only(left: 25,right: 25,top: 18,bottom: 18),
@@ -42,7 +42,7 @@ class _Ntm14PageState extends State<Ntm14Page> {
           ),
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -51,9 +51,9 @@ class _Ntm14PageState extends State<Ntm14Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _ntmContainer('ш. Турсунзода, бинои Хизби халки-демократи'),
+              _ntmContainer('г. Турсунзаде\nздание Народно-Демократической партии'),
               const SizedBox(height: 20),
-              _ntmContainer('н. Рашт, к. И.Сомонй-42. 88-883-90-90; 93-597-44-00'),
+              _ntmContainer('р. Рашт, ул. И.Сомони-42\n888-83-90-90; 935-97-44-00'),
               ],
           ),
         ),

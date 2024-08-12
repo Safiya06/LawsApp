@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:lows_app/pages/main_page.dart';
+import 'package:lows_app/pages/main_ru_page.dart';
 
-class Vmkb2Page extends StatefulWidget {
-  const Vmkb2Page({super.key});
+class Vmkb2RuPage extends StatefulWidget {
+  const Vmkb2RuPage({super.key});
 
   @override
-  State<Vmkb2Page> createState() => _Vmkb2PageState();
+  State<Vmkb2RuPage> createState() => _Vmkb2RuPageState();
 }
 
-class _Vmkb2PageState extends State<Vmkb2Page> {
+class _Vmkb2RuPageState extends State<Vmkb2RuPage> {
   Widget _vmkbContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(10),
@@ -23,7 +23,7 @@ class _Vmkb2PageState extends State<Vmkb2Page> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 11, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );
@@ -42,7 +42,7 @@ class _Vmkb2PageState extends State<Vmkb2Page> {
           ),
           onPressed: () {
             Navigator.pop(context,
-                MaterialPageRoute(builder: (context) => const MainPage()));
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -53,17 +53,17 @@ class _Vmkb2PageState extends State<Vmkb2Page> {
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/Vmkb21');
+                  Navigator.pushNamed(context, '/Vmkb21Ru');
                 },
                 child: _vmkbContainer(
-                    'ТАШКИЛОТХОИ ЧАМЪИЯТИИ ДАР САМТИ ПЕШГИРИИ ЗУРОВАРЙ ДАР ОИЛА'),
+                    'ОБЩЕСТВЕННЫЕ ОРГАНИЗАЦИИ В НАПРАВЛЕНИИ ПРЕДУПРЕЖДЕНИЯ НАСИЛИЯ'),
               ),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Vmkb22');
+                    Navigator.pushNamed(context, '/Vmkb22Ru');
                   },
-                  child: _vmkbContainer('МАРКАЗХОИ ЗАХИРАВИИ ЗАНОН')),
+                  child: _vmkbContainer('РЕСУРСНЫЕ ЦЕНТРЫ ДЛЯ ЖЕНЩИН')),
               const SizedBox(height: 10),
             ],
           ),
