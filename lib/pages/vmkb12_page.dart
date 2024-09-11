@@ -1,11 +1,23 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Vmkb12Page extends StatefulWidget {
   const Vmkb12Page({super.key});
 
   @override
   State<Vmkb12Page> createState() => _Vmkb12PageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Vmkb12PageState extends State<Vmkb12Page> {
@@ -41,8 +53,8 @@ class _Vmkb12PageState extends State<Vmkb12Page> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
         ),
       ),
@@ -51,24 +63,50 @@ class _Vmkb12PageState extends State<Vmkb12Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _vmkbContainer('ВМКБ\n(8-3522) 248-80;\n507-77-04-32'),
+              GestureDetector(
+                onTap: () => _launchDialer('507-77-04-32'),
+                  child:
+                      _vmkbContainer('ВМКБ\n507-77-04-32')),
               const SizedBox(height: 20),
-               _vmkbContainer('ш. Xopуг\n(8-3522) 268-77;\n93-585-40-01'),
+              GestureDetector(
+                onTap: () => _launchDialer('935-85-40-01'),
+                  child: _vmkbContainer(
+                      'ш. Хоруғ\n935-85-40-01')),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Дарвоз\n(8-3552) 215-87\n93-480-13-44'),
+              GestureDetector(
+                onTap: () => _launchDialer('934-80-13-44'),
+                  child: _vmkbContainer(
+                      'н. Дарвоз\n934-80-13-44')),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Ванч\n(8-3551) 213-52;\n93-924-29-34'),
+              GestureDetector(
+                onTap: () => _launchDialer('939-24-29-34'),
+                  child: _vmkbContainer(
+                      'н. Ванҷ\n939-24-29-34')),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Рошткальа\n(8-3555) 210-33;\n93-771-05-53'),
+              GestureDetector(
+                onTap: () => _launchDialer('937-71-05-53'),
+                  child: _vmkbContainer(
+                      'н. Роштқалъа\n937-71-05-53')),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Рушон\n(8-3556) 217-40\n93-812-33-22'),
+              GestureDetector(
+                onTap: () => _launchDialer('938-12-33-22'),
+                  child: _vmkbContainer(
+                      'н. Рӯшон\n938-12-33-22')),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Ишкошим\n(8-3553) 210-24;\n93-408-66-31'),
+              GestureDetector(
+                onTap: () => _launchDialer('934-08-66-31'),
+                  child: _vmkbContainer(
+                      'н. Ишқошим\n934-08-66-31')),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Шугнон\n(8-3522) 305-36;\n501-55-19-11'),
+              GestureDetector(
+                onTap: () => _launchDialer('501-55-19-11'),
+                  child: _vmkbContainer(
+                      'н. Шуғнон\n501-55-19-11')),
               const SizedBox(height: 20),
-               _vmkbContainer('н. Мургоб\n(8-3554) 212-32\n502-8-58-08'),
-            
+              GestureDetector(
+                onTap: () => _launchDialer('212-32'),
+                  child: _vmkbContainer(
+                      'н. Мурғоб\n(8-3554) 212-32;')),
             ],
           ),
         ),

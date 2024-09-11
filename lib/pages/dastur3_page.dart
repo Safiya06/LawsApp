@@ -11,8 +11,8 @@ class Dastur3Page extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.background,
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -48,24 +48,25 @@ class Dastur3Page extends StatelessWidget {
                       ),
                     ),
                     child: const Text.rich(
-                  TextSpan(
-    text: 'Ҳангоми ба зӯроварии шаҳвонӣ дучор шудан, аввалин қадам ин аст, ки ба ҷои бехатар равед. Агар имконият дошта бошед, аз ҷои ҳодиса дур шавед ва худро ба ҷои бехатар расонед. Баъдан, ба шахсони наздик, дӯстон ё ҳамсоягон дар бораи ҳодиса хабар диҳед. Дар ҳолатҳои фавқулодда, беҳтараш ба рақами таъҷилии ',
-    children: <TextSpan>[
-      TextSpan(
-        text: '112 ',
-        style: TextStyle(color: Colors.red),
-      ),
-      TextSpan(
-        text: 'занг занед, то ин ки ёрии фаврӣ гиред.',
-      ),
-    ],
-  ),
-                  style: TextStyle(
-                      color: Color(0xff654900),
-                      fontSize: 22,
-                      fontWeight: FontWeight.w800),
+                      TextSpan(
+                        text:
+                            'Ҳангоми ба зӯроварии шаҳвонӣ дучор шудан, аввалин қадам ин аст, ки ба ҷои бехатар равед. Агар имконият дошта бошед, аз ҷои ҳодиса дур шавед ва худро ба ҷои бехатар расонед. Баъдан, ба шахсони наздик, дӯстон ё ҳамсоягон дар бораи ҳодиса хабар диҳед. Дар ҳолатҳои фавқулодда, беҳтараш ба рақами таъҷилии ',
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: '112 ',
+                            style: TextStyle(color: Colors.red),
+                          ),
+                          TextSpan(
+                            text: 'занг занед, то ин ки ёрии фаврӣ гиред.',
+                          ),
+                        ],
+                      ),
+                      style: TextStyle(
+                          color: Color(0xff654900),
+                          fontSize: 22,
+                          fontWeight: FontWeight.w800),
                       // textAlign : TextAlign.center
-                ),
+                    ),
                   ),
                 ],
               ),
@@ -81,7 +82,7 @@ class Dastur3Page extends StatelessWidget {
               ),
               child: const Center(
                 child: Text(
-                  'Баъд аз ин, бояд фавран ба пизишк муроҷиат кунед, ҳатто агар шумо фикр кунед, ки ягон зарари ҷиддӣ надидаед. Ин на танҳо барои гирифтани ёрии тиббӣ, балки барои сабти далелҳо ва гирифтани маълумотномаҳо, ки баъдан барои муроҷиат ба мақомоти ҳуқуқӣ муҳиманд, зарур аст. Ҳангоми ба пизишк рафтан, кӯшиш кунед, ки либосҳои худро иваз накунед ва худро нашӯед, то далелҳо ҳифз шаванд.',
+                  'Баъд аз ин, бояд фавран ба пизишк муроҷиат кунед, ҳатто агар Шумо фикр кунед, ки ягон зарари ҷиддӣ надидаед. Ин на танҳо барои гирифтани ёрии тиббӣ зарур аст, балки барои сабти далелҳо ва гирифтани маълумотномаҳо, ки баъдан барои муроҷиат ба мақомоти ҳуқуқӣ муҳиманд. Ҳангоми ба пизишк рафтан, кӯшиш кунед, ки либосҳои худро иваз накунед ва худро нашӯед, то далелҳо ҳифз шаванд.',
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 22,
@@ -118,7 +119,7 @@ class Dastur3Page extends StatelessWidget {
                       ),
                     ),
                     child: const Text(
-                      'Ҳамчунин, муҳим аст, ки ба мақомоти ҳуқуқӣ, яъне милитсия хабар диҳед. Барои ин ба наздиктарин шӯъбаи милитсия рафта, изҳороти расмӣ диҳед. Ин ба шумо имкон медиҳад, ки ҳуқуқҳои худро ҳимоя кунед ва бар зидди ҷинояткор тадбирҳои лозимӣ андешида шаванд.',
+                      'Ҳамчунин, муҳим аст, ки ба мақомоти ҳуқуқӣ, яъне милитсия хабар диҳед. Барои ин ба наздиктарин шӯъбаи милитсия муроҷият намоед. Ин имкон медиҳад, ки ҳуқуқҳои Шумо ҳимоя гарданд ва бар зидди ҷинояткор тадбирҳои лозимӣ андешида шаванд.',
                       style: TextStyle(
                           color: Color(0xff654900),
                           fontSize: 22,
@@ -157,7 +158,7 @@ class Dastur3Page extends StatelessWidget {
                       ),
                     ),
                     child: const Text(
-                      'Ғайр аз ин, дар Тоҷикистон ташкилотҳо ва марказҳои дастгирӣ барои қурбониёни зӯроварии ҷинсӣ фаъолият мекунанд. Ба ин марказҳо муроҷиат кардан ба шумо кӯмак мерасонад, ки ёрии равонӣ ва ҳуқуқӣ гиред. Маслиҳатчиёни равонӣ метавонанд ба шумо кӯмак кунанд, ки бо таъсироти равонии ҳодиса мубориза баред ва ба ҳолати равонии мӯътадил баргардед.',
+                      'Ғайр аз ин, дар Тоҷикистон ташкилотҳо ва марказҳои дастгирӣ барои қурбониёни зӯроварии ҷинсӣ фаъолият мекунанд. Муроҷиат ба ин марказҳо  ба Шумо имкон медиҳад, ки дар он ҷо ёрии равонӣ ва ҳуқуқӣ гиред. Машваратчиёни равонӣ метавонанд ба Шумо барои бартараф намудани оқибатҳои равонии ҳодиса кӯмак кунанд.',
                       style: TextStyle(
                           color: Color(0xff654900),
                           fontSize: 25,
@@ -167,24 +168,31 @@ class Dastur3Page extends StatelessWidget {
                 ],
               ),
             ),
-            
-           const SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(
-              padding: const EdgeInsets.only(bottom: 9,top: 9,left: 18,right: 18),
-              width: MediaQuery.of(context).size.width *0.9,
-              decoration:
-                  BoxDecoration(color: Theme.of(context).colorScheme.primary,borderRadius: const BorderRadius.all(Radius.circular(20))),
-                  child: const Text('Ҳамчунин, машваратчиёни ҳуқуқӣ метавонанд ба шумо дар раванди ҳуқуқӣ кӯмак расонанд ва маслиҳатҳои ҳуқуқии заруриро пешниҳод кунанд. Муроҷиат ба ин марказҳо метавонад ба шумо дарёфти ёрии ҳамаҷониба ва дастгирии лозимиро фароҳам оварад.',
-                  style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w800),),
+              padding:
+                  const EdgeInsets.only(bottom: 9, top: 9, left: 18, right: 18),
+              width: MediaQuery.of(context).size.width * 0.9,
+              decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.primary,
+                  borderRadius: const BorderRadius.all(Radius.circular(20))),
+              child: const Text(
+                'Ҳамчунин, машваратчиёни ҳуқуқӣ метавонанд ба Шумо дар раванди ҳуқуқӣ кӯмак расонанд ва маслиҳатҳои ҳуқуқии заруриро пешниҳод кунанд. Муроҷиат ба ин марказҳо метавонад барои дарёфти ёрии ҳамаҷониба ва дастгирии лозимӣ ба Шумо шароит фароҳам оварад.',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w800),
+              ),
             ),
-            const SizedBox(height: 20,),
-
+            const SizedBox(
+              height: 20,
+            ),
             Center(
               child: Stack(
                 children: [
                   Container(
-                    width: MediaQuery.of(context).size.width*0.9,
-                    height: MediaQuery.of(context).size.height * 0.16,
+                    width: MediaQuery.of(context).size.width * 0.9,
+                    height: MediaQuery.of(context).size.height * 0.20,
                     color: Theme.of(context).colorScheme.primary,
                   ),
                   Positioned(
@@ -197,7 +205,7 @@ class Dastur3Page extends StatelessWidget {
                       padding: const EdgeInsets.all(16),
                       child: const Center(
                         child: Text(
-                          'Ин амалҳо метавонанд барои ҳифзи шумо, таъмини адолат ва барқароршавии равонии шумо кӯмак расонанд.',
+                          'Ин амалҳо метавонанд барои ҳифзи Шумо, таъмини адолат ва барқароршавии равонии Шумо кӯмак расонанд.',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Colors.white,
@@ -210,7 +218,9 @@ class Dastur3Page extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 40,)
+            const SizedBox(
+              height: 40,
+            )
           ],
         ),
       ),

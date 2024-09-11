@@ -48,8 +48,8 @@ class _Dastur61RuPageState extends State<Dastur61RuPage> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -65,9 +65,10 @@ class _Dastur61RuPageState extends State<Dastur61RuPage> {
                 onTap: () {
                   Navigator.pushNamed(context, '/IslamRu');
                 },
-                child: _dasturContainer('Насилие в отношении женщин с точки зрения Ислама',32),
-              ), 
-               const SizedBox(height: 20),
+                child: _dasturContainer(
+                    'Насилие в отношении женщин с точки зрения Ислама', 32),
+              ),
+              const SizedBox(height: 20),
             ],
           ),
         ),

@@ -11,8 +11,8 @@ class Dastur1Page extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.background,
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -50,7 +50,7 @@ class Dastur1Page extends StatelessWidget {
                     child: const Column(
                       children: [
                         Text(
-                          'Чӣ гуна зӯроварии оилавиро муайян кард?',
+                          'Чӣ тавр зӯроварии оилавиро метавон муайян намуд?',
                           style: TextStyle(
                               color: Color(0xff654900),
                               fontSize: 22,
@@ -221,14 +221,16 @@ class Dastur1Page extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Оиди ҳолати шуда истода ба шахсони Шуморо дастгирӣ мекарда гуед ва рақамҳои телефони онҳоро сабт карда монед.',
                                     style: TextStyle(
@@ -248,14 +250,16 @@ class Dastur1Page extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Телефони шахсии худро истифода баред.',
                                     style: TextStyle(
@@ -275,14 +279,16 @@ class Dastur1Page extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Ҳуҷҷатҳои лозимаро (ҳуҷҷатҳо, шаҳодатномаи таваллуд, кортҳои бонкӣ, шиноснома, калидҳо, доруҳо, либосҳои лозима) дар ҷои дастрас монед.',
                                     style: TextStyle(
@@ -302,14 +308,16 @@ class Dastur1Page extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Ба фарзандон фаҳмонед, ки дар ҳолатҳои зуроварии оилавӣ ба куҷо муроҷиат намояд.',
                                     style: TextStyle(
@@ -329,14 +337,16 @@ class Dastur1Page extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Ҷойҳоеро ёбед, ки бо фарзандон онҷо пинҳон шуда метавонед.',
                                     style: TextStyle(
@@ -358,19 +368,17 @@ class Dastur1Page extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.all(16.0),
                     child: Text(
-                      'Шавҳар ва ё ҳамсари шумо : ➡️',
+                      'Шавҳар ва ё ҳамсари шумо : ',
                       style: TextStyle(
                           color: Color(0xff654900),
                           fontSize: 29,
                           fontWeight: FontWeight.w800),
                     ),
                   ),
-                  // SizedBox(height: 10,),
                   Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height* 0.25,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),
@@ -383,7 +391,178 @@ class Dastur1Page extends StatelessWidget {
                             fontWeight: FontWeight.w800),
                       )),
                     ),
-                  )
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        'Шумо ва ё фарзандонатонро барои муноқишаҳо, барои амалҳои зӯроварии худ айбдор мекунад? ',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        'Ба Шумо ва ё фарзандонатон зарар мерасонад, бо шумоён дагал муносибат мекунад, Шуморо мезанад?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        'Дар ҳолати нӯшидани машрубот ва ё истифодаи маводи мухаддир Шуморо мезанад, пасон амалҳои худро бо ҳолатҳои мадҳушӣ сафед мекунад?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        'Бо Шумо чунон муносибат мекунад, ки Шумо онро аз  хешовандон ва наздиконатон пинҳон мекунед, зеро Шумо шарм мекунед?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        'Суханҳои Шуморо ба инобат намегирад, қадр намекунад, аз болои амалҳо ва комёбиҳоятон механдад?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        'Бо худкушӣ Шуморо метарсонад, агар ту меравам гӯӣ?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        'Зуд-зуд рашк мекунад ва ҳуқуқҳои худро ба шумо нишон медиҳад?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        'Шуморо идора мекунад: мехохад, ки фаҳмад шумо чӣ кор карда истодаед, бо дустон ва ё хешовандон вохӯрдан намегузорад, пул намедиҳад, компютер, телефон, автомашина ва ё дигар ҳуҷҷатҳоятонро  аз дастатон мегирад?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        'Шуморо иръоб (шантаж) ва метарсонад бо истифодаи зуроварӣ ба Шумо ва фарзандонатон таҳдид мекунад?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        'Қасдона ба амволҳои Шумо зарар мерасонад?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+
                 ],
               ),
             ),

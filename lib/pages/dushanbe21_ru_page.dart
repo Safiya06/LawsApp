@@ -1,11 +1,23 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_ru_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Dushanbe21RuPage extends StatefulWidget {
   const Dushanbe21RuPage({super.key});
 
   @override
   State<Dushanbe21RuPage> createState() => _Dushanbe21RuPageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Dushanbe21RuPageState extends State<Dushanbe21RuPage> {
@@ -41,8 +53,8 @@ class _Dushanbe21RuPageState extends State<Dushanbe21RuPage> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -51,13 +63,29 @@ class _Dushanbe21RuPageState extends State<Dushanbe21RuPage> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _khatlonContainer('Центр поддержки\n«Фемида»\nп. Рудаки-137\n935-01-62-92\nfemida-tj@mail.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('935-01-62-92'),
+                child: _khatlonContainer(
+                    'Центр поддержки\n«Фемида»\nп. Рудаки-137\n935-01-62-92'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer('Центр самопознания женщин\n935-17-77-56\nmarkazi.bonuvon '),
+              GestureDetector(
+                onTap: () => _launchDialer('935-17-77-56'),
+                child: _khatlonContainer(
+                    'Центр самопознания женщин\n935-17-77-56'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer('ОО «Лига женщин юристов»\nул. Аинӣ, 32/2, д. 7\n221-21-49\nlwl_toj@rambler.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('221-21-49'),
+                child: _khatlonContainer(
+                    'ОО «Лига женщин юристов»\nул. Аини, 32/2, д. 7\n221-21-49'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer('ОО «Корвони умед»\nул. Н. Хисрав, д. 11\n900-00-12-22'),
+              GestureDetector(
+                onTap: () => _launchDialer('900-00-12-22'),
+                child: _khatlonContainer(
+                    'ОО «Корвони умед»\nул. Н. Хисрав, д. 11\n900-00-12-22'),
+              ),
               const SizedBox(height: 20),
             ],
           ),

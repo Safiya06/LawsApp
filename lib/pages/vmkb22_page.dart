@@ -1,11 +1,23 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Vmkb22Page extends StatefulWidget {
   const Vmkb22Page({super.key});
 
   @override
   State<Vmkb22Page> createState() => _Vmkb22PageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Vmkb22PageState extends State<Vmkb22Page> {
@@ -41,8 +53,8 @@ class _Vmkb22PageState extends State<Vmkb22Page> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
         ),
       ),
@@ -51,11 +63,20 @@ class _Vmkb22PageState extends State<Vmkb22Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _khatlonContainer('ТЧ «Занон барои адолат», ш. Хоруг, к. Ш. Шотемур-8 93-593-97-74'),
+              GestureDetector(
+                onTap: () => _launchDialer('93-593-97-74'),
+                  child: _khatlonContainer(
+                      'ТҶ «Занон барои адолат»\nш. Хоруғ\nкӯчаи Ш. Шотемур-8\n935-93-97-74')),
               const SizedBox(height: 20),
-              _khatlonContainer('ТЧ «Мадина», ш. Хоруг, к. Х. Кирмоншо-66 93-555-47-36; 93-477-97-77'),
+              GestureDetector(
+                onTap: () => _launchDialer(' 93-477-97-77'),
+                  child: _khatlonContainer(
+                      'ТҶ «Мадина»\nш. Хоруғ\nкӯчаи Х. Кирмоншо-66\n935-55-47-36; 934-77-97-77')),
               const SizedBox(height: 20),
-              _khatlonContainer('ТЧ «Номус ва инсоф», ш. Хоруг, к. Х. Кирмоншо-1 91-923-00-71'),
+              GestureDetector(
+                onTap: () => _launchDialer('91-923-00-71'),
+                  child: _khatlonContainer(
+                      'ТҶ «Номус ва инсоф»\nш. Хоруғ\nкӯчаи Х. Кирмоншо-1\n919-23-00-71')),
               const SizedBox(height: 20),
             ],
           ),

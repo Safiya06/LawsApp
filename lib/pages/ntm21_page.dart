@@ -1,11 +1,23 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Ntm21Page extends StatefulWidget {
   const Ntm21Page({super.key});
 
   @override
   State<Ntm21Page> createState() => _Ntm21PageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Ntm21PageState extends State<Ntm21Page> {
@@ -41,8 +53,8 @@ class _Ntm21PageState extends State<Ntm21Page> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
         ),
       ),
@@ -51,9 +63,15 @@ class _Ntm21PageState extends State<Ntm21Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _ntmContainer('ТЧ «Мададгор», ш. Вахдат, к. Тугдона-3. 907-84-81-91; 93-506-37-64'),
+              GestureDetector(
+                onTap: () => _launchDialer('93-506-37-64'),
+                  child: _ntmContainer(
+                      'ТҶ «Мададгор»\nш. Ваҳдат, кӯчаи Туғдона-3\n907-84-81-91; 935-06-37-64')),
               const SizedBox(height: 20),
-              _ntmContainer('ТЧ «Мумтоз», н. Рудакй, к. Бустон-13. (8-3137) 22-698; 907-84-43-94'),
+              GestureDetector(
+                onTap: () => _launchDialer('907-84-43-94'),
+                  child: _ntmContainer(
+                      'ТҶ «Мумтоз»\nн. Рӯдакӣ, кӯчаи Бустон-13\n 907-84-43-94')),
               const SizedBox(height: 20),
             ],
           ),

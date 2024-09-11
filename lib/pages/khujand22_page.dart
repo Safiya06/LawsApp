@@ -1,11 +1,23 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Khujand22Page extends StatefulWidget {
   const Khujand22Page({super.key});
 
   @override
   State<Khujand22Page> createState() => _Khujand22PageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Khujand22PageState extends State<Khujand22Page> {
@@ -41,8 +53,8 @@ class _Khujand22PageState extends State<Khujand22Page> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
         ),
       ),
@@ -51,19 +63,40 @@ class _Khujand22PageState extends State<Khujand22Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _khujandContainer('M33 «ASTI», ш. Хучанд, к. Шуро-24 (8-3422) 62-470; 92-777-90-15 asti.tajikistan@gmail.com'),
+              GestureDetector(
+                onTap: () => _launchDialer('92-777-90-15'),
+                  child: _khujandContainer(
+                      'M33 «ASTI»\n ш. Хуҷанд, кӯчаи Шӯро-24\n 927-77-90-15')),
               const SizedBox(height: 20),
-              _khujandContainer('М33 «Кухсор», н. Айнй, к. Рудакй-55 92-762-40-40; 93-545-19-20 gulchehra.04@mail.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('93-545-19-20'),
+                  child: _khujandContainer(
+                      'М33 «Кӯҳсор»\nн. Айнӣ, кӯчаи Рӯдакӣ-55\n927-62-40-40; 935-45-19-20')),
               const SizedBox(height: 20),
-              _khujandContainer('М33 «Занони Шарк», ш. Панчакент, к. Рудакй-85 (8-3475) 54-329; 92-809-29-28 notima@mail.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('92-809-29-28'),
+                  child: _khujandContainer(
+                      'М33 «Занони Шарқ»\nш. Панҷикент, кӯчаи Рӯдакӣ-85\n928-09-29-28')),
               const SizedBox(height: 20),
-              _khujandContainer('М33 «Маркази дастгирии чамоати Ворух», ш. Исфара, чамоати Ворух, к. Рудакй-123А 989-10-72-44; golibu@mail.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('989-10-72-44'),
+                  child: _khujandContainer(
+                      'М33 «Маркази дастгирӣ»\nш. Исфара, ҷамоати Ворух\nкӯчаи Рӯдакӣ-123А\n989-10-72-44 ')),
               const SizedBox(height: 20),
-              _khujandContainer('М33 «Занон барои адолат», ш. Хучанд, к. Кирмоншо-1 93-836-45-45; farosat_kiba@bk.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('93-836-45-45'),
+                  child: _khujandContainer(
+                      'М33 «Занон барои адолат»\nш.Хуҷанд, кӯчаи Кирмоншо-1\n938-36-45-45')),
               const SizedBox(height: 20),
-              _khujandContainer('М33 «Умед», ш. Исфара, к. Марказй-22 (47) 44-10-140; 927-70-04-06 umed_i@mail.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('927-70-04-06'),
+                  child: _khujandContainer(
+                      'М33 «Умед»\nш. Исфара , кӯчаи Марказӣ-22\n927-70-04-06')),
               const SizedBox(height: 20),
-              _khujandContainer('М33 «Занхо зидди зуроварй», н. Истаравшан, к. И. Сомонй-186 988-65-31-65; 918-80-35-54; nasrulloevb@yahoo.com; sheroz-com@mail.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('918-80-35-54'),
+                  child: _khujandContainer(
+                      'М33 «Занҳо зидди зӯроварӣ»\nн. Истаравшан\nкӯчаи И. Сомонӣ-186\n988-65-31-65; 918-80-35-54 ')),
               const SizedBox(height: 20),
             ],
           ),

@@ -11,8 +11,8 @@ class Dastur2RuPage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.background,
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -63,25 +63,36 @@ class Dastur2RuPage extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 40,),
+              const SizedBox(
+                height: 40,
+              ),
               Column(
                 children: [
                   Container(
                     height: 11,
                     decoration: BoxDecoration(
                         color: Theme.of(context).colorScheme.secondary,
-                        border: Border.all(color: Theme.of(context).colorScheme.primary, width: 2)),
+                        border: Border.all(
+                            color: Theme.of(context).colorScheme.primary,
+                            width: 2)),
                   ),
                   Container(
                     padding: const EdgeInsets.all(16),
                     width: MediaQuery.of(context).size.width,
                     // height: 170,
                     decoration: BoxDecoration(
-                      border: Border.all(color: Theme.of(context).colorScheme.primary, width: 2),
-                      borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(10),bottomRight: Radius.circular(10))
-                    ),
-                    child: const Text('Вы не виновны в насилии над собой, насильник есть преступник, и с Вашей помощью он будет привлечен к ответственности.',
-                    style: TextStyle(color: Color(0xFF654900),fontSize: 18,fontWeight: FontWeight.w700),
+                        border: Border.all(
+                            color: Theme.of(context).colorScheme.primary,
+                            width: 2),
+                        borderRadius: const BorderRadius.only(
+                            bottomLeft: Radius.circular(10),
+                            bottomRight: Radius.circular(10))),
+                    child: const Text(
+                      'Вы не виновны в насилии над собой, насильник есть преступник, и с Вашей помощью он будет привлечен к ответственности.',
+                      style: TextStyle(
+                          color: Color(0xFF654900),
+                          fontSize: 18,
+                          fontWeight: FontWeight.w700),
                     ),
                   ),
                 ],

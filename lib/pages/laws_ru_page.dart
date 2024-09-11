@@ -68,7 +68,7 @@ class LawsRuPage extends StatelessWidget {
                   borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(10),bottomRight: Radius.circular(10))
                 ),
                 child: const Text(
-                  'Домашнее насилие является тяжким правонарушением, наказуемым положениями Кодекса Республики Таджикистан об административных правонарушениях и Уголовного Кодекса Республики Таджикистан. Согласно Закону Республики Таджикистан «О предупреждении  домашнего насилия» предусмотрены индивидуальные меры по защите потерпевших, выдача охранного ордера органами внутренних дел лицу, совершившему насилие в семье, или лицу, угрожающему его применением на основании заявления потерпевшего. Охранный ордер предписывает специальные ограничительные меры в отношении обидчика и выдается сроком на 30 дней.\n   По заявлению потерпевшего или его законного представителя срок охранного ордера может быть продлен до 60 суток по ходатайству руководителя органа внутренних дел и с согласия прокурора.',
+                  'Домашнее насилие является тяжким правонарушением, наказуемым положениями Кодекса Республики Таджикистан об административных правонарушениях и Уголовного Кодекса Республики Таджикистан.\n\n Согласно Закону Республики Таджикистан «О предупреждении  домашнего насилия» предусмотрены индивидуальные меры по защите потерпевших, выдача охранного ордера органами внутренних дел лицу, совершившему насилие в семье, или лицу, угрожающему его применением на основании заявления потерпевшего. Охранный ордер предписывает специальные ограничительные меры в отношении обидчика и выдается сроком на 30 дней.\n\n По заявлению потерпевшего или его законного представителя срок охранного ордера может быть продлен до 60 суток по ходатайству руководителя органа внутренних дел и с согласия прокурора.',
                   style: TextStyle(
                       color: Color(0xFF654900),
                       fontSize: 18,
@@ -90,37 +90,39 @@ class LawsRuPage extends StatelessWidget {
                 height: 20,
               ),
               Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     children: [
+                       SizedBox(height: MediaQuery.of(context).size.height*0.05,),
                       Image.asset(
                         'assets/car.png',
                         width: 50,
                       ),
-                      const SizedBox(
-                        height: 75,
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height*0.07
                       ),
                       Image.asset(
                         'assets/doctor.png',
                         width: 50,
                       ),
-                      const SizedBox(
-                        height: 75,
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height*0.07
                       ),
                       Image.asset(
                         'assets/low.png',
                         width: 50,
                       ),
-                      const SizedBox(
-                        height: 75,
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height*0.08
                       ),
                       Image.asset(
                         'assets/hospital.png',
                         width: 50,
                       ),
-                      const SizedBox(
-                        height: 75,
+                      SizedBox(
+                        height: MediaQuery.of(context).size.height*0.15
                       ),
                       Image.asset(
                         'assets/hands.png',
@@ -131,7 +133,7 @@ class LawsRuPage extends StatelessWidget {
                   Container(
                     color: Theme.of(context).colorScheme.primary,
                     width: 275,
-                    height: 570,
+                    // height: 570,
                     child: Column(
                       children: [
                         const SizedBox(
@@ -139,7 +141,7 @@ class LawsRuPage extends StatelessWidget {
                         ),
                         Container(
                           width: 260,
-                          height: 80,
+                           height: MediaQuery.of(context).size.height*0.101,
                           color: Colors.white,
                           child: Center(
                               child: Text(
@@ -156,7 +158,7 @@ class LawsRuPage extends StatelessWidget {
                         ),
                         Container(
                           width: 260,
-                          height: 80,
+                            height: MediaQuery.of(context).size.height*0.101,
                           color: Colors.white,
                           child: Center(
                               child: Text(
@@ -173,7 +175,7 @@ class LawsRuPage extends StatelessWidget {
                         ),
                         Container(
                           width: 260,
-                          height: 80,
+                            height: MediaQuery.of(context).size.height*0.125,
                           color: Colors.white,
                           child: Center(
                               child: Text(
@@ -190,7 +192,7 @@ class LawsRuPage extends StatelessWidget {
                         ),
                         Container(
                           width: 260,
-                          height: 100,
+                           height: MediaQuery.of(context).size.height*0.15,
                           color: Colors.white,
                           child: Center(
                               child: Text(
@@ -207,7 +209,7 @@ class LawsRuPage extends StatelessWidget {
                         ),
                         Container(
                           width: 260,
-                          height: 100,
+                          height: MediaQuery.of(context).size.height*0.15,
                           color: Colors.white,
                           child: Center(
                               child: Text(
@@ -231,9 +233,9 @@ class LawsRuPage extends StatelessWidget {
                 height: 30,
               ),
               Container(
-                // padding: EdgeInsets.all(18),
-                width: 360,
-                height: 120,
+                padding: EdgeInsets.all(18),
+                  width: MediaQuery.of(context).size.width*0.9,
+                
                 color: Theme.of(context).colorScheme.secondary,
                 child: const Center(
                     child: Text.rich(

@@ -11,8 +11,8 @@ class Dastur3RuPage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.background,
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -48,24 +48,25 @@ class Dastur3RuPage extends StatelessWidget {
                       ),
                     ),
                     child: const Text.rich(
-                  TextSpan(
-    text: 'Если вы подверглись сексуальному насилию, первым делом вам нужно отправиться в безопасное место. Если возможно, отойдите подальше от места происшествия и переберитесь в безопасное место. Затем расскажите о случившемся близким, друзьям или соседям. В экстренных случаях лучше позвонить по номеру экстренной помощи ',
-    children: <TextSpan>[
-      TextSpan(
-        text: '112',
-        style: TextStyle(color: Colors.red),
-      ),
-      TextSpan(
-        text: ', чтобы получить немедленную помощь.',
-      ),
-    ],
-  ),
-                  style: TextStyle(
-                      color: Color(0xff654900),
-                      fontSize: 22,
-                      fontWeight: FontWeight.w800),
+                      TextSpan(
+                        text:
+                            'Если вы подверглись сексуальному насилию, первым делом вам нужно отправиться в безопасное место. Если возможно, отойдите подальше от места происшествия и переберитесь в безопасное место. Затем расскажите о случившемся близким, друзьям или соседям. В экстренных случаях лучше позвонить по номеру экстренной помощи ',
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: '112',
+                            style: TextStyle(color: Colors.red),
+                          ),
+                          TextSpan(
+                            text: ', чтобы получить немедленную помощь.',
+                          ),
+                        ],
+                      ),
+                      style: TextStyle(
+                          color: Color(0xff654900),
+                          fontSize: 22,
+                          fontWeight: FontWeight.w800),
                       // textAlign : TextAlign.center
-                ),
+                    ),
                   ),
                 ],
               ),
@@ -167,23 +168,30 @@ class Dastur3RuPage extends StatelessWidget {
                 ],
               ),
             ),
-            
-           const SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(
-              padding: const EdgeInsets.only(bottom: 9,top: 9,left: 18,right: 18),
-              width: MediaQuery.of(context).size.width *0.9,
-              decoration:
-                  BoxDecoration(color: Theme.of(context).colorScheme.primary,borderRadius: const BorderRadius.all(Radius.circular(20))),
-                  child: const Text('Также юрисконсульты могут помочь Вам в судебном процессе и предоставить необходимую юридическую консультацию. Обращение в эти центры может предоставить вам необходимую всестороннюю помощь и поддержку.',
-                  style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w800),),
+              padding:
+                  const EdgeInsets.only(bottom: 9, top: 9, left: 18, right: 18),
+              width: MediaQuery.of(context).size.width * 0.9,
+              decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.primary,
+                  borderRadius: const BorderRadius.all(Radius.circular(20))),
+              child: const Text(
+                'Также юрисконсульты могут помочь Вам в судебном процессе и предоставить необходимую юридическую консультацию. Обращение в эти центры может предоставить вам необходимую всестороннюю помощь и поддержку.',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.w800),
+              ),
             ),
-            const SizedBox(height: 20,),
-
+            const SizedBox(
+              height: 20,
+            ),
             Center(
               child: Stack(
                 children: [
                   Container(
-                    width: MediaQuery.of(context).size.width*0.9,
+                    width: MediaQuery.of(context).size.width * 0.9,
                     height: MediaQuery.of(context).size.height * 0.16,
                     color: Theme.of(context).colorScheme.primary,
                   ),
@@ -209,7 +217,9 @@ class Dastur3RuPage extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 40,)
+            const SizedBox(
+              height: 40,
+            )
           ],
         ),
       ),

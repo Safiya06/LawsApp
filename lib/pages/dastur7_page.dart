@@ -48,8 +48,8 @@ class _Dastur7PageState extends State<Dastur7Page> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
         ),
       ),
@@ -65,16 +65,18 @@ class _Dastur7PageState extends State<Dastur7Page> {
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur71');
                 },
-                child: _dasturContainer('Конвенсияи СММ оид ба барҳам додани шаклҳои табъиз нисбати занон',36),
-              ), 
-               const SizedBox(height: 20),
+                child: _dasturContainer(
+                    'Конвенсияи\nСММ оид ба\nбарҳам додани\nшаклҳои табъиз нисбати занон',
+                    36),
+              ),
+              const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur72');
                 },
-                child: _dasturContainer('Эъломияи Пекин ва Нақшаи амалиёт',40),
-              ), 
-                const SizedBox(height: 20),
+                child: _dasturContainer('Эъломияи Пекин ва Нақшаи амалиёт', 40),
+              ),
+              const SizedBox(height: 20),
             ],
           ),
         ),

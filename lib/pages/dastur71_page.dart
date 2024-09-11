@@ -86,7 +86,7 @@ class Dastur71Page extends StatelessWidget {
               height: 40,
             ),
             Padding(
-              padding: const EdgeInsets.all(25),
+              padding: const EdgeInsets.all(18),
               child: Container(
                 height: 45,
                 width: MediaQuery.of(context).size.width,
@@ -99,7 +99,7 @@ class Dastur71Page extends StatelessWidget {
                   'https://www.ohchr.org/ru/treaty-bodies/cedaw',
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 14,
                       fontWeight: FontWeight.w800),
                 )),
               ),

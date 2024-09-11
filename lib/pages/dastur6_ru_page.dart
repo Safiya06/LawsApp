@@ -48,8 +48,8 @@ class _Dastur6RuPageState extends State<Dastur6RuPage> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -65,23 +65,23 @@ class _Dastur6RuPageState extends State<Dastur6RuPage> {
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur61Ru');
                 },
-                child: _dasturContainer('Ранние\nбраки',42),
-              ), 
-               const SizedBox(height: 20),
+                child: _dasturContainer('Ранние\nбраки', 42),
+              ),
+              const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur61Ru');
                 },
-                child: _dasturContainer('Программа развития семьи',36),
-              ), 
-                const SizedBox(height: 20),
-                GestureDetector(
+                child: _dasturContainer('Программа развития семьи', 36),
+              ),
+              const SizedBox(height: 20),
+              GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur63Ru');
                 },
-                child: _dasturContainer('Наказание за совершение насилия',36),
-              ), 
-                const SizedBox(height: 20),
+                child: _dasturContainer('Наказание за совершение насилия', 36),
+              ),
+              const SizedBox(height: 20),
             ],
           ),
         ),

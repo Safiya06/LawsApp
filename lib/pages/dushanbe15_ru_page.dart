@@ -1,11 +1,23 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_ru_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Dushanbe15RuPage extends StatefulWidget {
   const Dushanbe15RuPage({super.key});
 
   @override
   State<Dushanbe15RuPage> createState() => _Dushanbe15RuPageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Dushanbe15RuPageState extends State<Dushanbe15RuPage> {
@@ -56,17 +68,31 @@ class _Dushanbe15RuPageState extends State<Dushanbe15RuPage> {
           padding: const EdgeInsets.all(18),
           child: Column(
             children: [
-              _dushanbeContainer(
-                  'Телефон доверия прокуратуры г.Душанбе\n221-53-27',22),
+              GestureDetector(
+                onTap: () => _launchDialer('221-53-27'),
+                child: _dushanbeContainer(
+                    'Телефон доверия прокуратуры г.Душанбе\n221-53-27', 22),
+              ),
               const SizedBox(height: 20),
-              _dushanbeContainer(
-                  'Телефон доверия Суда г.Душанбе\n233-55-13',22),
+              GestureDetector(
+                onTap: () => _launchDialer('233-55-13'),
+                child: _dushanbeContainer(
+                    'Телефон доверия Суда г.Душанбе\n233-55-13', 22),
+              ),
               const SizedBox(height: 20),
-              _dushanbeContainer(
-                  'Республиканский центр судебно-медицинской экспертизы, ул. Сомони-59, о.15, Национальный медицинский центр\n236-65-64; 900-09-73-33',17),
+              GestureDetector(
+                onTap: () => _launchDialer('900-09-73-33'),
+                child: _dushanbeContainer(
+                    'Республиканский центр судебно-медицинской экспертизы, ул. Сомони-59, о.15, Национальный медицинский центр\n236-65-64; 900-09-73-33',
+                    17),
+              ),
               const SizedBox(height: 20),
-              _dushanbeContainer(
-                  'Центр самопознания женщин\nп. Рудакӣ 38/1, 14 этаж\n935-17-77-56',20),
+              GestureDetector(
+                onTap: () => _launchDialer('935-17-77-56'),
+                child: _dushanbeContainer(
+                    'Центр самопознания женщин\nп. Рудакӣ 38/1, 14 этаж\n935-17-77-56',
+                    20),
+              ),
               const SizedBox(height: 20),
             ],
           ),

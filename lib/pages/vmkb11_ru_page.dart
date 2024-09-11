@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_ru_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Vmkb11RuPage extends StatefulWidget {
   const Vmkb11RuPage({super.key});
 
   @override
   State<Vmkb11RuPage> createState() => _Vmkb11RuPageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Vmkb11RuPageState extends State<Vmkb11RuPage> {
@@ -51,7 +62,9 @@ class _Vmkb11RuPageState extends State<Vmkb11RuPage> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _khatlonContainer('г. Хоруг, ул. Ленин 935-55-35-34'),
+              GestureDetector(
+                onTap: () => _launchDialer('935-55-35-34'),
+                child: _khatlonContainer('г. Хоруг\nул. Ленин\n935-55-35-34')),
               const SizedBox(height: 20),
               ],
           ),

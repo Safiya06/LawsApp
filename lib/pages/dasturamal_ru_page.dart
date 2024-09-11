@@ -48,7 +48,7 @@ class _DasturamalRuPageState extends State<DasturamalRuPage> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-            const Text(
+              const Text(
                 'Справочник',
                 style: TextStyle(
                   fontSize: 37,
@@ -61,59 +61,66 @@ class _DasturamalRuPageState extends State<DasturamalRuPage> {
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur1Ru');
                 },
-                child: _dasturContainer('Как определить насилие в семье?',31),
-              ), 
-               const SizedBox(height: 20),
+                child: _dasturContainer('Как определить насилие в семье?', 31),
+              ),
+              const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur2Ru');
                 },
-                child: _dasturContainer('Что делать, если стали жертвой домашнего насилия?',31),
-              ), 
-                const SizedBox(height: 20),
-              GestureDetector(
-                onTap: () {
-                   Navigator.pushNamed(context, '/Dastur3Ru');
-                },
-                child: _dasturContainer('Что делать, если вы подверглись сексуальному насилию?',31),
-              ), 
-                const SizedBox(height: 20),
-              GestureDetector(
-                onTap: () {
-                   Navigator.pushNamed(context, '/Dastur4Ru');
-                },
-                child: _dasturContainer('Что делать, если вы стали свидетелем домашнего насилия?',31),
-              ), 
-                const SizedBox(height: 20),
-              GestureDetector(
-                onTap: () {
-                   Navigator.pushNamed(context, '/Dastur5Ru');
-                },
-                child: _dasturContainer('Как определить, что ваша знакомая (ый) подвергается насилию',31),
-              ), 
-                const SizedBox(height: 20),
-              GestureDetector(
-                onTap: () {
-                   Navigator.pushNamed(context, '/Dastur6Ru');
-                },
-                child: _dasturContainer('Национальное законодательство',31),
-              ), 
-                const SizedBox(height: 20),
-              GestureDetector(
-                onTap: () {
-                   Navigator.pushNamed(context, '/Dastur7Ru');
-                },
-                child: _dasturContainer('Международное законодательство',31),
-              ), 
-              
+                child: _dasturContainer(
+                    'Что делать, если стали жертвой домашнего насилия?', 31),
+              ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
-                   Navigator.pushNamed(context, '/Dastur61Ru');
+                  Navigator.pushNamed(context, '/Dastur3Ru');
                 },
-                child: _dasturContainer('Насилие в отношении женщин с точки зрения Ислама',31),
-              ), 
-                const SizedBox(height: 20),
+                child: _dasturContainer(
+                    'Что делать, если\nвы подверглись сексуальному насилию?',
+                    31),
+              ),
+              const SizedBox(height: 20),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/Dastur4Ru');
+                },
+                child: _dasturContainer(
+                    'Что делать, если\nвы стали свидетелем домашнего\nнасилия?',
+                    31),
+              ),
+              const SizedBox(height: 20),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/Dastur5Ru');
+                },
+                child: _dasturContainer(
+                    'Как определить,\nчто ваша\nзнакомая (ый)\nподвергается насилию',
+                    31),
+              ),
+              const SizedBox(height: 20),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/Dastur6Ru');
+                },
+                child: _dasturContainer('Национальное законодательство', 31),
+              ),
+              const SizedBox(height: 20),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/Dastur7Ru');
+                },
+                child: _dasturContainer('Международное законодательство', 31),
+              ),
+              const SizedBox(height: 20),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/Dastur61Ru');
+                },
+                child: _dasturContainer(
+                    'Насилие в отношении женщин с точки зрения Ислама', 31),
+              ),
+              const SizedBox(height: 20),
             ],
           ),
         ),

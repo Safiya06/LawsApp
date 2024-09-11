@@ -12,7 +12,7 @@ class _Dushanbe1PageState extends State<Dushanbe1Page> {
   Widget _khujandContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(10),
-      height: 80,
+      height: MediaQuery.of(context).size.height*0.13,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -23,7 +23,7 @@ class _Dushanbe1PageState extends State<Dushanbe1Page> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );
@@ -48,7 +48,7 @@ class _Dushanbe1PageState extends State<Dushanbe1Page> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
               GestureDetector(
@@ -56,35 +56,34 @@ class _Dushanbe1PageState extends State<Dushanbe1Page> {
                   Navigator.pushNamed(context, '/Dushanbe11');
                 },
                 child: _khujandContainer(
-                    'ХУЧРАХОИ НОЗИРОНИ МИНТАКАВЙ ОИД БА ПЕШГИРИИ ЗУРОВАРЙ ДАР ОИЛА ДАР ЧУМХУРИИ ТОЧИКИСТОН'),
+                    'ХУҶРАҲОИ НОЗИРОНИ МИНТАҚАВӢ ОИД БА ПЕШГИРИИ\nЗӮРОВАРӢ ДАР ОИЛА'),
               ),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context, '/Dushanbe12');
                   },
-                  child: _khujandContainer('БАХШХОИ КОР БО ЗАНОН ВА ОИЛА')),
+                  child: _khujandContainer('БАХШҲОИ КОР БО ЗАНОН ВА ОИЛА')),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context, '/Dushanbe13');
                   },
                   child: _khujandContainer(
-                      'ХУЧРАХОИ ТАВОНБАХШИИ ТИББИЮ ИЧТИМОЙ БАРОИ ЧАБРДИДАГОНИ ЗУРОВАРЙ ДАР ОИЛА')),
+                      'ХУҶРАҲОИ ТАВОНБАХШИИ ТИББИЮ ИҶТИМОӢ\nБАРОИ ҶАБРДИДАГОНИ ЗӮРОВАРӢ ДАР ОИЛА')),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context, '/Dushanbe14');
                   },
                   child: _khujandContainer(
-                      'ИНСТИТУТИ ВАКОЛАТДОР ОИД БА ХУКУКИ ИНСОН (ВХИ) ВА ВАКОЛАТДОР ОИД БА ХУКУКИ КУДАК (ВХК)')),
+                      'ИНСТИТУТИ ВАКОЛАТДОР ОИД БА ҲУҚУҚИ ИНСОН\nВА ВАКОЛАТДОР ОИД БА ХУҚУҚИ КӮДАК')),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context, '/Dushanbe15');
                   },
-                  child: _khujandContainer(
-                      'ДИГАР МУАССИСАХОИ ДАВЛАТИ')),
+                  child: _khujandContainer('ДИГАР МУАССИСАҲОИ ДАВЛАТӢ')),
               const SizedBox(height: 10),
             ],
           ),

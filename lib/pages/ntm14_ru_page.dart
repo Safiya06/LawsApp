@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_ru_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Ntm14RuPage extends StatefulWidget {
   const Ntm14RuPage({super.key});
@@ -8,10 +11,19 @@ class Ntm14RuPage extends StatefulWidget {
   State<Ntm14RuPage> createState() => _Ntm14RuPageState();
 }
 
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
 class _Ntm14RuPageState extends State<Ntm14RuPage> {
   Widget _ntmContainer(String value) {
     return Container(
-      padding: const EdgeInsets.only(left: 25,right: 25,top: 18,bottom: 18),
+      padding: const EdgeInsets.only(left: 25, right: 25, top: 18, bottom: 18),
       height: 146,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
@@ -41,8 +53,8 @@ class _Ntm14RuPageState extends State<Ntm14RuPage> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -51,10 +63,16 @@ class _Ntm14RuPageState extends State<Ntm14RuPage> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _ntmContainer('г. Турсунзаде\nздание Народно-Демократической партии'),
+              GestureDetector(
+                onTap: () => _launchDialer(''),
+                  child: _ntmContainer(
+                      'г. Турсунзаде\nздание Народно-Демократической партии')),
               const SizedBox(height: 20),
-              _ntmContainer('р. Рашт, ул. И.Сомони-42\n888-83-90-90; 935-97-44-00'),
-              ],
+              GestureDetector(
+                onTap: () => _launchDialer('935-97-44-00'),
+                  child: _ntmContainer(
+                      'р. Рашт\nул. И.Сомони-42\n888-83-90-90; 935-97-44-00')),
+            ],
           ),
         ),
       ),

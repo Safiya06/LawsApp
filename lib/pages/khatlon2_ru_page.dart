@@ -12,7 +12,7 @@ class _Khatlon2RuPageState extends State<Khatlon2RuPage> {
   Widget _khatlonContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(10),
-      height: 80,
+      height: MediaQuery.of(context).size.height*0.13,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -23,7 +23,7 @@ class _Khatlon2RuPageState extends State<Khatlon2RuPage> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );
@@ -48,7 +48,7 @@ class _Khatlon2RuPageState extends State<Khatlon2RuPage> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
               GestureDetector(

@@ -11,8 +11,8 @@ class Dastur1RuPage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.background,
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -213,14 +213,16 @@ class Dastur1RuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Запишите в свой телефон номера телефонов лиц, кто может помочь Вам.',
                                     style: TextStyle(
@@ -240,14 +242,16 @@ class Dastur1RuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Важные документы (паспорт, свидетельство о рождении, банковские карты,  ключи, лекарства, необходимую одежду) оставьте в доступном месте.',
                                     style: TextStyle(
@@ -267,14 +271,16 @@ class Dastur1RuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Объясните детям, чтобы в случаях насилия, куда они могут обратиться.',
                                     style: TextStyle(
@@ -296,7 +302,7 @@ class Dastur1RuPage extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.all(16.0),
                     child: Text(
-                      'Супруг или Ваш сожитель : ➡️',
+                      'Супруг или Ваш сожитель : ',
                       style: TextStyle(
                           color: Color(0xff654900),
                           fontSize: 29,
@@ -308,13 +314,13 @@ class Dastur1RuPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height* 0.25,
+                      height: MediaQuery.of(context).size.height * 0.25,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),
                       child: const Center(
                           child: Text(
-                            textAlign: TextAlign.center,
+                        textAlign: TextAlign.center,
                         'Неадекватно реагирует на ваши слова или поведение и часто кричит?',
                         style: TextStyle(
                             color: Colors.white,
@@ -322,7 +328,197 @@ class Dastur1RuPage extends StatelessWidget {
                             fontWeight: FontWeight.w800),
                       )),
                     ),
-                  )
+                  ),
+                   Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        textAlign: TextAlign.center,
+                        'Винит ли он вас или ваших детей в конфликтах, в своих насильственных действиях?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                   Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        textAlign: TextAlign.center,
+                        'Причиняет ли он вред вам или вашим детям, грубит вам, бьет вас?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                   Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        textAlign: TextAlign.center,
+                        'Он обращается с вами так, что вы скрываете это от родственников и друзей, потому что вам стыдно?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                   Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        textAlign: TextAlign.center,
+                        'Не принимает во внимание ваши слова, не ценит их, смеется над вашими действиями и достижениями?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                   Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        textAlign: TextAlign.center,
+                        'Он пугает тебя самоубийством, если ты скажешь, что хочешь уйти?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                   Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        textAlign: TextAlign.center,
+                        'Он часто ревнует и демонстрирует вам свои права?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                   Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        textAlign: TextAlign.center,
+                        'Контролирует вас: хочет знать, чем вы занимаетесь, не разрешает встречаться с друзьями или родственниками, не дает денег, забирает компьютер, телефон, машину или другие документы?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                   Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        textAlign: TextAlign.center,
+                        'Он шантажирует вас и угрожает расправой вам и вашим детям?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                   Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        textAlign: TextAlign.center,
+                        'Умышленно повредили свое имущество?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
+                   Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      padding: const EdgeInsets.all(16),
+                      height: MediaQuery.of(context).size.height * 0.25,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Center(
+                          child: Text(
+                        textAlign: TextAlign.center,
+                        'Если он бьет вас в состоянии алкогольного или наркотического опьянения, а потом оправдывает свои действия опьянением?',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      )),
+                    ),
+                  ),
                 ],
               ),
             ),

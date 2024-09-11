@@ -12,7 +12,7 @@ class _Khujand2PageState extends State<Khujand2Page> {
   Widget _khujandContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(10),
-      height: 80,
+      height: MediaQuery.of(context).size.height*0.13,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -23,7 +23,7 @@ class _Khujand2PageState extends State<Khujand2Page> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );
@@ -48,7 +48,7 @@ class _Khujand2PageState extends State<Khujand2Page> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
               GestureDetector(
@@ -56,14 +56,14 @@ class _Khujand2PageState extends State<Khujand2Page> {
                   Navigator.pushNamed(context, '/Khujand21');
                 },
                 child: _khujandContainer(
-                    'ТАШКИЛОТХОИ ЧАМЪИЯТИИ ДАР САМТИ ПЕШГИРИИ ЗУРОВАРЙ ДАР ОИЛА'),
+                    'ТАШКИЛОТҲОИ ҶАМЪИЯТӢ ДАР САМТИ ПЕШГИРИИ ЗӮРОВАРӢ ДАР ОИЛА'),
               ),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context, '/Khujand22');
                   },
-                  child: _khujandContainer('МАРКАЗХОИ ЗАХИРАВИИ ЗАНОН')),
+                  child: _khujandContainer('МАРКАЗҲОИ ЗАХИРАВИИ ЗАНОН')),
               const SizedBox(height: 10),
             ],
           ),

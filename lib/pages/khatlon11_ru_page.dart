@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_ru_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Khatlon11RuPage extends StatefulWidget {
   const Khatlon11RuPage({super.key});
@@ -8,10 +11,19 @@ class Khatlon11RuPage extends StatefulWidget {
   State<Khatlon11RuPage> createState() => _Khatlon11RuPageState();
 }
 
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
 class _Khatlon11RuPageState extends State<Khatlon11RuPage> {
   Widget _khatlonContainer(String value) {
     return Container(
-      padding: const EdgeInsets.only(left: 60, right: 60, top: 18, bottom: 18),
+      padding: const EdgeInsets.only(left: 18, right: 18, top: 18, bottom: 18),
       height: 146,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
@@ -48,25 +60,31 @@ class _Khatlon11RuPageState extends State<Khatlon11RuPage> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
-              _khatlonContainer(
-                  'р. Джаихун\nг. Дусти, ул. 1-ое мая\n933-98-46-46'),
+              GestureDetector(
+                onTap: () => _launchDialer('933-98-46-46'),
+                child: _khatlonContainer(
+                    'р. Джаихун\nг. Дусти, ул. 1-ое мая\n933-98-46-46'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'г. Бохтар\nул. Борбад-7'),
+              _khatlonContainer('г. Бохтар\nул. Борбад-7'),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н.Дусти \nул. Л.Каримов\n935-98-15-90'),
+              GestureDetector(
+                onTap: () => _launchDialer('935-98-15-90'),
+                  child: _khatlonContainer(
+                      'н.Дусти \nул. Л.Каримов\n935-98-15-90')),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'г. Кулоб\n р. Ш. Шоҳин-8\n918-45-45-96'),
+              GestureDetector(
+                onTap: () => _launchDialer('918-45-45-96'),
+                  child: _khatlonContainer(
+                      'г. Кулоб\n р. Ш. Шоҳин-8\n918-45-45-96')),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Левакант\n907 30 56 66'),
+              GestureDetector(
+                onTap: () => _launchDialer('907 30 56 66'),
+                  child: _khatlonContainer('н. Левакант\n907 30 56 66')),
               const SizedBox(height: 20),
-              
             ],
           ),
         ),

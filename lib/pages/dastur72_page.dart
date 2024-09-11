@@ -35,21 +35,21 @@ class Dastur72Page extends StatelessWidget {
                   height: 10,
                 ),
                 Container(
-            decoration:
-                BoxDecoration(color: Theme.of(context).colorScheme.primary),
-            child: const Padding(
-              padding: EdgeInsets.all(20),
-              child: Text(
-                'Конференсияи чоруми умумиҷаҳонӣ оид ба вазъи занон соли 1995 дар Пекин баргузор гардид. Сарфи назар аз он ки аз конференсияи Мехико (соли 1975) сар карда  барои беҳтар намудани вазъи занон ва васеъ намудани дастрасии онҳо ба захираҳо саъю кӯшишҳои зиёде ба кор бурда шуданд, онҳо ба заминаҳои сохтории нобаробарӣ дар муносибатҳои байни занону мардон дахл накарданд.',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w800),
-              ),
-            ),
-                        ),
+                  decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.primary),
+                  child: const Padding(
+                    padding: EdgeInsets.all(20),
+                    child: Text(
+                      'Конференсияи чоруми умумиҷаҳонӣ оид ба вазъи занон соли 1995 дар Пекин баргузор гардид. Сарфи назар аз он ки аз конференсияи Мехико (соли 1975) сар карда  барои беҳтар намудани вазъи занон ва васеъ намудани дастрасии онҳо ба захираҳо саъю кӯшишҳои зиёде ба кор бурда шуданд, онҳо ба заминаҳои сохтории нобаробарӣ дар муносибатҳои байни занону мардон дахл накарданд.',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                          fontWeight: FontWeight.w800),
+                    ),
+                  ),
+                ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 18,left: 18, right: 18),
+                  padding: const EdgeInsets.only(top: 18, left: 18, right: 18),
                   child: Container(
                     padding: const EdgeInsets.all(16),
                     height: 43,
@@ -85,22 +85,31 @@ class Dastur72Page extends StatelessWidget {
                 ),
               ],
             ),
-            
             const SizedBox(
               height: 40,
             ),
             Padding(
-              padding: const EdgeInsets.all(25),
+              padding: const EdgeInsets.all(18),
               child: Container(
                 height: 45,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.primary,
                     borderRadius: BorderRadius.circular(46)),
-                    child: const Center(child: Text(textAlign: TextAlign.center,'https://www.un.org/ru/documents/decl_conv/declarations/womdecl.shtml',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w800),)),
+                child: const Center(
+                    child: Text(
+                  textAlign: TextAlign.center,
+                  'https://www.un.org/ru/documents/decl_conv/declarations/womdecl.shtml',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w800),
+                )),
               ),
             ),
-            const SizedBox(height: 40,)
+            const SizedBox(
+              height: 40,
+            )
           ],
         ),
       ),

@@ -12,7 +12,7 @@ class _Dushanbe2PageState extends State<Dushanbe2Page> {
   Widget _dushanbeContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(10),
-      height: 80,
+      height: MediaQuery.of(context).size.height*0.13,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -23,7 +23,7 @@ class _Dushanbe2PageState extends State<Dushanbe2Page> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );
@@ -48,7 +48,7 @@ class _Dushanbe2PageState extends State<Dushanbe2Page> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
               GestureDetector(
@@ -56,7 +56,7 @@ class _Dushanbe2PageState extends State<Dushanbe2Page> {
                   Navigator.pushNamed(context, '/Dushanbe21');
                 },
                 child: _dushanbeContainer(
-                    'ТАШКИЛОТХОИ ЧАМЪИЯТИИ ДАР САМТИ ПЕШГИРИИ ЗУРОВАРЙ ДАР ОИЛА'),
+                    'ТАШКИЛОТҲОИ ҶАМЪИЯТӢ ДАР САМТИ ПЕШГИРИИ ЗӮРОВАРӢ ДАР ОИЛА'),
               ),
               const SizedBox(height: 10),
             ],

@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:lows_app/pages/main_ru_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Vmkb21RuPage extends StatefulWidget {
   const Vmkb21RuPage({super.key});
 
   @override
   State<Vmkb21RuPage> createState() => _Vmkb21RuPageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Vmkb21RuPageState extends State<Vmkb21RuPage> {
@@ -51,8 +61,11 @@ class _Vmkb21RuPageState extends State<Vmkb21RuPage> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _khatlonContainer(
-                  'РЦЖ «Сарпараст»\nр. Ванч, джамоати Абдуллаев ул. 8-ое Марта, здание 9\n935-81-96-46; 935-97-09-24; tj_sarparast_vanj@mail. ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('935-97-09-24'),
+                child: _khatlonContainer(
+                    'РЦЖ «Сарпараст»\nр. Ванч, джамоати Абдуллаев ул. 8-ое Марта, здание 9\n935-81-96-46; 935-97-09-24'),
+              ),
               const SizedBox(height: 20),
               
             ],

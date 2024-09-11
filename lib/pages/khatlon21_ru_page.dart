@@ -1,11 +1,22 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_ru_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Khatlon21RuPage extends StatefulWidget {
   const Khatlon21RuPage({super.key});
 
   @override
   State<Khatlon21RuPage> createState() => _Khatlon21RuPageState();
+}
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Khatlon21RuPageState extends State<Khatlon21RuPage> {
@@ -48,17 +59,26 @@ class _Khatlon21RuPageState extends State<Khatlon21RuPage> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
-              _khatlonContainer(
-                  'РЦЖ «Марифат»\nр. Хуросон, джамоати\nОби Киик, ул. Сомонӣ-1\n934-40-20-64; 935-03-60-42\nmarifatkhatlon@mail.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('935-03-60-42'),
+                child: _khatlonContainer(
+                    'РЦЖ «Марифат»\nр. Хуросон, джамоати\nОби Киик, ул. Сомони-1\n934-40-20-64; 935-03-60-42'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'РЦЖ «Дармонбахш»\nр. Дӯстӣ, ул. Рӯдакӣ-35\n937-26-75-57; 918-32-12-88\ndarmonbahhs@mail.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('918-32-12-88'),
+                child: _khatlonContainer(
+                    'РЦЖ «Дармонбахш»\nр. Дусти, ул. Рудаки-35\n937-26-75-57; 918-32-12-88'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'РЦЖ «Оксана»\n р. Дж. Балхи, ул. Ҳайдарова-24\n918-698-530; 234-74-23-96\nmusmanova@mail.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('234-74-23-96'),
+                child: _khatlonContainer(
+                    'РЦЖ «Оксана»\n р. Дж. Балхи, ул. Хайдарова-24\n918-698-530; 234-74-23-96'),
+              ),
               const SizedBox(height: 20),
               
             ],

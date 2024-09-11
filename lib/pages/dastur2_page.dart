@@ -11,8 +11,8 @@ class Dastur2Page extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.background,
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -43,7 +43,10 @@ class Dastur2Page extends StatelessWidget {
                             fontWeight: FontWeight.w800),
                       ),
                     ),
-                    Text('                               ➡️', style: TextStyle(fontSize: 20),)
+                    Text(
+                      '                               ➡️',
+                      style: TextStyle(fontSize: 20),
+                    )
                   ],
                 ),
               ),
@@ -62,25 +65,35 @@ class Dastur2Page extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 40,),
+              const SizedBox(
+                height: 40,
+              ),
               Column(
                 children: [
                   Container(
                     height: 11,
                     decoration: BoxDecoration(
                         color: Theme.of(context).colorScheme.secondary,
-                        border: Border.all(color: Theme.of(context).colorScheme.primary, width: 2)),
+                        border: Border.all(
+                            color: Theme.of(context).colorScheme.primary,
+                            width: 2)),
                   ),
                   Container(
                     padding: const EdgeInsets.all(16),
                     width: MediaQuery.of(context).size.width,
-                    // height: MediaQuery.of(context).size.height*0.1,
                     decoration: BoxDecoration(
-                      border: Border.all(color: Theme.of(context).colorScheme.primary, width: 2),
-                      borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(10),bottomRight: Radius.circular(10))
-                    ),
-                    child: const Text('Шумо дар зуроварй нисбати худ гунох надоред, гунахгор худи хушунатгар аст ва бо ёрии Шумо вай ба чавобгарй кашида мешавад.',
-                    style: TextStyle(color: Color(0xFF654900),fontSize: 18,fontWeight: FontWeight.w700),
+                        border: Border.all(
+                            color: Theme.of(context).colorScheme.primary,
+                            width: 2),
+                        borderRadius: const BorderRadius.only(
+                            bottomLeft: Radius.circular(10),
+                            bottomRight: Radius.circular(10))),
+                    child: const Text(
+                      'Шумо дар зуроварй нисбати худ гунох надоред, гунахгор худи хушунатгар аст ва бо ёрии Шумо вай ба чавобгарй кашида мешавад.',
+                      style: TextStyle(
+                          color: Color(0xFF654900),
+                          fontSize: 18,
+                          fontWeight: FontWeight.w700),
                     ),
                   ),
                 ],

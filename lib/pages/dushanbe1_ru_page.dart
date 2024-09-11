@@ -12,7 +12,7 @@ class _Dushanbe1RuPageState extends State<Dushanbe1RuPage> {
   Widget _khujandContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(10),
-      height: 80,
+      height: MediaQuery.of(context).size.height*0.13,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -23,7 +23,7 @@ class _Dushanbe1RuPageState extends State<Dushanbe1RuPage> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );
@@ -48,7 +48,7 @@ class _Dushanbe1RuPageState extends State<Dushanbe1RuPage> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
               GestureDetector(
@@ -83,8 +83,8 @@ class _Dushanbe1RuPageState extends State<Dushanbe1RuPage> {
                   onTap: () {
                     Navigator.pushNamed(context, '/Dushanbe15Ru');
                   },
-                  child: _khujandContainer(
-                      'ДРУГИЕ ГОСУДАРСТВЕННЫЕ УЧРЕЖДЕНИЯ')),
+                  child:
+                      _khujandContainer('ДРУГИЕ ГОСУДАРСТВЕННЫЕ УЧРЕЖДЕНИЯ')),
               const SizedBox(height: 10),
             ],
           ),

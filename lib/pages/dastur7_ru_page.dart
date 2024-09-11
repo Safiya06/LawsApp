@@ -48,8 +48,8 @@ class _Dastur7RuPageState extends State<Dastur7RuPage> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
@@ -65,16 +65,19 @@ class _Dastur7RuPageState extends State<Dastur7RuPage> {
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur71Ru');
                 },
-                child: _dasturContainer('Конвенция о ликвидации всех форм дискриминации в отношении женщин',34),
-              ), 
-               const SizedBox(height: 20),
+                child: _dasturContainer(
+                    'Конвенция о ликвидации всех форм дискриминации в отношении женщин',
+                    34),
+              ),
+              const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur72Ru');
                 },
-                child: _dasturContainer('Пекинская декларация и Платформа действий',40),
-              ), 
-                const SizedBox(height: 20),
+                child: _dasturContainer(
+                    'Пекинская декларация и Платформа действий', 40),
+              ),
+              const SizedBox(height: 20),
             ],
           ),
         ),

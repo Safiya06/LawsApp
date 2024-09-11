@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_ru_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Khujand11RuPage extends StatefulWidget {
   const Khujand11RuPage({super.key});
@@ -8,10 +11,19 @@ class Khujand11RuPage extends StatefulWidget {
   State<Khujand11RuPage> createState() => _Khujand11RuPageState();
 }
 
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
 class _Khujand11RuPageState extends State<Khujand11RuPage> {
   Widget _khatlonContainer(String value) {
     return Container(
-      padding: const EdgeInsets.only(left: 25,right: 25,top: 18,bottom: 18),
+      padding: const EdgeInsets.only(left: 18, right: 18, top: 8, bottom: 8),
       height: 146,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
@@ -41,23 +53,32 @@ class _Khujand11RuPageState extends State<Khujand11RuPage> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
         ),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
-              _khatlonContainer('г. Худжанд,\nул. К. Худжанди-2\n921-77-00-04'),
+              GestureDetector(
+                onTap: () => _launchDialer('921-77-00-04'),
+                  child: _khatlonContainer(
+                      'г. Худжанд,\nул. К. Худжанди-2\n921-77-00-04')),
               const SizedBox(height: 20),
-              _khatlonContainer('г. Исфара, джамоати\nд. Джоркух, ул. Сари бозор\n929-49-32-92'),
+              GestureDetector(
+                onTap: () => _launchDialer('929-49-32-92'),
+                  child: _khatlonContainer(
+                      'г. Исфара\nджамоати д. Джоркух\nул. Сари бозор\n929-49-32-92')),
               const SizedBox(height: 20),
-              _khatlonContainer('г. Панджакент,\nп. Рудаки-130\n926-35-23-61'),
+              GestureDetector(
+                onTap: () => _launchDialer('926-35-23-61'),
+                  child: _khatlonContainer(
+                      'г. Панджакент,\nп. Рудаки-130\n926-35-23-61')),
               const SizedBox(height: 20),
-              ],
+            ],
           ),
         ),
       ),

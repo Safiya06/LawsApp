@@ -48,8 +48,8 @@ class _Dastur61PageState extends State<Dastur61Page> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
         ),
       ),
@@ -65,9 +65,11 @@ class _Dastur61PageState extends State<Dastur61Page> {
                 onTap: () {
                   Navigator.pushNamed(context, '/Islam');
                 },
-                child: _dasturContainer('Зӯроварӣ ва хушунат нисбати занон аз нигоҳи дини  Ислом',32),
-              ), 
-               const SizedBox(height: 20),
+                child: _dasturContainer(
+                    'Зӯроварӣ ва хушунат нисбати занон аз нигоҳи дини  Ислом',
+                    32),
+              ),
+              const SizedBox(height: 20),
             ],
           ),
         ),

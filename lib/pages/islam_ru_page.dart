@@ -11,8 +11,8 @@ class IslamRuPage extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.background,
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -49,7 +49,7 @@ class IslamRuPage extends StatelessWidget {
                     ),
                     child: const Column(
                       children: [
-                          Text(
+                        Text(
                           'Ислам осуждает насилие в отношении женщин и девочек, подобные действия противоречат принципам учения Ислама. Всемогущий Аллах установил брак и семью для сохранения потомства, воспитания человечества и защиты общества от блуда и различных болезней. Аллах  определил отношения между мужем и женой как самые благородные и приоритетные и построил их на основе мира, любви и доброты. Например, в Священном Коране сказано:',
                           style: TextStyle(
                               color: Color(0xff654900),
@@ -59,106 +59,125 @@ class IslamRuPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(height: 40,),
+                  const SizedBox(
+                    height: 40,
+                  ),
                   Center(
-              child: Stack(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width*0.8,
-                    height: MediaQuery.of(context).size.height*0.19,
-                    color: Theme.of(context).colorScheme.primary,
-                  ),
-                  Positioned(
-                    bottom: 10,
-                    left: 0,
-                    right: 10,
-                    top: 0,
-                    child: Container(
-                      color: Theme.of(context).colorScheme.secondary,
-                      padding: const EdgeInsets.all(16),
-                      child: const Center(
-                        child: Text(
-                          '«И среди знамений Божиих есть то, что Он создал для вас женщин из рода вашего, чтобы вы могли отдыхать с ними, и сотворил между вами дружбу и доброту. Воистину, в этом — знамения для людей мыслящих». (Сура Рум, аят 21)',
-                         
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w800),
+                    child: Stack(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width * 0.8,
+                          height: MediaQuery.of(context).size.height * 0.19,
+                          color: Theme.of(context).colorScheme.primary,
                         ),
-                      ),
+                        Positioned(
+                          bottom: 10,
+                          left: 0,
+                          right: 10,
+                          top: 0,
+                          child: Container(
+                            color: Theme.of(context).colorScheme.secondary,
+                            padding: const EdgeInsets.all(16),
+                            child: const Center(
+                              child: Text(
+                                '«И среди знамений Божиих есть то, что Он создал для вас женщин из рода вашего, чтобы вы могли отдыхать с ними, и сотворил между вами дружбу и доброту. Воистину, в этом — знамения для людей мыслящих». (Сура Рум, аят 21)',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w800),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 20,),
-            const Text('Любовь женщины к мужчине – это мир сердца, как сказано в Священном Коране:',style: TextStyle(color: Color(0xFF654900),fontSize: 18,fontWeight: FontWeight.w800),),
-            const SizedBox(height: 20,),
-              Center(
-              child: Stack(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width*0.8,
-                    height: MediaQuery.of(context).size.height*0.15,
-                    color: Theme.of(context).colorScheme.secondary,
+                  const SizedBox(
+                    height: 20,
                   ),
-                  Positioned(
-                    bottom: 10,
-                    left: 0,
-                    right: 10,
-                    top: 0,
-                    child: Container(
-                      color: Theme.of(context).colorScheme.primary,
-                      padding: const EdgeInsets.all(16),
-                      child: const Center(
-                        child: Text(
-                          '«Он — Тот [Бог], который создал вас из одной души и создал из нее свою жену, чтобы он нашел  покой с ней…» (Сура Аъроф, аят 189)',
-                         
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w800),
+                  const Text(
+                    'Любовь женщины к мужчине – это мир сердца, как сказано в Священном Коране:',
+                    style: TextStyle(
+                        color: Color(0xFF654900),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w800),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Center(
+                    child: Stack(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width * 0.8,
+                          height: MediaQuery.of(context).size.height * 0.15,
+                          color: Theme.of(context).colorScheme.secondary,
                         ),
-                      ),
+                        Positioned(
+                          bottom: 10,
+                          left: 0,
+                          right: 10,
+                          top: 0,
+                          child: Container(
+                            color: Theme.of(context).colorScheme.primary,
+                            padding: const EdgeInsets.all(16),
+                            child: const Center(
+                              child: Text(
+                                '«Он — Тот [Бог], который создал вас из одной души и создал из нее свою жену, чтобы он нашел  покой с ней…» (Сура Аъроф, аят 189)',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w800),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ],
-              ),
-            ),
-            const SizedBox(height: 20,),
-            const Text('В другом месте Всемогущий Аллах говорит:',style: TextStyle(color: Color(0xFF654900),fontSize: 18,fontWeight: FontWeight.w800),),
-            const SizedBox(height: 20,),
-              Center(
-              child: Stack(
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width*0.8,
-                    height: MediaQuery.of(context).size.height*0.28,
-                    color: Theme.of(context).colorScheme.primary,
+                  const SizedBox(
+                    height: 20,
                   ),
-                  Positioned(
-                    bottom: 10,
-                    left: 0,
-                    right: 10,
-                    top: 0,
-                    child: Container(
-                      color: Theme.of(context).colorScheme.secondary,
-                      padding: const EdgeInsets.all(16),
-                      child: const Center(
-                        child: Text(
-                          '«О люди, бойтесь вашего Господа, сотворившего вас из одного человека! И из него (человека) Он создал свою жену; и от этих двух (лиц) рассеял множество людей и бесчисленное количество женщин. И бойтесь Бога, (именем которого) друг друга просите! И (бойтесь!) (прекращения) родства! Воистину, Бог наблюдает за вами! (Сура Ниса, аят 1)',
-                         
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                              fontWeight: FontWeight.w800),
+                  const Text(
+                    'В другом месте Всемогущий Аллах говорит:',
+                    style: TextStyle(
+                        color: Color(0xFF654900),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w800),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Center(
+                    child: Stack(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width * 0.8,
+                          height: MediaQuery.of(context).size.height * 0.28,
+                          color: Theme.of(context).colorScheme.primary,
                         ),
-                      ),
+                        Positioned(
+                          bottom: 10,
+                          left: 0,
+                          right: 10,
+                          top: 0,
+                          child: Container(
+                            color: Theme.of(context).colorScheme.secondary,
+                            padding: const EdgeInsets.all(16),
+                            child: const Center(
+                              child: Text(
+                                '«О люди, бойтесь вашего Господа, сотворившего вас из одного человека! И из него (человека) Он создал свою жену; и от этих двух (лиц) рассеял множество людей и бесчисленное количество женщин. И бойтесь Бога, (именем которого) друг друга просите! И (бойтесь!) (прекращения) родства! Воистину, Бог наблюдает за вами! (Сура Ниса, аят 1)',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w800),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ],
-              ),
-            ),
                 ],
               ),
             ),
@@ -183,21 +202,21 @@ class IslamRuPage extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-           Padding(
-             padding: const EdgeInsets.all(8.0),
-             child: Column(
-               children: [
-                 Container(
-                          padding: const EdgeInsets.all(16),
-                          height: 32,
-                          decoration: BoxDecoration(
-                            color: Theme.of(context).colorScheme.secondary,
-                            border: Border.all(
-                                color: Theme.of(context).colorScheme.primary,
-                                width: 3),
-                          ),
-                        ),
-                        Container(
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(16),
+                    height: 32,
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.secondary,
+                      border: Border.all(
+                          color: Theme.of(context).colorScheme.primary,
+                          width: 3),
+                    ),
+                  ),
+                  Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
                       border: Border.all(
@@ -218,10 +237,13 @@ class IslamRuPage extends StatelessWidget {
                         //       fontSize: 31,
                         //       fontWeight: FontWeight.w800),
                         // ),
-                        const Text('Всегда следует помнить, что в семейных отношениях важно следующее:',style: TextStyle(
-                                        color: Color(0xff654900),
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w800),),
+                        const Text(
+                          'Всегда следует помнить, что в семейных отношениях важно следующее:',
+                          style: TextStyle(
+                              color: Color(0xff654900),
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800),
+                        ),
                         Column(
                           children: [
                             Row(
@@ -233,14 +255,16 @@ class IslamRuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.8,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.8,
                                   child: const Text(
                                     'Поддержка чувства чести и достоинства мужа и жены;',
                                     style: TextStyle(
@@ -260,14 +284,16 @@ class IslamRuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.8,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.8,
                                   child: const Text(
                                     'Постоянное проявление уважения друг к другу;',
                                     style: TextStyle(
@@ -287,14 +313,16 @@ class IslamRuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.8,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.8,
                                   child: const Text(
                                     'Пытаться привлечь внимание супруги;',
                                     style: TextStyle(
@@ -314,14 +342,16 @@ class IslamRuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.8,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.8,
                                   child: const Text(
                                     'Сохранение и подавление гнева, злости и нервозности;',
                                     style: TextStyle(
@@ -331,7 +361,8 @@ class IslamRuPage extends StatelessWidget {
                                   ),
                                 ),
                               ],
-                            ),Row(
+                            ),
+                            Row(
                               // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -340,14 +371,16 @@ class IslamRuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.8,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.8,
                                   child: const Text(
                                     'Не зацикливаться на недостатках и ошибках супруги;',
                                     style: TextStyle(
@@ -357,7 +390,8 @@ class IslamRuPage extends StatelessWidget {
                                   ),
                                 ),
                               ],
-                            ),Row(
+                            ),
+                            Row(
                               // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -366,14 +400,16 @@ class IslamRuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.8,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.8,
                                   child: const Text(
                                     'Не винить супругу в своем прошлом, особенно в её предыдущих ошибках;',
                                     style: TextStyle(
@@ -383,7 +419,8 @@ class IslamRuPage extends StatelessWidget {
                                   ),
                                 ),
                               ],
-                            ),Row(
+                            ),
+                            Row(
                               // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -392,14 +429,16 @@ class IslamRuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.8,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.8,
                                   child: const Text(
                                     'Избегать возможностей конфликтов путем сосредоточения внимания на других безопасных темах;',
                                     style: TextStyle(
@@ -409,7 +448,8 @@ class IslamRuPage extends StatelessWidget {
                                   ),
                                 ),
                               ],
-                            ),Row(
+                            ),
+                            Row(
                               // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -418,14 +458,16 @@ class IslamRuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.8,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.8,
                                   child: const Text(
                                     'Не терзать себя и супругу подозрениями в измене и неверности, подавлять в себе предрассудки и необоснованную ревность;',
                                     style: TextStyle(
@@ -445,14 +487,16 @@ class IslamRuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.8,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.8,
                                   child: const Text(
                                     'Перед посторонними людьми или детьми не делать замечания и не произносить слов, которые могут унизить достоинство супруги и тому подобное.',
                                     style: TextStyle(
@@ -468,21 +512,29 @@ class IslamRuPage extends StatelessWidget {
                       ],
                     ),
                   ),
-           
-               ],
-             ),
-           ),
-           const SizedBox(height: 10,),
-           Container(
-            decoration: BoxDecoration(color: Theme.of(context).colorScheme.primary),
-            child: const Padding(
-              padding: EdgeInsets.all(18.0),
-              child: Text('Паёмбари гиромӣ лаънат кардан, дуои бад кардан, нафрин кардан ва истифодаи суханҳои кабеҳро манъ намудаанд. Ба фарди мусалмон таҳқир намудани як нафари дигар (аз ҷумла ҳамсари худ, хешутабори худ ва дигар шахсони шинос ва ношинос), дар ҳаққи онҳо гуфтани ҳар гуна саханҳои қабеҳ нораво мебошад. ',
-              style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.w800),
+                ],
               ),
             ),
-           ),const SizedBox(height: 50,)
-                  
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+              decoration:
+                  BoxDecoration(color: Theme.of(context).colorScheme.primary),
+              child: const Padding(
+                padding: EdgeInsets.all(18.0),
+                child: Text(
+                  'Паёмбари гиромӣ лаънат кардан, дуои бад кардан, нафрин кардан ва истифодаи суханҳои кабеҳро манъ намудаанд. Ба фарди мусалмон таҳқир намудани як нафари дигар (аз ҷумла ҳамсари худ, хешутабори худ ва дигар шахсони шинос ва ношинос), дар ҳаққи онҳо гуфтани ҳар гуна саханҳои қабеҳ нораво мебошад. ',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w800),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 50,
+            )
           ],
         ),
       ),

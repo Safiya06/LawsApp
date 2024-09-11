@@ -35,21 +35,21 @@ class Dastur72RuPage extends StatelessWidget {
                   height: 10,
                 ),
                 Container(
-            decoration:
-                BoxDecoration(color: Theme.of(context).colorScheme.primary),
-            child: const Padding(
-              padding: EdgeInsets.all(20),
-              child: Text(
-                'Четвёртая Всемирная конференция по положению женщин состоялась в Пекине в 1995 году. Несмотря на то, что усилия, которые предпринимались начиная с конференции в Мехико в 1975 году, помогли улучшить положение женщин и расширить их доступ к ресурсам, они не коснулись структурной основы неравенства в отношениях между мужчинами и женщинами.',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w800),
-              ),
-            ),
-                        ),
+                  decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.primary),
+                  child: const Padding(
+                    padding: EdgeInsets.all(20),
+                    child: Text(
+                      'Четвёртая Всемирная конференция по положению женщин состоялась в Пекине в 1995 году. Несмотря на то, что усилия, которые предпринимались начиная с конференции в Мехико в 1975 году, помогли улучшить положение женщин и расширить их доступ к ресурсам, они не коснулись структурной основы неравенства в отношениях между мужчинами и женщинами.',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 22,
+                          fontWeight: FontWeight.w800),
+                    ),
+                  ),
+                ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 18,left: 18, right: 18),
+                  padding: const EdgeInsets.only(top: 18, left: 18, right: 18),
                   child: Container(
                     padding: const EdgeInsets.all(16),
                     height: 43,
@@ -85,7 +85,6 @@ class Dastur72RuPage extends StatelessWidget {
                 ),
               ],
             ),
-            
             const SizedBox(
               height: 40,
             ),
@@ -97,10 +96,20 @@ class Dastur72RuPage extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.primary,
                     borderRadius: BorderRadius.circular(46)),
-                    child: const Center(child: Text(textAlign: TextAlign.center,'https://www.un.org/ru/documents/decl_conv/declarations/womdecl.shtml',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w800),)),
+                child: const Center(
+                    child: Text(
+                  textAlign: TextAlign.center,
+                  'https://www.un.org/ru/documents/decl_conv/declarations/womdecl.shtml',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w800),
+                )),
               ),
             ),
-            const SizedBox(height: 40,)
+            const SizedBox(
+              height: 40,
+            )
           ],
         ),
       ),

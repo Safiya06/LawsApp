@@ -6,7 +6,9 @@ class HelpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Theme.of(context).colorScheme.background,),
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.background,
+      ),
       body: Center(
         child: Container(
           height: 335,
@@ -25,9 +27,22 @@ class HelpPage extends StatelessWidget {
           ),
           child: Column(
             children: [
-            Text('!',style: TextStyle(color:Theme.of(context).colorScheme.tertiary,fontSize: 175,fontWeight: FontWeight.w400),),
-            Text('КУМАК',style: TextStyle(color: Theme.of(context).colorScheme.tertiary,fontSize: 37,fontWeight: FontWeight.w800),)
-          ],),
+              Text(
+                '!',
+                style: TextStyle(
+                    color: Theme.of(context).colorScheme.tertiary,
+                    fontSize: 175,
+                    fontWeight: FontWeight.w400),
+              ),
+              Text(
+                'КУМАК',
+                style: TextStyle(
+                    color: Theme.of(context).colorScheme.tertiary,
+                    fontSize: 37,
+                    fontWeight: FontWeight.w800),
+              )
+            ],
+          ),
         ),
       ),
     );

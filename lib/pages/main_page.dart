@@ -95,7 +95,7 @@ class _MainPageState extends State<MainPage> {
                         child: Center(
                           child: Text(
                             textAlign: TextAlign.center,
-                            'Ташкилотҳои ҷамъиятӣ ва шелтерҳо',
+                            'Ташкилотҳои\nҷамъиятӣ ва шелтерҳо',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 24,

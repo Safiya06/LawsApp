@@ -6,12 +6,13 @@ class Dastur5RuPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold( appBar: AppBar(
+    return Scaffold(
+      appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.background,
         leading: IconButton(
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainRuPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainRuPage()));
           },
           icon: const Icon(Icons.arrow_back_ios_new),
           color: Theme.of(context).colorScheme.primary,
@@ -19,13 +20,14 @@ class Dastur5RuPage extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        child: Column(children: [
-           Center(
+        child: Column(
+          children: [
+            Center(
               child: Stack(
                 children: [
                   Container(
-                    width: MediaQuery.of(context).size.width*0.7,
-                    height: MediaQuery.of(context).size.height*0.17,
+                    width: MediaQuery.of(context).size.width * 0.7,
+                    height: MediaQuery.of(context).size.height * 0.17,
                     color: Theme.of(context).colorScheme.secondary,
                   ),
                   Positioned(
@@ -38,7 +40,6 @@ class Dastur5RuPage extends StatelessWidget {
                       padding: const EdgeInsets.all(16),
                       child: const Text(
                         ' Как определить, что ваша знакомая (ый) подвергается насилию?',
-                       
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
@@ -49,7 +50,9 @@ class Dastur5RuPage extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 20,),
+            const SizedBox(
+              height: 20,
+            ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
@@ -87,14 +90,16 @@ class Dastur5RuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     ' Очень низкая самооценка у человека, который прежде был уверен в себе;',
                                     style: TextStyle(
@@ -114,14 +119,16 @@ class Dastur5RuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Любые другие резкие изменения личности (например, в прошлом общительный человек становится замкнутым);',
                                     style: TextStyle(
@@ -141,14 +148,16 @@ class Dastur5RuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Депрессия, состояние повышенной тревожности, разговоры о самоубийстве.',
                                     style: TextStyle(
@@ -158,7 +167,8 @@ class Dastur5RuPage extends StatelessWidget {
                                   ),
                                 ),
                               ],
-                            ), Row(
+                            ),
+                            Row(
                               // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -167,14 +177,16 @@ class Dastur5RuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     ' Часто на ней (нем) можно увидеть следы травм.',
                                     style: TextStyle(
@@ -184,7 +196,8 @@ class Dastur5RuPage extends StatelessWidget {
                                   ),
                                 ),
                               ],
-                            ), Row(
+                            ),
+                            Row(
                               // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -193,14 +206,16 @@ class Dastur5RuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     ' Часто пропускает работу, учебу, социальные мероприятия без объяснения причин;',
                                     style: TextStyle(
@@ -210,7 +225,8 @@ class Dastur5RuPage extends StatelessWidget {
                                   ),
                                 ),
                               ],
-                            ), Row(
+                            ),
+                            Row(
                               // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -219,14 +235,16 @@ class Dastur5RuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Носить закрытую одежду не по сезону, солнцезащитные очки в помещении.',
                                     style: TextStyle(
@@ -236,7 +254,8 @@ class Dastur5RuPage extends StatelessWidget {
                                   ),
                                 ),
                               ],
-                            ), Row(
+                            ),
+                            Row(
                               // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -245,14 +264,16 @@ class Dastur5RuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Все реже встречаться с родственниками и друзьями;',
                                     style: TextStyle(
@@ -262,7 +283,8 @@ class Dastur5RuPage extends StatelessWidget {
                                   ),
                                 ),
                               ],
-                            ), Row(
+                            ),
+                            Row(
                               // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -271,14 +293,16 @@ class Dastur5RuPage extends StatelessWidget {
                                   height: 20,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(3),
-                                    color: Theme.of(context).colorScheme.secondary,
+                                    color:
+                                        Theme.of(context).colorScheme.secondary,
                                   ),
                                 ),
                                 const SizedBox(
                                   width: 10,
                                 ),
                                 SizedBox(
-                                  width: MediaQuery.of(context).size.width*0.7,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Иметь ограниченный доступ к деньгам, кредитным картам, автомобилю;',
                                     style: TextStyle(
@@ -300,10 +324,9 @@ class Dastur5RuPage extends StatelessWidget {
                 ],
               ),
             ),
-            
-        ],),
+          ],
+        ),
       ),
-      
-      );
+    );
   }
 }

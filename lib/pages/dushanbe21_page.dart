@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Dushanbe21Page extends StatefulWidget {
   const Dushanbe21Page({super.key});
@@ -8,8 +11,17 @@ class Dushanbe21Page extends StatefulWidget {
   State<Dushanbe21Page> createState() => _Dushanbe21PageState();
 }
 
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
 class _Dushanbe21PageState extends State<Dushanbe21Page> {
-  Widget _khatlonContainer(String value) {
+  Widget _dushanbeContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(18),
       height: 140,
@@ -41,8 +53,8 @@ class _Dushanbe21PageState extends State<Dushanbe21Page> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
         ),
       ),
@@ -51,13 +63,29 @@ class _Dushanbe21PageState extends State<Dushanbe21Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _khatlonContainer('Маркази дастгирӣ «Фемида»\nх. Рӯдакӣ-137\n935-01-62-92\nfemida-tj@mail.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('935-01-62-92'),
+                child: _dushanbeContainer(
+                    'Маркази дастгирӣ «Фемида»\nх. Рӯдакӣ-137\n935-01-62-92'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer('Маркази Худшиносии Занон\n935-17-77-56\nmarkazi.bonuvon '),
+              GestureDetector(
+                onTap: () => _launchDialer('935-17-77-56'),
+                child: _dushanbeContainer(
+                    'Маркази Худшиносии Занон\n935-17-77-56'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer('ТҶ «Лигаи занони ҳуқуқшинос»\nк. Айнӣ, 32/2, х. 7\n221-21-49\nlwl_toj@rambler.ru'),
+              GestureDetector(
+                onTap: () => _launchDialer('221-21-49'),
+                child: _dushanbeContainer(
+                    'ТҶ «Лигаи занони ҳуқуқшинос»\nкӯчаи Айнӣ, 32/2, х. 7\n221-21-49'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer('ТҶ «Корвони умед»\nк. Н. Хисрав, х. 11\n900-00-12-22'),
+              GestureDetector(
+                onTap: () => _launchDialer('900-00-12-22'),
+                child: _dushanbeContainer(
+                    'ТҶ «Корвони умед»\nкӯчаи Н. Хисрав, х. 11\n900-00-12-22'),
+              ),
               const SizedBox(height: 20),
             ],
           ),

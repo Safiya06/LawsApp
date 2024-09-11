@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Ntm16Page extends StatefulWidget {
   const Ntm16Page({super.key});
@@ -8,10 +11,19 @@ class Ntm16Page extends StatefulWidget {
   State<Ntm16Page> createState() => _Ntm16PageState();
 }
 
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
 class _Ntm16PageState extends State<Ntm16Page> {
   Widget _ntmnContainer(String value) {
     return Container(
-      padding: const EdgeInsets.only(left: 25,right: 25,top: 18,bottom: 18),
+      padding: const EdgeInsets.only(left: 25, right: 25, top: 18, bottom: 18),
       height: 208,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
@@ -41,8 +53,8 @@ class _Ntm16PageState extends State<Ntm16Page> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
         ),
       ),
@@ -51,23 +63,18 @@ class _Ntm16PageState extends State<Ntm16Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _ntmnContainer('н. Шаҳринав, бинои Маркази адлия, кӯчаи И.Сомонӣ 933-55-36-39'),
+              GestureDetector(
+                onTap: () => _launchDialer('933-55-78-20'),
+                  child: _ntmnContainer(
+                      'н. Нуробод\nбинои «Тоҷиксуғурта»\nкӯчаи И. Ҳалимов-11\n933-55-78-20')),
               const SizedBox(height: 20),
-              _ntmnContainer('ш.Ваҳдат, бинои Маркази адлия, х.Рудакӣ 933-55-59-94'),
+              GestureDetector(
+                onTap: () => _launchDialer('933-55-49-87'),
+                  child: _ntmnContainer(
+                      'н. Тоҷикобод\nбинои Бонки молиявии хурд\nкӯчаи Сомонӣ-21\n933-55-49-87')),
               const SizedBox(height: 20),
-              _ntmnContainer('н. Нуробод, бинои «Тоҷиксуғурта», кӯчаи И. Ҳалимов-11 933-55-78-20'),
-              const SizedBox(height: 20),
-              _ntmnContainer('н. Тоҷикобод, бинои Бонки молиявии хурд, кӯчаи Сомонӣ-21 933-55-49-87'),
-              const SizedBox(height: 20),
-              _ntmnContainer('н. Файзобод, бинои МИҲД-2. кӯчаи И. Сомонӣ-49 935-54-32-19'),
-              const SizedBox(height: 20),
-              _ntmnContainer('ш. Турсунзода, бинои САҲШ, маҳ. 2 933-55-59-93'),
-              const SizedBox(height: 20),
-              _ntmnContainer('ш. Ҳиссор, кӯчаи И. Сомонӣ, ошёнаи 1-ум, 10, бинои МИҲД 933-55-95-72'),
-              const SizedBox(height: 20),
-              _ntmnContainer('н. Рӯдакӣ, ш. Сомониён, кӯчаи И. Сомонӣ, бинои Маркази адлия (ошёнаи 1-ум) 930-10-01-67'),
-              const SizedBox(height: 20),
-              ],
+              
+            ],
           ),
         ),
       ),

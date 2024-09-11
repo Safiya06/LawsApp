@@ -1,11 +1,23 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Khatlon13Page extends StatefulWidget {
   const Khatlon13Page({super.key});
 
   @override
   State<Khatlon13Page> createState() => _Khatlon13PageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Khatlon13PageState extends State<Khatlon13Page> {
@@ -51,16 +63,21 @@ class _Khatlon13PageState extends State<Khatlon13Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _khatlonContainer(
-                  'ш. Бохтар, к. Б.Гафуров-11 (8-3222) 2-79-32; 93-920-74-00'),
+              GestureDetector(
+                onTap: () => _launchDialer('939-20-74-00'),
+                child: _khatlonContainer(
+                    'ш. Бохтар\nкучаи Б.Ғафуров-11\n222-79-32; 939-20-74-00'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Кубодиён, к. И. Сомонй 93-854-36-88'),
+              GestureDetector(
+                onTap: () => _launchDialer('938-54-36-88'),
+                  child: _khatlonContainer(
+                      'н. Қубодиён\nкучаи И. Сомонӣ\n938-54-36-88')),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'ш. Кулоб 98-535-36-71'),
+              GestureDetector(
+                onTap: () => _launchDialer('985-35-36-71'),
+                  child: _khatlonContainer('ш. Кулоб\n985-35-36-71')),
               const SizedBox(height: 20),
-              
             ],
           ),
         ),

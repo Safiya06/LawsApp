@@ -93,10 +93,20 @@ class Dastur71RuPage extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.primary,
                     borderRadius: BorderRadius.circular(46)),
-                    child: const Center(child: Text(textAlign: TextAlign.center,'https://www.ohchr.org/ru/treaty-bodies/cedaw',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w800),)),
+                child: const Center(
+                    child: Text(
+                  textAlign: TextAlign.center,
+                  'https://www.ohchr.org/ru/treaty-bodies/cedaw',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w800),
+                )),
               ),
             ),
-            const SizedBox(height: 40,)
+            const SizedBox(
+              height: 40,
+            )
           ],
         ),
       ),

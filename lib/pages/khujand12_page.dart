@@ -1,5 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Khujand12Page extends StatefulWidget {
   const Khujand12Page({super.key});
@@ -8,10 +11,19 @@ class Khujand12Page extends StatefulWidget {
   State<Khujand12Page> createState() => _Khujand12PageState();
 }
 
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
 class _Khujand12PageState extends State<Khujand12Page> {
   Widget _khatlonContainer(String value) {
     return Container(
-      padding: const EdgeInsets.only(left: 60, right: 60, top: 18, bottom: 18),
+      padding: const EdgeInsets.only(left: 18, right: 18, top: 18, bottom: 18),
       height: 146,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
@@ -48,62 +60,116 @@ class _Khujand12PageState extends State<Khujand12Page> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
-              _khatlonContainer(
-                  'Вилояти Сугд (8-3422) 4-68-50; 4-65-37; 92-919-90-60'),
+              GestureDetector(
+                onTap: () => _launchDialer('929-19-90-60'),
+                child: _khatlonContainer(
+                    'Вилояти Суғд\n224-68-50; 224-65-37;\n929-19-90-60'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'ш. Хучанд (8-3422) 4-67-25; 92-770-37-47'),
+              GestureDetector(
+                onTap: () => _launchDialer('927-70-37-47'),
+                child: _khatlonContainer(
+                    'ш. Хуҷанд\n224-67-25; 927-70-37-47'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'ш. Исфара (8-3462) 2-44-22; 918-97-93-59'),
+              GestureDetector(
+                onTap: () => _launchDialer('918-97-93-59'),
+                child: _khatlonContainer(
+                    'ш. Исфара\n918-97-93-59'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'ш. Бустон (8-4744) 822-44; 92-712-60-92'),
+              GestureDetector(
+                onTap: () => _launchDialer('927-12-60-92'),
+                child: _khatlonContainer(
+                    'ш. Бустон\n927-12-60-92'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'ш. Конибодом (8-3467) 322-44'),
+              GestureDetector(
+                onTap: () => _launchDialer('322-44'),
+                child: _khatlonContainer(
+                    'ш. Конибодом\n(8-3467) 322-44'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'ш. Гулистон (8-3443) 240-26; 93-870-02-41'),
+              GestureDetector(
+                onTap: () => _launchDialer('938-70-02-411'),
+                child: _khatlonContainer(
+                    'ш. Гулистон\n938-70-02-411'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'ш. Истиклол (8-3465) 2-54-87; 92-808-50-05'),
+              GestureDetector(
+                onTap: () => _launchDialer('928-08-50-05'),
+                child: _khatlonContainer(
+                    'ш. Истиқлол\n928-08-50-05'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'ш. Панчакент (8-3475) 5-53-94'),
+              GestureDetector(
+                onTap: () => _launchDialer('5-53-94'),
+                child: _khatlonContainer(
+                    'ш. Панҷикент\n(8-3475) 5-53-94'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'ш. Истаравшан (8-3454) 2-44-65; 98-707-14-60'),
+              GestureDetector(
+                onTap: () => _launchDialer('987-07-14-60'),
+                child: _khatlonContainer(
+                    'ш. Истаравшан\n987-07-14-60'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Айни (8 34 79) 2-28-71; 93-583-93-00'),
+              GestureDetector(
+                onTap: () => _launchDialer('935-83-93-00'),
+                child: _khatlonContainer(
+                    'н. Айнӣ\n935-83-93-00'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Ашт (8-3453) 214-30; 92-894-22-92'),
+              GestureDetector(
+                onTap: () => _launchDialer('928-94-22-92'),
+                child: _khatlonContainer(
+                    'н. Ашт\n928-94-22-92'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'ш. Зафаробод (8-34-52) 5-24-63; 92-625-84-87'),
+              GestureDetector(
+                onTap: () => _launchDialer('926-25-84-87'),
+                child: _khatlonContainer(
+                    'ш. Зафаробод\n926-25-84-87'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Б. Гафуров (8-3442) 3-36-73; 92-764-38-97'),
+              GestureDetector(
+                onTap: () => _launchDialer('927-64-38-97'),
+                child: _khatlonContainer(
+                    'н. Б. Ғафуров\n927-64-38-97'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Деваштич (8-3464) 243-79'),
+              GestureDetector(
+                onTap: () => _launchDialer('243-79'),
+                child: _khatlonContainer(
+                    'н. Деваштич\n(8-3464) 243-79'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Ч. Расулов (8-34-55) 2-11-30; 92-600-15-73'),
+              GestureDetector(
+                onTap: () => _launchDialer('926-00-15-73'),
+                child: _khatlonContainer(
+                    'н. Ҷ. Расулов\n926-00-15-73'),
+              ),
               const SizedBox(height: 20),
-               _khatlonContainer(
-                  'н. Спитамен (8-3441) 2-22-44'),
+               GestureDetector(
+                onTap: () => _launchDialer('2-22-44'),
+                 child: _khatlonContainer(
+                    'н. Спитамен\n(8-3441) 2-22-44'),
+               ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Шахристон (8-3456) 2-63-35; 92-787-30-35'),
+              GestureDetector(
+                onTap: () => _launchDialer('92-787-30-35'),
+                child: _khatlonContainer(
+                    'н. Шаҳристон\n92-787-30-35'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Мастчох (8-3445) 2-23-15; 93-129-99-01; 92-921-07-77'),
+              GestureDetector(
+                onTap: () => _launchDialer('92-921-07-77'),
+                child: _khatlonContainer(
+                    'н. Мастчоҳ\n931-29-99-01;\n929-21-07-77'),
+              ),
               const SizedBox(height: 20),
             ],
           ),

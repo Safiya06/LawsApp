@@ -22,6 +22,38 @@ class Dastur4Page extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            Center(
+              child: Stack(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.9,
+                    height: MediaQuery.of(context).size.height * 0.15,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+                  Positioned(
+                    bottom: 10,
+                    left: 0,
+                    right: 10,
+                    top: 0,
+                    child: Container(
+                      color: Theme.of(context).colorScheme.secondary,
+                      padding: const EdgeInsets.all(16),
+                      child: const Center(
+                        child: Text(
+                          'Чӣ бояд кард, агар Шумо шоҳиди зӯроварӣ шудед:',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w800),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 20,),
             Padding(
               padding: const EdgeInsets.all(18),
               child: Column(
@@ -94,7 +126,9 @@ class Dastur4Page extends StatelessWidget {
                               fontSize: 18,
                               fontWeight: FontWeight.w800),
                         ),
-                        SizedBox(height: 25,),
+                        SizedBox(
+                          height: 25,
+                        ),
                         Text(
                           '~ Ҷабрдидаро гуш кунед, ӯро дастгирӣ намоед. Оид ба вазъияташ ва чӣ гуна ёри расонида метавонед, пурсед.',
                           style: TextStyle(

@@ -1,11 +1,23 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Dushanbe13Page extends StatefulWidget {
   const Dushanbe13Page({super.key});
 
   @override
   State<Dushanbe13Page> createState() => _Dushanbe13PageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Dushanbe13PageState extends State<Dushanbe13Page> {
@@ -44,8 +56,8 @@ class _Dushanbe13PageState extends State<Dushanbe13Page> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
         ),
       ),
@@ -54,19 +66,44 @@ class _Dushanbe13PageState extends State<Dushanbe13Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _dushanbeContainer('Ваколатдор оид ба хукуки инсон дар ЧТ 101; 221-79-89'),
+              GestureDetector(
+                onTap: () => _launchDialer('221-79-89'),
+                child: _dushanbeContainer(
+                    'Ваколатдор оид ба\nҳуқуқи инсон дар ҶТ\n101; 221-79-89'),
+              ),
               const SizedBox(height: 20),
-              _dushanbeContainer('Муовини Ваколатдор 103; 221-76-02'),
+              GestureDetector(
+                onTap: () => _launchDialer('221-76-02'),
+                  child:
+                      _dushanbeContainer('Муовини Ваколатдор\n103; 221-76-02')),
               const SizedBox(height: 20),
-              _dushanbeContainer('Рохбари Дастгохи Ваколатдор 105; 221-76-01; 918-26-03-03'),
+              GestureDetector(
+                onTap: () => _launchDialer('918-26-03-03'),
+                child: _dushanbeContainer(
+                    'Роҳбари Дастгоҳи\nВаколатдор\n105; 221-76-01; 918-26-03-03'),
+              ),
               const SizedBox(height: 20),
-              _dushanbeContainer('Сардори Шуба 106; 221-46-92; 919-53-00-46'),
+              GestureDetector(
+                onTap: () => _launchDialer('919-53-00-46'),
+                  child: _dushanbeContainer(
+                      'Сардори Шуъба\n106; 221-46-92;\n919-53-00-46')),
               const SizedBox(height: 20),
-              _dushanbeContainer('Муовини сардори Шуба 120; 221-74-39; 93-999-68-68'),
+              GestureDetector(
+                onTap: () => _launchDialer('93-999-68-68'),
+                child: _dushanbeContainer(
+                    'Муовини\nсардори Шуъба\n120; 221-74-39;\n939-99-68-68'),
+              ),
               const SizedBox(height: 20),
-              _dushanbeContainer('Сармутахассис 120; 221-74-39; 935-66-84-40'),
+              GestureDetector(
+                onTap: () => _launchDialer('935-66-84-40'),
+                  child: _dushanbeContainer(
+                      'Сармутахассис\n120; 221-74-39;\n935-66-84-40')),
               const SizedBox(height: 20),
-              _dushanbeContainer('Мутахассиси пешбар 120; 221-74-39; 93-546-00-12'),
+              GestureDetector(
+                onTap: () => _launchDialer('93-546-00-12'),
+                child: _dushanbeContainer(
+                    'Мутахассиси пешбар\n120; 221-74-39;\n935-46-00-12'),
+              ),
               const SizedBox(height: 20),
             ],
           ),

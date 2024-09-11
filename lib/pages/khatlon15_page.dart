@@ -1,11 +1,23 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Khatlon15Page extends StatefulWidget {
   const Khatlon15Page({super.key});
 
   @override
   State<Khatlon15Page> createState() => _Khatlon15PageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Khatlon15PageState extends State<Khatlon15Page> {
@@ -48,17 +60,26 @@ class _Khatlon15PageState extends State<Khatlon15Page> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
-              _khatlonContainer(
-                  'ш.Левакант, Маркази дастгирии занон 98-726-69-95'),
+              GestureDetector(
+                onTap: () => _launchDialer('987-26-69-95'),
+                child: _khatlonContainer(
+                    'ш.Левакант\nМаркази дастгирии занон\n987-26-69-95'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Кушониён, бахши занон ва оила МИХД 98-726-69-95'),
+              GestureDetector(
+                onTap: () => _launchDialer('987-26-69-95'),
+                child: _khatlonContainer(
+                    'н. Кушониён\nбахши занон ва оила МИҲД\n987-26-69-95'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'ш. Левакант, бинои Касри фарханг, ош. 3 91-833-00-63'),
+              GestureDetector(
+                onTap: () => _launchDialer('918-33-00-63'),
+                child: _khatlonContainer(
+                    'ш. Левакант\nбинои Қасри фарҳанг, ош. 3\n918-33-00-63'),
+              ),
               const SizedBox(height: 20),
               
             ],

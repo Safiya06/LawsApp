@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Vmkb13Page extends StatefulWidget {
   const Vmkb13Page({super.key});
 
   @override
   State<Vmkb13Page> createState() => _Vmkb13PageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Vmkb13PageState extends State<Vmkb13Page> {
@@ -51,7 +62,9 @@ class _Vmkb13PageState extends State<Vmkb13Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _khatlonContainer('ш. Хоруг, кучаи Ленин-121. Тел.: (8-3322) 232-84; 93-400-74-57'),
+              GestureDetector(
+                onTap: () => _launchDialer('934-00-74-57'),
+                child: _khatlonContainer('ш. Хоруғ\nкӯчаи Ленин-121\n 222-32-84; 934-00-74-57')),
               const SizedBox(height: 20),
               ],
           ),

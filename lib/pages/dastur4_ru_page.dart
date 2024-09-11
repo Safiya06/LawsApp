@@ -94,7 +94,9 @@ class Dastur4RuPage extends StatelessWidget {
                               fontSize: 18,
                               fontWeight: FontWeight.w800),
                         ),
-                        SizedBox(height: 25,),
+                        SizedBox(
+                          height: 25,
+                        ),
                         Text(
                           '~ Слушайте жертву, верьте ей, поддерживайте ее. Спрашивайте, как она себя чувствует и что вы можете для нее сделать.',
                           style: TextStyle(

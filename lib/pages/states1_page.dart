@@ -67,13 +67,13 @@ class _States1PageState extends State<States1Page> {
                   onTap: () {
                    Navigator.pushNamed(context, '/Khujand1');
                   },
-                  child: _stateContainer('вилояти Сугд')),
+                  child: _stateContainer('Вилояти Суғд')),
               const SizedBox(height: 20),
                GestureDetector(
                   onTap: () {
                    Navigator.pushNamed(context, '/Khatlon1');
                   },
-                  child: _stateContainer('вилояти Хатлон')),
+                  child: _stateContainer('Вилояти Хатлон')),
               const SizedBox(height: 20), GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context,'/Vmkb1');
@@ -83,12 +83,12 @@ class _States1PageState extends State<States1Page> {
                   onTap: () {
                     Navigator.pushNamed(context,'/Ntm1');
                   },
-                  child: _stateContainer('нохияхои тобеъи\nмарказ')),
+                  child: _stateContainer('Ноҳияҳои тобеи\nмарказ')),
               const SizedBox(height: 20), GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context,'/Dushanbe1');
                   },
-                  child: _stateContainer('ш.Душанбе')),
+                  child: _stateContainer('ш. Душанбе')),
                 
             ],
           ),

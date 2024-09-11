@@ -1,11 +1,23 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Ntm13Page extends StatefulWidget {
   const Ntm13Page({super.key});
 
   @override
   State<Ntm13Page> createState() => _Ntm13PageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Ntm13PageState extends State<Ntm13Page> {
@@ -41,8 +53,8 @@ class _Ntm13PageState extends State<Ntm13Page> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
         ),
       ),
@@ -51,13 +63,22 @@ class _Ntm13PageState extends State<Ntm13Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _ntmContainer('н. Вахдат, бинои ШВКД. 93-992-58-19'),
+              GestureDetector(
+                onTap: () => _launchDialer(' 93-992-58-19'),
+                  child: _ntmContainer('ш. Ваҳдат\nбинои ШВКД\n939-92-58-19')),
               const SizedBox(height: 20),
-              _ntmContainer('н. Рашт, ш. Fapm, к. И. Сомонй-36. 91-832-75-28'),
+              GestureDetector(
+                onTap: () => _launchDialer('91-832-75-28'),
+                  child: _ntmContainer(
+                      'н. Рашт, ш. Ғарм,\nкӯчаи И. Сомонӣ-36\n918-32-75-28')),
               const SizedBox(height: 20),
-              _ntmContainer('н. Рудаки 900-27-81-81'),
+              GestureDetector(
+                onTap: () => _launchDialer(' 900-27-81-81'),
+                child: _ntmContainer('н. Рӯдакӣ\n900-27-81-81')),
               const SizedBox(height: 20),
-              _ntmContainer('พ. Xncop 907-17-36-36'),
+              GestureDetector(
+                onTap: () => _launchDialer('907-17-36-36'),
+                child: _ntmContainer('ш.Ҳисор\n907-17-36-36')),
               const SizedBox(height: 20),
             ],
           ),

@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Khatlon14Page extends StatefulWidget {
   const Khatlon14Page({super.key});
 
   @override
   State<Khatlon14Page> createState() => _Khatlon14PageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Khatlon14PageState extends State<Khatlon14Page> {
@@ -51,31 +61,54 @@ class _Khatlon14PageState extends State<Khatlon14Page> {
           padding: const EdgeInsets.all(10),
           child: Column(
             children: [
-              _khatlonContainer(
-                  'ш. Бохтар, Беморхонаи\nклиникии\nвилоятии ба номи Б. Вохидов\n918-69-45-64; 832-22-30-63'),
+              GestureDetector(
+                onTap: () => _launchDialer('832-22-30-63'),
+                child: _khatlonContainer(
+                    'ш. Бохтар\nБеморхонаи клиникии\nвилоятӣ ба номи Б. Воҳидов\n918-69-45-64; 832-22-30-63'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'ш. Кулоб, Таввалуд-\nхонаи ш. Кулоб\n985-09-63-20'),
+              GestureDetector(
+                onTap: () => _launchDialer('985-09-63-20'),
+                child: _khatlonContainer(
+                    'Таввалуд-хонаи\nш. Кулоб\n985-09-63-20'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Панч, Беморхонаи\nмарказии нохияви\n900-60-15-49'),
+              GestureDetector(
+                onTap: () => _launchDialer('900-60-15-49'),
+                child: _khatlonContainer(
+                    'н. Панҷ\nБеморхонаи\nмарказии ноҳияви\n900-60-15-49'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Фархор, Беморхонаи\nмарказии нохияви\n900-60-15-49\n880-38-35-35'),
+              GestureDetector(
+                onTap: () => _launchDialer('880-38-35-35'),
+                child: _khatlonContainer(
+                    'н. Фархор\nБеморхонаи\nмарказии ноҳиявӣ\n900-60-15-49; 880-38-35-35'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Ёвон, Беморхонаи\nмарказии нохияви\n901-00-99-07'),
+              GestureDetector(
+                onTap: () => _launchDialer('901-00-99-07'),
+                child: _khatlonContainer(
+                    'н. Ёвон\nБеморхонаи\nмарказии ноҳиявӣ\n901-00-99-07'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Восеъ, Беморхонаи\nмарказии нохияви\n98-537-53-27'),
+              GestureDetector(
+                onTap: () => _launchDialer('985-37-53-27'),
+                child: _khatlonContainer(
+                    'н. Восеъ\n Беморхонаи\nмарказии ноҳиявӣ\n985-37-53-27'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. А.Чоми, Беморхонаи\nмарказии нохияви\n93-531-08-50'),
+              GestureDetector(
+                onTap: () => _launchDialer('935-31-08-50'),
+                child: _khatlonContainer(
+                    'н. А.Ҷоми\nБеморхонаи\nмарказии ноҳиявӣ\n935-31-08-50'),
+              ),
               const SizedBox(height: 20),
-              _khatlonContainer(
-                  'н. Шахритус, Беморхонаи\nмарказии нохияви\n93-420-05-07'),
+              GestureDetector(
+                onTap: () => _launchDialer('934-20-05-07'),
+                child: _khatlonContainer(
+                    'н. Шаҳритус\nБеморхонаи\nмарказии ноҳиявӣ\n934-20-05-07'),
+              ),
               const SizedBox(height: 20),
-              
             ],
           ),
         ),

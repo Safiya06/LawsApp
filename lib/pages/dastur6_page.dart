@@ -48,8 +48,8 @@ class _Dastur6PageState extends State<Dastur6Page> {
             color: Theme.of(context).colorScheme.primary,
           ),
           onPressed: () {
-            Navigator.pop(
-                context, MaterialPageRoute(builder: (context) => const MainPage()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const MainPage()));
           },
         ),
       ),
@@ -65,16 +65,24 @@ class _Dastur6PageState extends State<Dastur6Page> {
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur61');
                 },
-                child: _dasturContainer('Барномаи рушди оила',36),
-              ), 
-               const SizedBox(height: 20),
+                child: _dasturContainer('Никоҳи барвақт', 36),
+              ),
+              const SizedBox(height: 20),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/Dastur61');
+                },
+                child: _dasturContainer('Барномаи рушди оила', 36),
+              ),
+              const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur62');
                 },
-                child: _dasturContainer('Ҷазо барои содир намудани зӯроварӣ',42),
-              ), 
-                const SizedBox(height: 20),
+                child:
+                    _dasturContainer('Ҷазо барои содир намудани зӯроварӣ', 42),
+              ),
+              const SizedBox(height: 20),
             ],
           ),
         ),

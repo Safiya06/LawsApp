@@ -1,11 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Khujand21Page extends StatefulWidget {
   const Khujand21Page({super.key});
 
   @override
   State<Khujand21Page> createState() => _Khujand21PageState();
+}
+
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 class _Khujand21PageState extends State<Khujand21Page> {
@@ -51,8 +62,11 @@ class _Khujand21PageState extends State<Khujand21Page> {
           padding: const EdgeInsets.all(25),
           child: Column(
             children: [
-              _khatlonContainer(
-                  'ТЧ «Гулрухсор», ш. Хучанд, н. Р. Набиев-111 (8-3422) 60-510; 92-780-40-74; 98-750-40-74; info@gulruhsor.tj'),
+              GestureDetector(
+                onTap: () => _launchDialer('987-50-40-74'),
+                child: _khatlonContainer(
+                    'ТҶ «Гулрухсор»\n ш. Хуҷанд, н. Р. Набиев-111\n927-80-40-74; 987-50-40-74 '),
+              ),
               const SizedBox(height: 20),
               
             ],
