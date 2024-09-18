@@ -1,6 +1,8 @@
-import 'package:flutter/material.dart';
+
 import 'package:flutter/widgets.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+
 
 class HelpPage extends StatefulWidget {
   const HelpPage({super.key});
@@ -8,53 +10,49 @@ class HelpPage extends StatefulWidget {
   @override
   State<HelpPage> createState() => _HelpPageState();
 }
-void _launchDialer(String phoneNumber) async {
-  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
-  if (await canLaunchUrl(url)) {
-    await launchUrl(url);
-  } else {
-    throw 'Could not launch $url';
-  }
-}
 
 class _HelpPageState extends State<HelpPage> {
+  bool _showPhoneNumbers = false;
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.background,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          children: [
-            SizedBox(
-              height: 50,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            padding: const EdgeInsets.all(10),
+            margin: EdgeInsets.only(bottom: 15),
+            color: Color(0xfffea701),
+            child: Text(
+              '92 970-16-66',
+              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
             ),
-            Container(
-              height: 60,
-              width: 300,
-              decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primary,
-                  borderRadius: BorderRadius.circular(10)),
-              child: Center(
-                child: GestureDetector(
-                  onTap: () =>  _launchDialer('92 780-40-74'),
-                  child: Text(
-                    '92 780-40-74',
-                    style: TextStyle(
-                      color: Color(0xFF654900),
-                      fontWeight: FontWeight.w700,
-                      fontSize: 40
-                    ),
-                  ),
-                ),
+          )
+              .animate(
+                target: _showPhoneNumbers ? 1 : 0,
+              )
+              .scale(
+                duration: Duration(milliseconds: 250),
+              )
+              .fadeIn()
+              .slideY(
+                begin: 2,
+                end: 0,
+                duration: Duration(milliseconds: 250),
               ),
-            ),
-            SizedBox(
-              height: 50,
-            ),
-            Center(
+
+          Center(
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  _showPhoneNumbers = !_showPhoneNumbers;
+                });
+              },
               child: Container(
                 height: 335,
                 width: 335,
@@ -85,36 +83,42 @@ class _HelpPageState extends State<HelpPage> {
                           color: Theme.of(context).colorScheme.tertiary,
                           fontSize: 37,
                           fontWeight: FontWeight.w800),
-                    ),
+                    )
                   ],
                 ),
               ),
             ),
-            SizedBox(
-              height: 50,
+          ),
+          // Animate(
+          //   // autoPlay: _showPhoneNumbers,
+          //   // delay: Duration(hours: _showPhoneNumbers ? 0 : 10),
+          //   effects: [FadeEffect(), SlideEffect(), ScaleEffect()],
+          //   child: Text('Phone 2'),
+          // ),
+
+          Container(
+            padding: const EdgeInsets.all(10),
+            margin: EdgeInsets.only(top: 15),
+            color: Color(0xfffea701),
+            child: Text(
+              '92 970-16-66',
+              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
             ),
-            GestureDetector(
-              onTap: () => _launchDialer('92 970-16-66'),
-              child: Container(
-                height: 60,
-                width: 300,
-                decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.primary,
-                    borderRadius: BorderRadius.circular(10)),
-                child: Center(
-                  child: Text(
-                    '92 970-16-66',
-                    style: TextStyle(
-                      color: Color(0xFF654900),
-                      fontWeight: FontWeight.w700,
-                      fontSize: 40
-                    ),
-                  ),
-                ),
+          )
+              .animate(
+                target: _showPhoneNumbers ? 1 : 0,
+              )
+              .scale(
+                duration: Duration(milliseconds: 250),
+              )
+              .fadeIn()
+              .slideY(
+                begin: -2,
+                end: 0,
+                duration: Duration(milliseconds: 250),
               ),
-            ),
-          ],
-        ),
+        ],
+
       ),
     );
   }
