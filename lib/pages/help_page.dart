@@ -1,5 +1,8 @@
-import 'package:flutter/material.dart';
+
+import 'package:flutter/widgets.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+
 
 class HelpPage extends StatefulWidget {
   const HelpPage({super.key});
@@ -10,6 +13,7 @@ class HelpPage extends StatefulWidget {
 
 class _HelpPageState extends State<HelpPage> {
   bool _showPhoneNumbers = false;
+
 
   @override
   Widget build(BuildContext context) {
@@ -114,6 +118,7 @@ class _HelpPageState extends State<HelpPage> {
                 duration: Duration(milliseconds: 250),
               ),
         ],
+
       ),
     );
   }

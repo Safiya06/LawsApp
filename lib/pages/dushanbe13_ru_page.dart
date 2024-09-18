@@ -23,7 +23,7 @@ void _launchDialer(String phoneNumber) async {
 class _Dushanbe13RuPageState extends State<Dushanbe13RuPage> {
   Widget _dushanbeContainer(String value) {
     return Container(
-      height: 146,
+      // height: MediaQuery.of(context).size.height*0.16,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -36,7 +36,7 @@ class _Dushanbe13RuPageState extends State<Dushanbe13RuPage> {
               textAlign: TextAlign.center,
               value,
               style: const TextStyle(
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.w800,
                   color: Colors.white),
             ),

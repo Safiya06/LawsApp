@@ -37,15 +37,215 @@ class Dastur2RuPage extends StatelessWidget {
                     ),
                     Center(
                       child: Text(
-                        'Разработка плана действий в кризисной ситуации - как можно скорее покинуть дом и пойти в безопасное место.\n',
+                        'Разработка плана действий в кризисной ситуации - как можно скорее покинуть дом и пойти в безопасное место.',
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 24,
                             fontWeight: FontWeight.w800),
                       ),
                     ),
-                    Text('                                             ➡️')
                   ],
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                padding: const EdgeInsets.all(28),
+                // height: 390,
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: const Column(
+                  children: [
+                    SizedBox(
+                      height: 70,
+                    ),
+                    Center(
+                      child: Text(
+                        ' О насилии сообщите своим доверенным лицам (друзьям, родственникам, близким).',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                  ],
+                ),
+              ),SizedBox(height: 20,),
+              Container(
+                padding: const EdgeInsets.all(28),
+                // height: 390,
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: const Column(
+                  children: [
+                    SizedBox(
+                      height: 70,
+                    ),
+                    Center(
+                      child: Text(
+                        'Узнайте телефоны и адреса центров экстренной помощи, приютов, региональных инспекторов полиции.',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                  ],
+                ),
+              ),SizedBox(height: 20,),
+              Container(
+                padding: const EdgeInsets.all(28),
+                // height: 390,
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: const Column(
+                  children: [
+                    SizedBox(
+                      height: 70,
+                    ),
+                    Center(
+                      child: Text(
+                        'Соберите самое необходимое (одежду, документы, лекарства, ключи) и спрячьте в укромное место.',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                  ],
+                ),
+              ),SizedBox(height: 20,),
+              Container(
+                padding: const EdgeInsets.all(28),
+                // height: 390,
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: const Column(
+                  children: [
+                    SizedBox(
+                      height: 70,
+                    ),
+                    Center(
+                      child: Text(
+                        'Если возможно, зафиксируйте избиение, угрозы и насилие (с помощью фото-, видео- или диктофона).',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                  ],
+                ),
+              ),SizedBox(height: 20,),
+              Container(
+                padding: const EdgeInsets.all(28),
+                // height: 390,
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: const Column(
+                  children: [
+                    SizedBox(
+                      height: 70,
+                    ),
+                    Center(
+                      child: Text(
+                        'Посоветуйтесь со своими соседями, чтобы  при необходимости позвонили в полицию или принесли вам телефон.',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                  ],
+                ),
+              ),SizedBox(height: 20,),
+              Container(
+                padding: const EdgeInsets.all(28),
+                // height: 390,
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: const Column(
+                  children: [
+                    SizedBox(
+                      height: 70,
+                    ),
+                    Center(
+                      child: Text(
+                        'Сохраняйте спокойствие, насколько это возможно, после прибытия полиции. Попросите правоохранителей доставить насильника в отделение. После происшествия напишите заявление и зарегистрируйте его в отделе участковой милиции. Подробно опишите в своем заявлении случай насилия.',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                  ],
+                ),
+              ),SizedBox(height: 20,),
+              Container(
+                padding: const EdgeInsets.all(28),
+                // height: 390,
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: const Column(
+                  children: [
+                    SizedBox(
+                      height: 70,
+                    ),
+                    Center(
+                      child: Text(
+                        'Если вы подверглись физическому насилию, обратитесь на судебно-медицинскую экспертизу (через травм пункт, поликлинику) для регистрации синяков и попросите врача зафиксировать все повреждения.',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                  ],
+                ),
+              ),SizedBox(height: 20,),
+              Container(
+                padding: const EdgeInsets.all(28),
+                // height: 390,
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: const Column(
+                  children: [
+                    SizedBox(
+                      height: 70,
+                    ),
+                    Center(
+                      child: Text(
+                        'Если вы и ваши дети находитесь в опасности и никто не может остановить насильника, лучше временно покинуть дом. Не отвечайте на насилие насилием. Постарайтесь держать себя в руках, разговаривайте с обидчиком спокойно и твердо.',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 24,
+                            fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                  ],
+                ),
+              ),SizedBox(height: 20,),
+              Container(
+                padding: const EdgeInsets.all(28),
+                // height: 390,
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: Center(
+                  child: Text(
+                    'Успокойтесь и примите решение о своих дальнейших действиях. Если вы сомневаетесь в правильности своих действий или не знаете, что делать, получите консультации организаций, которые помогают жертвам насилия.',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w800),
+                  ),
                 ),
               ),
               const SizedBox(

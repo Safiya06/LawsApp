@@ -21,9 +21,9 @@ void _launchDialer(String phoneNumber) async {
 }
 
 class _Dushanbe15PageState extends State<Dushanbe15Page> {
-  Widget _dushanbeContainer(String value, double size) {
+  Widget _dushanbeContainer(String value) {
     return Container(
-      height: 140,
+      // height: MediaQuery.of(context).size.height*0.19,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -36,7 +36,7 @@ class _Dushanbe15PageState extends State<Dushanbe15Page> {
             textAlign: TextAlign.center,
             value,
             style: TextStyle(
-              fontSize: size,
+              fontSize: 20,
               fontWeight: FontWeight.w800,
               color: Colors.white,
             ),
@@ -72,27 +72,27 @@ class _Dushanbe15PageState extends State<Dushanbe15Page> {
                 onTap: () => _launchDialer('221-53-27'),
                 child: _dushanbeContainer(
                     'Телефони боварии\nПрокуратураи шаҳри\nДушанбе\n221-53-27',
-                    22),
+                    ),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('233-55-13'),
                 child: _dushanbeContainer(
-                    'Телефони боварии\nСуди шаҳри Душанбе\n233-55-13',22),
+                    'Телефони боварии\nСуди шаҳри Душанбе\n233-55-13'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('900-09-73-33'),
                 child: _dushanbeContainer(
                     'Маркази ҷумҳуриявии\nэкспертизаи тиббию судӣ,\nкӯчаи Сомонӣ-59, иморати 15\nМаркази миллии тиббӣ\n236-65-64; 900-09-73-33',
-                    19),
+                    ),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('93-51-777-56'),
                 child: _dushanbeContainer(
                     'Маркази худшиносии бонувон\nхиёбони Рудакӣ 38/1, ошёнаи 14\n935-17-77-56',
-                    20),
+                    ),
               ),
               const SizedBox(height: 20),
             ],

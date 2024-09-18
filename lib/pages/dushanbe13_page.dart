@@ -23,20 +23,20 @@ void _launchDialer(String phoneNumber) async {
 class _Dushanbe13PageState extends State<Dushanbe13Page> {
   Widget _dushanbeContainer(String value) {
     return Container(
-      height: 140,
+      // height: MediaQuery.of(context).size.height*0.16,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
         borderRadius: BorderRadius.circular(25),
       ),
       child: Padding(
-          padding: const EdgeInsets.all(18.0),
+          padding: const EdgeInsets.all(16.0),
           child: Center(
             child: Text(
               textAlign: TextAlign.center,
               value,
               style: const TextStyle(
-                  fontSize: 22,
+                  fontSize: 20,
                   fontWeight: FontWeight.w800,
                   color: Colors.white),
             ),
@@ -63,7 +63,7 @@ class _Dushanbe13PageState extends State<Dushanbe13Page> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(16),
           child: Column(
             children: [
               GestureDetector(
@@ -87,11 +87,11 @@ class _Dushanbe13PageState extends State<Dushanbe13Page> {
                 onTap: () => _launchDialer('919-53-00-46'),
                   child: _dushanbeContainer(
                       'Сардори Шуъба\n106; 221-46-92;\n919-53-00-46')),
-              const SizedBox(height: 20),
+              const SizedBox(height: 20), 
               GestureDetector(
                 onTap: () => _launchDialer('93-999-68-68'),
                 child: _dushanbeContainer(
-                    'Муовини\nсардори Шуъба\n120; 221-74-39;\n939-99-68-68'),
+                    'Муовини сардори Шуъба\n120; 221-74-39;\n939-99-68-68'),
               ),
               const SizedBox(height: 20),
               GestureDetector(

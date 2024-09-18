@@ -99,7 +99,7 @@ class Dastur71RuPage extends StatelessWidget {
                   'https://www.ohchr.org/ru/treaty-bodies/cedaw',
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 16,
                       fontWeight: FontWeight.w800),
                 )),
               ),

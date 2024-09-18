@@ -146,7 +146,7 @@ class LawsRuPage extends StatelessWidget {
                           child: Center(
                               child: Text(
                             textAlign: TextAlign.center,
-                            'получение медицинской, психологической, правовой и социальной помощи',
+                            'Получение медицинской, психологической, правовой и социальной помощи',
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary,
                                 fontSize: 14,
@@ -163,7 +163,7 @@ class LawsRuPage extends StatelessWidget {
                           child: Center(
                               child: Text(
                             textAlign: TextAlign.center,
-                            'получение юридической консультации и иной информации о защите собственной безопасности',
+                            'Получение юридической консультации и иной информации о защите собственной безопасности',
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary,
                                 fontSize: 14,
@@ -180,7 +180,7 @@ class LawsRuPage extends StatelessWidget {
                           child: Center(
                               child: Text(
                             textAlign: TextAlign.center,
-                            'обращение в органы внутренних дел, прокуратуру или суд о привлечении к ответственности лица, совершившего насилие в семье',
+                            'Обращение в органы внутренних дел, прокуратуру или суд о привлечении к ответственности лица, совершившего насилие в семье',
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary,
                                 fontSize: 14,
@@ -197,7 +197,7 @@ class LawsRuPage extends StatelessWidget {
                           child: Center(
                               child: Text(
                             textAlign: TextAlign.center,
-                            'помещение по его письменному согласию в центры поддержки, центры или отделения по медицинской и социальной реабилитации пострадавших',
+                            'Помещение по его письменному согласию в центры поддержки, центры или отделения по медицинской и социальной реабилитации пострадавших',
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary,
                                 fontSize: 14,
@@ -214,7 +214,7 @@ class LawsRuPage extends StatelessWidget {
                           child: Center(
                               child: Text(
                             textAlign: TextAlign.center,
-                            'обращение в органы общественной самодеятельности с целью общественного осуждения поведения лица, совершившего насилие в семьи',
+                            'Обращение в органы общественной самодеятельности с целью общественного осуждения поведения лица, совершившего насилие в семьи',
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary,
                                 fontSize: 14,

@@ -12,7 +12,7 @@ class _Dushanbe1PageState extends State<Dushanbe1Page> {
   Widget _khujandContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(10),
-      height: MediaQuery.of(context).size.height*0.13,
+      // height: MediaQuery.of(context).size.height*0.15,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,

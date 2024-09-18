@@ -24,7 +24,7 @@ class _Dushanbe21PageState extends State<Dushanbe21Page> {
   Widget _dushanbeContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(18),
-      height: 140,
+      // height: 140,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -35,7 +35,7 @@ class _Dushanbe21PageState extends State<Dushanbe21Page> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 18, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );

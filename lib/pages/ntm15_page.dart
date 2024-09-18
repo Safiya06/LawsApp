@@ -24,7 +24,7 @@ class _Ntm15PageState extends State<Ntm15Page> {
   Widget _ntmContainer(String value) {
     return Container(
       padding: const EdgeInsets.only(left: 18, right: 18, top: 3, bottom: 3),
-      height: 146,
+      // height: MediaQuery.of(context).size.height*0.19,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
