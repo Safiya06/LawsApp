@@ -24,7 +24,7 @@ class _Khujand22RuPageState extends State<Khujand22RuPage> {
   Widget _khujandContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(8),
-      height: 140,
+      // height: 140,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,

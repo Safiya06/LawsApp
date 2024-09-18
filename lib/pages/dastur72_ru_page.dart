@@ -102,7 +102,7 @@ class Dastur72RuPage extends StatelessWidget {
                   'https://www.un.org/ru/documents/decl_conv/declarations/womdecl.shtml',
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 16,
                       fontWeight: FontWeight.w800),
                 )),
               ),

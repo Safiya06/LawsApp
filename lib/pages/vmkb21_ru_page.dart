@@ -22,7 +22,7 @@ class _Vmkb21RuPageState extends State<Vmkb21RuPage> {
   Widget _khatlonContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(18),
-      height: 222,
+      // height: 222,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -58,7 +58,7 @@ class _Vmkb21RuPageState extends State<Vmkb21RuPage> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
               GestureDetector(

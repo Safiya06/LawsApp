@@ -24,7 +24,7 @@ class _Khatlon14RuPageState extends State<Khatlon14RuPage> {
   Widget _khatlonContainer(String value) {
     return Container(
       padding: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
-      height: 146,
+      // height: MediaQuery.of(context).size.height*0.17,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -35,7 +35,7 @@ class _Khatlon14RuPageState extends State<Khatlon14RuPage> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 22, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );

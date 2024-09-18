@@ -21,9 +21,9 @@ void _launchDialer(String phoneNumber) async {
 }
 
 class _Dushanbe15RuPageState extends State<Dushanbe15RuPage> {
-  Widget _dushanbeContainer(String value, double size) {
+  Widget _dushanbeContainer(String value) {
     return Container(
-      height: 140,
+      // height: MediaQuery.of(context).size.height*0.19,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -36,7 +36,7 @@ class _Dushanbe15RuPageState extends State<Dushanbe15RuPage> {
             textAlign: TextAlign.center,
             value,
             style: TextStyle(
-              fontSize: size,
+              fontSize: 20,
               fontWeight: FontWeight.w800,
               color: Colors.white,
             ),
@@ -71,27 +71,27 @@ class _Dushanbe15RuPageState extends State<Dushanbe15RuPage> {
               GestureDetector(
                 onTap: () => _launchDialer('221-53-27'),
                 child: _dushanbeContainer(
-                    'Телефон доверия прокуратуры г.Душанбе\n221-53-27', 22),
+                    'Телефон доверия прокуратуры г.Душанбе\n221-53-27', ),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('233-55-13'),
                 child: _dushanbeContainer(
-                    'Телефон доверия Суда г.Душанбе\n233-55-13', 22),
+                    'Телефон доверия Суда г.Душанбе\n233-55-13', ),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('900-09-73-33'),
                 child: _dushanbeContainer(
                     'Республиканский центр судебно-медицинской экспертизы, ул. Сомони-59, о.15, Национальный медицинский центр\n236-65-64; 900-09-73-33',
-                    17),
+                    ),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('935-17-77-56'),
                 child: _dushanbeContainer(
                     'Центр самопознания женщин\nп. Рудакӣ 38/1, 14 этаж\n935-17-77-56',
-                    20),
+                    ),
               ),
               const SizedBox(height: 20),
             ],

@@ -29,27 +29,180 @@ class Dastur2Page extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.primary,
                     borderRadius: const BorderRadius.all(Radius.circular(20))),
-                child: const Column(
-                  children: [
-                    SizedBox(
-                      height: 70,
-                    ),
-                    Center(
-                      child: Text(
-                        'Тартиб додани накшаи амал хангоми вазъияти бухрони - бехатар ва хар чй зудтар хонаро тарк намудан.\n',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 24,
-                            fontWeight: FontWeight.w800),
-                      ),
-                    ),
-                    Text(
-                      '                               ➡️',
-                      style: TextStyle(fontSize: 20),
-                    )
-                  ],
+                child: Center(
+                  child: Text(
+                    'Тартиб додани накшаи амал хангоми вазъияти бухрони - бехатар ва хар чй зудтар хонаро тарк намудан.\n',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w800),
+                  ),
                 ),
               ),
+
+              const SizedBox(
+                height: 30,
+              ),
+              Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: Center(
+                  child: Text(
+                    'Дар бораи холати зӯроварӣ ба шахсони\nбовариноки худ (дӯстон, хешу табор, наздикон) маълумот дихед.',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w800),
+                  ),
+                ),
+              ),
+              
+              const SizedBox(
+                height: 30,
+              ),Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: Center(
+                  child: Text(
+                    'Рақамҳои телефон ва суроғаҳои марказҳои бӯхронӣ, паногоҳҳо, нозирони минтақавии милитсияро аниқ карда гиред.',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w800),
+                  ),
+                ),
+              ),
+              
+              const SizedBox(
+                height: 30,
+              ),Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: Center(
+                  child: Text(
+                    'Лавозимоти аз хама заруриро (либос, хуҷҷатҳо, доруворӣ, калидҳо) ҷамъ карда, дар ҷои хилват пинҳон кунед.',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w800),
+                  ),
+                ),
+              ),
+              
+              const SizedBox(
+                height: 30,
+              ),Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: Center(
+                  child: Text(
+                    'Агар имконият бошад, ҳолати латукуб, таҳдидҳо ва зӯровариро (бо акс, видео ё диктофон) сабт намоед.',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w800),
+                  ),
+                ),
+              ),
+              
+              const SizedBox(
+                height: 30,
+              ),Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: Center(
+                  child: Text(
+                    'Бо ҳамсояҳо маслиҳат кунед, ки дар сурати зарурат онҳо милитсияро даъват кунанд, ё барои Шумо телефонро дастрас намоянд.',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w800),
+                  ),
+                ),
+              ),
+              
+              const SizedBox(
+                height: 30,
+              ),Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: Center(
+                  child: Text(
+                    'Пас аз омадани милитсия то ҳадди имкон ором бошед. Аз кормандони ҳифзи ҳуқуқ хоҳиш кунед, ки шахси зӯроварро ба шуъба баранд. Баъд аз руй додани воқеа ариза нависед ва онро дар шуъбаи минтақавии милитсия ба қайд дароред. Дар аризаи худ ҳодисаи зӯровариро ба таври муфассал тавзеҳ диҳед.',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w800),
+                  ),
+                ),
+              ),
+              
+              const SizedBox(
+                height: 30,
+              ),Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: Center(
+                  child: Text(
+                    'Агар Шумо таҳти зӯроварии ҷисмонӣ қарор дошта бошед, ба экспертизаи судию тиббӣ (таввасути ҳуҷраи ёрии фаврӣ, дармонгоҳ) барои ба қайд гирифтани зарбу латҳо муроҷиат намуда, аз духтур хоҳиш кунед, ки ҳамаи ҷароҳатҳои гирифташударо қайд кунад.',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w800),
+                  ),
+                ),
+              ),
+              
+              const SizedBox(
+                height: 30,
+              ),Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: Center(
+                  child: Text(
+                    'Агар ба Шумо ва фарзандони Шумо хатар таҳдид кунад ва касе натавонад пеши роҳи хушунатгарро бигирад, беҳтар аст, ки манзилатонро муваққатан тарк намоед. Ба хушунат бо хушунат чавоб надиҳед. Кӯшиш кунед худро ба даст гиред, бо хушунатгар оромона ва бурро суҳбат кунед.',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w800),
+                  ),
+                ),
+              ),
+              
+              const SizedBox(
+                height: 30,
+              ),Container(
+                padding: const EdgeInsets.all(18),
+                decoration: BoxDecoration(
+                    color: Theme.of(context).colorScheme.primary,
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
+                child: Center(
+                  child: Text(
+                    'Ором шуда, дар хусуси амалҳои минбаъдаатон қарор қабул кунед. Агар Шумо ба дурустии амалҳои худ шубҳа дошта бошед ё намедонед, чӣ кор кунед, аз ташкилотҳое, ки ба қурбониёни зӯроварӣ кумак мерасонанд, машварат гиред.',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w800),
+                  ),
+                ),
+              ),
+              
               const SizedBox(
                 height: 30,
               ),

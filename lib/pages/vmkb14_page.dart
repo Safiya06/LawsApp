@@ -24,7 +24,7 @@ class _Vmkb14PageState extends State<Vmkb14Page> {
   Widget _khatlonContainer(String value) {
     return Container(
       padding: const EdgeInsets.only(left: 18,right: 18,top: 18,bottom: 18),
-      height: 146,
+      // height: MediaQuery.of(context).size.height*0.19,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,

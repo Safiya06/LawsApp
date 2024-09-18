@@ -314,7 +314,7 @@ class Dastur1RuPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      // height: MediaQuery.of(context).size.height * 0.3,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),
@@ -333,7 +333,7 @@ class Dastur1RuPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      // height: MediaQuery.of(context).size.height * 0.3,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),
@@ -352,7 +352,7 @@ class Dastur1RuPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      // height: MediaQuery.of(context).size.height * 0.3,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),
@@ -371,7 +371,7 @@ class Dastur1RuPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      // height: MediaQuery.of(context).size.height * 0.3,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),
@@ -389,8 +389,8 @@ class Dastur1RuPage extends StatelessWidget {
                    Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
-                      padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      padding: const EdgeInsets.all(10),
+                      // height: MediaQuery.of(context).size.height * 0.3,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),
@@ -409,7 +409,7 @@ class Dastur1RuPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      // height: MediaQuery.of(context).size.height * 0.3,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),
@@ -428,7 +428,7 @@ class Dastur1RuPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      // height: MediaQuery.of(context).size.height * 0.3,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),
@@ -447,7 +447,7 @@ class Dastur1RuPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      // height: MediaQuery.of(context).size.height * 0.3,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),
@@ -457,7 +457,7 @@ class Dastur1RuPage extends StatelessWidget {
                         'Контролирует вас: хочет знать, чем вы занимаетесь, не разрешает встречаться с друзьями или родственниками, не дает денег, забирает компьютер, телефон, машину или другие документы?',
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 24,
+                            fontSize: 22,
                             fontWeight: FontWeight.w800),
                       )),
                     ),
@@ -466,7 +466,7 @@ class Dastur1RuPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      // height: MediaQuery.of(context).size.height * 0.3,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),
@@ -485,7 +485,7 @@ class Dastur1RuPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      // height: MediaQuery.of(context).size.height * 0.3,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),
@@ -504,7 +504,7 @@ class Dastur1RuPage extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Container(
                       padding: const EdgeInsets.all(16),
-                      height: MediaQuery.of(context).size.height * 0.25,
+                      // height: MediaQuery.of(context).size.height * 0.3,
                       decoration: BoxDecoration(
                           color: Theme.of(context).colorScheme.primary,
                           borderRadius: BorderRadius.circular(20)),

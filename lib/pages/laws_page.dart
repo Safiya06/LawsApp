@@ -149,7 +149,7 @@ class LawsPage extends StatelessWidget {
                           child: Center(
                               child: Text(
                             textAlign: TextAlign.center,
-                            'кумаки тиббӣ, равонӣ, ҳуқуқӣ ва иҷтимоиро гирад',
+                            'Kумаки тиббӣ, равонӣ, ҳуқуқӣ ва иҷтимоиро гирад',
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary,
                                 fontSize: 14,
@@ -166,7 +166,7 @@ class LawsPage extends StatelessWidget {
                           child: Center(
                               child: Text(
                             textAlign: TextAlign.center,
-                            'маслиҳатҳои хуқуқӣ ва дигар иттилоотро\nоид ба ҳифзи амнияташ гирад',
+                            'Mаслиҳатҳои хуқуқӣ ва дигар иттилоотро\nоид ба ҳифзи амнияташ гирад',
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary,
                                 fontSize: 14,
@@ -183,7 +183,7 @@ class LawsPage extends StatelessWidget {
                           child: Center(
                               child: Text(
                             textAlign: TextAlign.center,
-                            'ба мақомоти корҳои дохилӣ, прокуратура ё суд дар бораи ба ҷавобгарӣ кашидани шахси зӯроварӣ\nдар оиларо содирнамуда муроҷиат намояд.',
+                            'Ба мақомоти корҳои дохилӣ, прокуратура ё суд дар бораи ба ҷавобгарӣ кашидани шахси зӯроварӣ\nдар оиларо содирнамуда муроҷиат намояд.',
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary,
                                 fontSize: 14,
@@ -200,7 +200,7 @@ class LawsPage extends StatelessWidget {
                           child: Center(
                               child: Text(
                             textAlign: TextAlign.center,
-                            'бо розигии хаттиаш дар марказҳои ёрирасон,\nмарказҳо ё бахшҳои офиятбахшии тиббию\nиҷтимоӣ барои ҷабрдидагон ҷойгир карда шавад',
+                            'Бо розигии хаттиаш дар марказҳои ёрирасон,\nмарказҳо ё бахшҳои офиятбахшии тиббию\nиҷтимоӣ барои ҷабрдидагон ҷойгир карда шавад',
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary,
                                 fontSize: 14,
@@ -217,7 +217,7 @@ class LawsPage extends StatelessWidget {
                           child: Center(
                               child: Text(
                             textAlign: TextAlign.center,
-                            'ба мақомоти худфаъолияти ҷамъиятӣ бо мақсади\nмаҳкумкунии ҷамъиятии рафтори шахси зӯроварӣ\nдар оиларо содирнамуда муроҷиат намояд',
+                            'Ба мақомоти худфаъолияти ҷамъиятӣ бо мақсади\nмаҳкумкунии ҷамъиятии рафтори шахси зӯроварӣ\nдар оиларо содирнамуда муроҷиат намояд',
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.secondary,
                                 fontSize: 14,
