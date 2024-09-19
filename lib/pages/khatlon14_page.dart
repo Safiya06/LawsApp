@@ -22,7 +22,7 @@ class _Khatlon14PageState extends State<Khatlon14Page> {
   Widget _khatlonContainer(String value) {
     return Container(
       padding: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
-      height: 146,
+      // height: MediaQuery.of(context).size.height*0.17,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -33,7 +33,7 @@ class _Khatlon14PageState extends State<Khatlon14Page> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 22, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );

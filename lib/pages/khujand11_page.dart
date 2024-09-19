@@ -23,8 +23,8 @@ void _launchDialer(String phoneNumber) async {
 class _Khujand11PageState extends State<Khujand11Page> {
   Widget _khatlonContainer(String value) {
     return Container(
-      padding: const EdgeInsets.only(left: 25, right: 25, top: 18, bottom: 18),
-      height: 146,
+      padding: const EdgeInsets.only(left: 18, right: 18, top: 18, bottom: 18),
+      // height: 146,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -35,7 +35,7 @@ class _Khujand11PageState extends State<Khujand11Page> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 24, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );
@@ -60,7 +60,7 @@ class _Khujand11PageState extends State<Khujand11Page> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
               GestureDetector(
@@ -71,7 +71,7 @@ class _Khujand11PageState extends State<Khujand11Page> {
               GestureDetector(
                 onTap: () => _launchDialer('929-49-32-92'),
                   child: _khatlonContainer(
-                      'ш. Исфара\n деҳ. Ҷоркӯҳ, к. Сари бозор\n929-49-32-92')),
+                      'ш. Исфара\n деҳ. Ҷоркӯҳ, к.Сари бозор\n929-49-32-92')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('926-35-23-61'),

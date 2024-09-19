@@ -24,7 +24,7 @@ class _Ntm13RuPageState extends State<Ntm13RuPage> {
   Widget _ntmContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(10),
-      height: 140,
+      // height: MediaQuery.of(context).size.height*0.16,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -35,7 +35,7 @@ class _Ntm13RuPageState extends State<Ntm13RuPage> {
           textAlign: TextAlign.center,
           value,
           style: const TextStyle(
-              fontSize: 22, fontWeight: FontWeight.w800, color: Colors.white),
+              fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white),
         ),
       ),
     );

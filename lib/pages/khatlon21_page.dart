@@ -24,7 +24,7 @@ class _Khatlon21PageState extends State<Khatlon21Page> {
   Widget _khatlonContainer(String value) {
     return Container(
       padding: const EdgeInsets.all(18),
-      height: 222,
+      // height: 222,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,

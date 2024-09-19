@@ -65,7 +65,7 @@ class _Dastur6PageState extends State<Dastur6Page> {
                 onTap: () {
                   Navigator.pushNamed(context, '/Dastur61');
                 },
-                child: _dasturContainer('Никоҳи барвақт', 36),
+                child: _dasturContainer('Никоҳи бармаҳал', 36),
               ),
               const SizedBox(height: 20),
               GestureDetector(

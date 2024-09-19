@@ -24,7 +24,7 @@ class _Ntm16RuPageState extends State<Ntm16RuPage> {
   Widget _ntmnContainer(String value) {
     return Container(
       padding: const EdgeInsets.only(left: 10, right: 10, top: 18, bottom: 18),
-      height: 208,
+      // height: MediaQuery.of(context).size.height*0.19,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,

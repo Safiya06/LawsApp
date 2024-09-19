@@ -26,7 +26,7 @@ class Dastur5RuPage extends StatelessWidget {
               child: Stack(
                 children: [
                   Container(
-                    width: MediaQuery.of(context).size.width * 0.7,
+                    width: MediaQuery.of(context).size.width * 0.8,
                     height: MediaQuery.of(context).size.height * 0.17,
                     color: Theme.of(context).colorScheme.secondary,
                   ),

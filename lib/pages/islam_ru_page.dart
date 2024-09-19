@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_ru_page.dart';
 
 class IslamRuPage extends StatelessWidget {
@@ -66,8 +67,8 @@ class IslamRuPage extends StatelessWidget {
                     child: Stack(
                       children: [
                         Container(
-                          width: MediaQuery.of(context).size.width * 0.8,
-                          height: MediaQuery.of(context).size.height * 0.19,
+                          width: MediaQuery.of(context).size.width * 0.7,
+                          height: MediaQuery.of(context).size.height * 0.23,
                           color: Theme.of(context).colorScheme.primary,
                         ),
                         Positioned(
@@ -109,7 +110,7 @@ class IslamRuPage extends StatelessWidget {
                     child: Stack(
                       children: [
                         Container(
-                          width: MediaQuery.of(context).size.width * 0.8,
+                          width: MediaQuery.of(context).size.width * 0.7,
                           height: MediaQuery.of(context).size.height * 0.15,
                           color: Theme.of(context).colorScheme.secondary,
                         ),
@@ -152,8 +153,8 @@ class IslamRuPage extends StatelessWidget {
                     child: Stack(
                       children: [
                         Container(
-                          width: MediaQuery.of(context).size.width * 0.8,
-                          height: MediaQuery.of(context).size.height * 0.28,
+                          width: MediaQuery.of(context).size.width * 0.7,
+                          height: MediaQuery.of(context).size.height * 0.31,
                           color: Theme.of(context).colorScheme.primary,
                         ),
                         Positioned(
@@ -237,12 +238,16 @@ class IslamRuPage extends StatelessWidget {
                         //       fontSize: 31,
                         //       fontWeight: FontWeight.w800),
                         // ),
-                        const Text(
-                          'Всегда следует помнить, что в семейных отношениях важно следующее:',
-                          style: TextStyle(
-                              color: Color(0xff654900),
-                              fontSize: 16,
-                              fontWeight: FontWeight.w800),
+                        SizedBox(
+                          width:
+                                      MediaQuery.of(context).size.width * 0.9,
+                          child: const Text(
+                            'Всегда следует помнить, что в семейных отношениях важно следующее:',
+                            style: TextStyle(
+                                color: Color(0xff654900),
+                                fontSize: 16,
+                                fontWeight: FontWeight.w800),
+                          ),
                         ),
                         Column(
                           children: [
@@ -264,7 +269,7 @@ class IslamRuPage extends StatelessWidget {
                                 ),
                                 SizedBox(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.8,
+                                      MediaQuery.of(context).size.width * 0.75,
                                   child: const Text(
                                     'Поддержка чувства чести и достоинства мужа и жены;',
                                     style: TextStyle(
@@ -293,7 +298,7 @@ class IslamRuPage extends StatelessWidget {
                                 ),
                                 SizedBox(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.8,
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Постоянное проявление уважения друг к другу;',
                                     style: TextStyle(
@@ -322,7 +327,7 @@ class IslamRuPage extends StatelessWidget {
                                 ),
                                 SizedBox(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.8,
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Пытаться привлечь внимание супруги;',
                                     style: TextStyle(
@@ -351,7 +356,7 @@ class IslamRuPage extends StatelessWidget {
                                 ),
                                 SizedBox(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.8,
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Сохранение и подавление гнева, злости и нервозности;',
                                     style: TextStyle(
@@ -380,7 +385,7 @@ class IslamRuPage extends StatelessWidget {
                                 ),
                                 SizedBox(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.8,
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Не зацикливаться на недостатках и ошибках супруги;',
                                     style: TextStyle(
@@ -409,7 +414,7 @@ class IslamRuPage extends StatelessWidget {
                                 ),
                                 SizedBox(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.8,
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Не винить супругу в своем прошлом, особенно в её предыдущих ошибках;',
                                     style: TextStyle(
@@ -438,7 +443,7 @@ class IslamRuPage extends StatelessWidget {
                                 ),
                                 SizedBox(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.8,
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Избегать возможностей конфликтов путем сосредоточения внимания на других безопасных темах;',
                                     style: TextStyle(
@@ -467,7 +472,7 @@ class IslamRuPage extends StatelessWidget {
                                 ),
                                 SizedBox(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.8,
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Не терзать себя и супругу подозрениями в измене и неверности, подавлять в себе предрассудки и необоснованную ревность;',
                                     style: TextStyle(
@@ -496,7 +501,7 @@ class IslamRuPage extends StatelessWidget {
                                 ),
                                 SizedBox(
                                   width:
-                                      MediaQuery.of(context).size.width * 0.8,
+                                      MediaQuery.of(context).size.width * 0.7,
                                   child: const Text(
                                     'Перед посторонними людьми или детьми не делать замечания и не произносить слов, которые могут унизить достоинство супруги и тому подобное.',
                                     style: TextStyle(

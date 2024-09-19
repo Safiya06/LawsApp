@@ -11,7 +11,7 @@ class Dastur7RuPage extends StatefulWidget {
 class _Dastur7RuPageState extends State<Dastur7RuPage> {
   Widget _dasturContainer(String value, double size) {
     return Container(
-      height: 300,
+      // height: 300,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
@@ -75,7 +75,7 @@ class _Dastur7RuPageState extends State<Dastur7RuPage> {
                   Navigator.pushNamed(context, '/Dastur72Ru');
                 },
                 child: _dasturContainer(
-                    'Пекинская декларация и Платформа действий', 40),
+                    'Пекинская декларация и Платформа действий', 34),
               ),
               const SizedBox(height: 20),
             ],

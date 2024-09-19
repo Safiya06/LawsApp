@@ -115,7 +115,7 @@ class _DasturamalRuPageState extends State<DasturamalRuPage> {
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/Dastur61Ru');
+                  Navigator.pushNamed(context, '/IslamRu');
                 },
                 child: _dasturContainer(
                     'Насилие в отношении женщин с точки зрения Ислама', 31),
