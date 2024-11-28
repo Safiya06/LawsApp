@@ -66,13 +66,13 @@ class _Khatlon13PageState extends State<Khatlon13Page> {
               GestureDetector(
                 onTap: () => _launchDialer('939-20-74-00'),
                 child: _khatlonContainer(
-                    'ш. Бохтар\nкучаи Б.Ғафуров-11\n222-79-32; 939-20-74-00'),
+                    'ш. Бохтар,\nкӯчаи Б.Ғафуров, 11\n222-79-32; 939-20-74-00'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('938-54-36-88'),
                   child: _khatlonContainer(
-                      'н. Қубодиён\nкучаи И. Сомонӣ\n938-54-36-88')),
+                      'н. Қубодиён,\nкӯчаи И. Сомонӣ\n938-54-36-88')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('985-35-36-71'),

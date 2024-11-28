@@ -66,17 +66,17 @@ class _Khujand14PageState extends State<Khujand14Page> {
               GestureDetector(
                 onTap: () => _launchDialer('929-40-94-94'),
                   child: _khatlonContainer(
-                      'ш. Хуҷанд\nк. Фирдавсӣ-120\n226-28-68; 929-40-94-94')),
+                      'ш. Хуҷанд,\nк. Фирдавсӣ, 120\n(8-3226)28-68; 929-40-94-94')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('927-07-06-65'),
                   child:
-                      _khatlonContainer('н. Айни\nдеҳаи Томин\n927-07-06-65')),
+                      _khatlonContainer('н. Айнӣ,\nдеҳаи Томин\n927-07-06-65')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('918-43-79-29'),
                   child: _khatlonContainer(
-                      'ш. Исфара\nкӯчаи Марказӣ\n927-01-72-40; 918-43-79-29')),
+                      'ш. Исфара,\nк. Марказӣ\n927-01-72-40; 918-43-79-29')),
               const SizedBox(height: 20),
             ],
           ),

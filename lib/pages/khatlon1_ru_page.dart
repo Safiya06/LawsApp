@@ -53,24 +53,24 @@ class _Khatlon1RuPageState extends State<Khatlon1RuPage> {
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/Khatlon11Ru');
+                  Navigator.pushNamed(context, '/Khatlon13Ru');
                 },
                 child: _khujandContainer(
-                    'КОМНАТЫ ИНСПЕКТОРОВ ПО ПРЕДУПРЕЖДЕНИЮ НАСИЛИЯ В СЕМЬЕ'),
+                    'ИНСТИТУТ УПОЛНОМОЧЕННОГО ПО ПРАВАМ ЧЕЛОВЕКА И ПО ПРАВАМ РЕБЕНКА'),
               ),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Khatlon12Ru');
+                    Navigator.pushNamed(context, '/Khatlon16Ru');
                   },
-                  child: _khujandContainer('ОТДЕЛЫ ПО ДЕЛАМ ЖЕНЩИН И СЕМЬИ')),
+                  child: _khujandContainer('ГОСУДАРСТВЕННЫЕ ЮРИДИЧЕСКИЕ БЮРО «ЦЕНТРА ПРАВОВОЙ ПОМОЩИ» МИНИСТЕРСТВА ЮСТИЦИИ РТ')),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Khatlon13Ru');
+                    Navigator.pushNamed(context, '/Khatlon11Ru');
                   },
                   child: _khujandContainer(
-                      ' ИНСТИТУТ УПОЛНОМОЧЕННОГО ПО ПРАВАМ ЧЕЛОВЕКА И ПО ПРАВАМ РЕБЕНКА')),
+                      'КОМНАТЫ ИНСПЕКТОРОВ ПО ПРЕДУПРЕЖДЕНИЮ НАСИЛИЯ В СЕМЬЕ')),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
@@ -81,16 +81,16 @@ class _Khatlon1RuPageState extends State<Khatlon1RuPage> {
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Khatlon15Ru');
+                    Navigator.pushNamed(context, '/Khatlon12Ru');
                   },
-                  child: _khujandContainer('КОНСУЛЬТАЦИОННЫЕ КАБИНЕТЫ')),
+                  child: _khujandContainer('ОТДЕЛЫ ПО ДЕЛАМ ЖЕНЩИН И СЕМЬИ')),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context, '/Khatlon15Ru');
                   },
                   child: _khujandContainer(
-                      'ГОСУДАРСТВЕННЫЕ ЮРИДИЧЕСКИЕ БЮРО «ЦЕНТРА ПРАВОВОЙ ПОМОЩИ» МИНИСТЕРСТВА ЮСТИЦИИ РТ')),
+                      'КОНСУЛЬТАЦИОННЫЕ КАБИНЕТЫ ')),
               const SizedBox(height: 10),
             ],
           ),

@@ -66,12 +66,12 @@ class _Ntm14RuPageState extends State<Ntm14RuPage> {
               GestureDetector(
                 onTap: () => _launchDialer(''),
                   child: _ntmContainer(
-                      'г. Турсунзаде\nздание Народно-Демократической партии')),
+                      'г. Турсунзаде,\nздание Народно-Демократической партии')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('935-97-44-00'),
                   child: _ntmContainer(
-                      'р. Рашт\nул. И.Сомони-42\n888-83-90-90; 935-97-44-00')),
+                      'р. Рашт,\nул. И.Сомони, 42\n888-83-90-90; 935-97-44-00')),
             ],
           ),
         ),

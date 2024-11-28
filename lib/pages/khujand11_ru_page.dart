@@ -66,17 +66,17 @@ class _Khujand11RuPageState extends State<Khujand11RuPage> {
               GestureDetector(
                 onTap: () => _launchDialer('921-77-00-04'),
                   child: _khatlonContainer(
-                      'г. Худжанд,\nул. К. Худжанди-2\n921-77-00-04')),
+                      'г. Худжанд,\nул. К. Худжанди, 2\n921-77-00-04')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('929-49-32-92'),
                   child: _khatlonContainer(
-                      'г. Исфара\nджамоати д. Джоркух\nул. Сари бозор\n929-49-32-92')),
+                      'г. Исфара,\nджамоат д. Чоркух,\nул. Сари бозор\n929-49-32-92')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('926-35-23-61'),
                   child: _khatlonContainer(
-                      'г. Панджакент,\nп. Рудаки-130\n926-35-23-61')),
+                      'г. Пенджикент,\nп. Рудаки,130\n926-35-23-61')),
               const SizedBox(height: 20),
             ],
           ),

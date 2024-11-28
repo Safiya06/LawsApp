@@ -65,42 +65,42 @@ class _Vmkb12RuPageState extends State<Vmkb12RuPage> {
             children: [
               GestureDetector(
                 onTap: () => _launchDialer('507-77-04-32'),
-                child: _vmkbContainer('ГБАО\n507-77-04-32')),
+                child: _vmkbContainer('ГБАО,\n(8-3522)248-80;\n507-77-04-32')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('935-85-40-01'),
-                child: _vmkbContainer('г. Хоруг\n935-85-40-01')),
+                child: _vmkbContainer('г. Хорoг,\n(8-3522)268-77;\n935-85-40-01')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('934-80-13-44'),
-                child: _vmkbContainer('р. Дарваз\n934-80-13-44')),
+                child: _vmkbContainer('р. Дарваз,\n(8-3552)215-87;\n934-80-13-44')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('939-24-29-34'),
-                child: _vmkbContainer('р. Ванч\n939-24-29-34')),
+                child: _vmkbContainer('р. Ванч,\n(8-3551)213-52;\n939-24-29-34')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('937-71-05-53'),
 
-                  child: _vmkbContainer('р. Рошткала\n937-71-05-53')),
+                  child: _vmkbContainer('р. Рошткала,\n(8-3555)210-33;\n937-71-05-53')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('938-12-33-22'),
-                child: _vmkbContainer('р. Рушан\n938-12-33-22')),
+                child: _vmkbContainer('р. Рушан,\n(8-3556)217-40;\n938-12-33-22')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('934-08-66-31'),
 
-                  child: _vmkbContainer('р. Ишкашим\n934-08-66-31')),
+                  child: _vmkbContainer('р. Ишкашим,\n(8-3553)210-24;\n934-08-66-31')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('501-55-19-11'),
-                child: _vmkbContainer('р. Шугнан\n501-55-19-11')),
+                child: _vmkbContainer('р. Шугнан,\n(8-3522)305-36;\n501-55-19-11')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('212-32'),
 
-                  child: _vmkbContainer('р. Мургаб\n(8-3554) 212-32;')),
+                  child: _vmkbContainer('р. Мургаб,\n(8-3554) 212-32;')),
             ],
           ),
         ),

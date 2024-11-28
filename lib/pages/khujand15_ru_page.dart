@@ -64,77 +64,77 @@ class _Khujand15RuPageState extends State<Khujand15RuPage> {
               GestureDetector(
                 onTap: () => _launchDialer('927-58-19-58'),
                 child: _khatlonContainer(
-                    'г. Пенджикент\nздание ГЦ  «Культурно-\nтворческий комплекс Кохи Лоик»\nп.Рудаки, 2 этаж,  207 кабинет\n933-55-59-80'),
+                    'г. Пенджикент,\nздание ГЦ  «Культурно-\nтворческий комплекс «Кохи Лоик»\nп.Рудаки, 2 этаж,  207 кабинет\n933-55-59-80'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('927-09-26-09'),
                 child: _khatlonContainer(
-                    'р. Деваштич\nздание Центра юстиции\n1 этаж, ул. А. Сино\n933-55-59-82'),
+                    'р. Деваштич,\nздание Центра юстиции\n1 этаж, ул. А. Сино\n933-55-59-82'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-95-62'),
                 child: _khatlonContainer(
-                    'р. Б. Гафуров\nул. А.Нозиров-14, здание Исполнительного органа государственной власти\n987-02-88-60'),
+                    'р. Б. Гафуров,\nул. А.Нозиров, 14, здание Исполнительного органа государственной власти\n987-02-88-60'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('93-377-73-40'),
                 child: _khatlonContainer(
-                    'г. Канибадам\nздание ПМК- Экология\nул. К. Худжанди-5\n933-55-36-41'),
+                    'г. Канибадам,\nздание ПМК- Экология\nул. К. Худжанди, 5\n933-55-36-41'),
               ),
               const SizedBox(height: 20),GestureDetector(
                 onTap: () => _launchDialer('927-58-19-58'),
                 child: _khatlonContainer(
-                    'г.Канибадам\nДжамоати село Пулотон\nул. А.Шарипова-109\n933-55-36-42'),
+                    'г.Канибадам,\nджамоат село Пулодон,\nул. А.Шарипова, 109\n933-55-36-42'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('927-09-26-09'),
                 child: _khatlonContainer(
-                    'р. Дж. Расулов\nздание Центра юстиции,\nул. Э. Умаров, 1 этаж\n927-31-31-92; 933-55-36-40'),
+                    'р. Дж. Расулов,\nздание Центра юстиции,\nул. Э. Умаров, 1 этаж\n927-31-31-92; 933-55-36-40'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-95-62'),
                 child: _khatlonContainer(
-                    'р. Спитамен\nздание Центра юстиции\nг. Навкат, ул. Р. Турсунов-2\n935-55-04-51'),
+                    'р. Спитамен,\nздание Центра юстиции\nп. Навкат, ул. Р. Турсунов, 2\n935-55-04-51'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('93-377-73-40'),
                 child: _khatlonContainer(
-                    'г. Исфара\nздание Центра юстиции\n ул. Маркази-27\n933-55-97-05'),
+                    'г. Исфара,\nздание Центра юстиции\n ул. Маркази, 27\n933-55-97-05'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('93-377-73-40'),
                 child: _khatlonContainer(
-                    'г. Истаравшан\nздание Центра юстиции\nул. Г.Абдулоев\n935-54-28-18'),
+                    'г. Истаравшан,\nздание Центра юстиции\nул. Г.Абдулоев\n935-54-28-18'),
               ),
               const SizedBox(height: 20),GestureDetector(
                 onTap: () => _launchDialer('927-58-19-58'),
                 child: _khatlonContainer(
-                    'р. Ашт\nр.И. Сомони-6,\nздание Исполнительного органа государственной власти\n927-58-19-58'),
+                    'р. Ашт,\nр.И. Сомони, 6,\nздание Исполнительного органа государственной власти\n927-58-19-58'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('927-09-26-09'),
                 child: _khatlonContainer(
-                    'р. Ашт\nджамоати  Понгоз\nул. Сари бозор\n927-09-26-09'),
+                    'р. Ашт,\nджамоат  Понгоз,\nул. Сари бозор\n927-09-26-09'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-95-62'),
                 child: _khatlonContainer(
-                    'г. Гулистан,\nздание Центра здоровья,\nул. Истиклол-70\n933-55-95-62'),
+                    'г. Гулистан,\nздание Центра здоровья,\nул. Истиклол, 70\n933-55-95-62'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('93-377-73-40'),
                 child: _khatlonContainer(
-                    'г. Худжанд, ул. Р.Набиев-39\n9 этаж, 908 кабинет, здание\nИсполнительного органа государственной власти\n93-377-73-40'),
+                    'г. Худжанд, ул. Р.Набиев, 39\n9 этаж, 908 кабинет, здание\nИсполнительного органа государственной власти\n93-377-73-40'),
               ),
               const SizedBox(height: 20),
             ],

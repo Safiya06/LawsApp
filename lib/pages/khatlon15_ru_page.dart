@@ -66,19 +66,19 @@ class _Khatlon15RuPageState extends State<Khatlon15RuPage> {
               GestureDetector(
                 onTap: () => _launchDialer('987-26-69-95'),
                 child: _khatlonContainer(
-                    'г.Левакант\nЦентр поддержки женщин\n987-26-69-95'),
+                    'г.Левакант,\nЦентр поддержки женщин\n987-26-69-95'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('987-26-69-95'),
                 child: _khatlonContainer(
-                    'р. Кушониён, Отдел по делам женщин и семьи\n987-26-69-95'),
+                    'р. Кушониён,\nОтдел по делам женщин и семьи\n987-26-69-95'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('918-33-00-63'),
                 child: _khatlonContainer(
-                    'г. Левакант, здание Дворца культуры, 3 этаж\n918-33-00-63'),
+                    'г. Левакант,\nздание Дворца культуры, 3 этаж\n918-33-00-63'),
               ),
               const SizedBox(height: 20),
               

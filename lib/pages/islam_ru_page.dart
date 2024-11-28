@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_ru_page.dart';
 
 class IslamRuPage extends StatelessWidget {
@@ -529,7 +528,7 @@ class IslamRuPage extends StatelessWidget {
               child: const Padding(
                 padding: EdgeInsets.all(18.0),
                 child: Text(
-                  'Паёмбари гиромӣ лаънат кардан, дуои бад кардан, нафрин кардан ва истифодаи суханҳои кабеҳро манъ намудаанд. Ба фарди мусалмон таҳқир намудани як нафари дигар (аз ҷумла ҳамсари худ, хешутабори худ ва дигар шахсони шинос ва ношинос), дар ҳаққи онҳо гуфтани ҳар гуна саханҳои қабеҳ нораво мебошад. ',
+                  'Святой Пророк запретил ругаться, совершать плохие молитвы, ругаться и использовать плохие слова. Мусульманину запрещено оскорблять другого человека (в том числе его супругу, родственников и других знакомых и незнакомых лиц), говорить в его адрес любые нецензурные слова. ',
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,

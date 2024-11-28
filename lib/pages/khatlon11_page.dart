@@ -66,13 +66,13 @@ class _Khatlon11PageState extends State<Khatlon11Page> {
               GestureDetector(
                 onTap: () => _launchDialer('933-98-46-46'),
                 child: _khatlonContainer(
-                    'н. Ҷайҳун, ш. Дӯстӣ\nкӯчаи 1-уми май\n933-98-46-46'),
+                    'н. Ҷайҳун\n ш. Дӯстӣ, кӯчаи 1-уми май\n933-98-46-46'),
               ),
               const SizedBox(height: 20),
               // GestureDetector(
                 // onTap: () => _launchDialer(''),
                   // child:
-                   _khatlonContainer('ш. Бохтар\nкӯчаи Борбад-7'),
+                   _khatlonContainer('ш. Бохтар\nкӯчаи Борбад, 7'),
                   // ),
               const SizedBox(height: 20),
               GestureDetector(
@@ -83,7 +83,7 @@ class _Khatlon11PageState extends State<Khatlon11Page> {
               GestureDetector(
                 onTap: () => _launchDialer('918-45-45-96'),
                 child: _khatlonContainer(
-                    'ш. Кӯлоб\n маҳаллаи Ш. Шоҳин-8\n918-45-45-96'),
+                    'ш. Кӯлоб\n маҳаллаи Ш. Шоҳин, 8\n918-45-45-96'),
               ),
               const SizedBox(height: 20),
               GestureDetector(

@@ -65,7 +65,7 @@ class _Vmkb11PageState extends State<Vmkb11Page> {
               GestureDetector(
                   onTap: () => _launchDialer('935-55-35-34'),
                   child: _khatlonContainer(
-                      'ш. Хоруғ\nкӯчаи Ленин\n935-55-35-34')),
+                      'ш. Хоруғ,\nкӯчаи Ленин\n935-55-35-34')),
               const SizedBox(height: 20),
             ],
           ),

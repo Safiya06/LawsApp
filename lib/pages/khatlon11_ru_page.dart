@@ -66,24 +66,24 @@ class _Khatlon11RuPageState extends State<Khatlon11RuPage> {
               GestureDetector(
                 onTap: () => _launchDialer('933-98-46-46'),
                 child: _khatlonContainer(
-                    'р. Джаихун\nг. Дусти, ул. 1-ое мая\n933-98-46-46'),
+                    'р. Джайхун,\nп. Дусти, ул. 1-ое мая\n933-98-46-46'),
               ),
               const SizedBox(height: 20),
-              _khatlonContainer('г. Бохтар\nул. Борбад-7'),
+              _khatlonContainer('г. Бохтар,\nул. Борбад, 7'),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('935-98-15-90'),
                   child: _khatlonContainer(
-                      'н.Дусти \nул. Л.Каримов\n935-98-15-90')),
+                      'p.Дусти, \nул. Л.Каримовa\n935-98-15-90')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('918-45-45-96'),
                   child: _khatlonContainer(
-                      'г. Кулоб\n р. Ш. Шоҳин-8\n918-45-45-96')),
+                      'г. Куляб\n м. Ш. Шоҳин, 8\n918-45-45-96')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('907 30 56 66'),
-                  child: _khatlonContainer('н. Левакант\n907 30 56 66')),
+                  child: _khatlonContainer('г. Левакант,\n907 30 56 66')),
               const SizedBox(height: 20),
             ],
           ),

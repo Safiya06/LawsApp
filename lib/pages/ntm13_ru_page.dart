@@ -65,20 +65,20 @@ class _Ntm13RuPageState extends State<Ntm13RuPage> {
             children: [
               GestureDetector(
                   onTap: () => _launchDialer('939-92-58-19'),
-                  child: _ntmContainer('г. Вахдат\nд. ОМВД\n939-92-58-19')),
+                  child: _ntmContainer('г. Вахдат,\nздание ОМВД\n939-92-58-19')),
               const SizedBox(height: 20),
               GestureDetector(
                   onTap: () => _launchDialer('918-32-75-28'),
                   child: _ntmContainer(
-                      'р. Рашт\nг. Гарм,\nул. И. Сомони-36\n918-32-75-28')),
+                      'р. Рашт,\nп. Гарм,\nул. И. Сомони, 36\n918-32-75-28')),
               const SizedBox(height: 20),
               GestureDetector(
                   onTap: () => _launchDialer('900-27-81-81'),
-                  child: _ntmContainer('р. Рудаки\n900-27-81-81')),
+                  child: _ntmContainer('р. Рудаки,\n900-27-81-81')),
               const SizedBox(height: 20),
               GestureDetector(
                   onTap: () => _launchDialer('907-17-36-36'),
-                  child: _ntmContainer('г.Гисар\n907-17-36-36')),
+                  child: _ntmContainer('г.Гиcсар,\n907-17-36-36')),
               const SizedBox(height: 20),
             ],
           ),

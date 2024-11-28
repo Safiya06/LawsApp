@@ -87,7 +87,7 @@ class _Khatlon1PageState extends State<Khatlon1Page> {
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Khatlon15');
+                    Navigator.pushNamed(context, '/Khatlon16');
                   },
                   child: _khujandContainer(
                       'БЮРОҲОИ ДАВЛАТИИ ҲУҚУҚӢ, МУАССИСАИ ДАВЛАТИИ «МАРКАЗИ ЁРИИ ХУКУКӢ»-И ВАЗОРАТИ АДЛИЯИ ҶУМҲУРИИ ТОҶИКИСТОН')),

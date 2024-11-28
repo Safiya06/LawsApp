@@ -66,41 +66,41 @@ class _Ntm11PageState extends State<Ntm11Page> {
               GestureDetector(
                 onTap: () => _launchDialer('22-841'),
                   child: _ntmContainer(
-                      'ш. Турсунзода\nкӯчаи Б. Ғафуров 22\n(+9923130) 22-841')),
+                      'ш. Турсунзода,\nкӯчаи Б. Ғафуров, 22\n(+9923130) 22-841')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('22-210'),
                   child: _ntmContainer(
-                      'н. Рӯдакӣ\nш. Сомониён ,кӯчаи Бӯстон-65\n(8-3137) 22-210')),
+                      'н. Рӯдакӣ,\nш. Сомониён ,кӯчаи Бӯстон, 65\n(8-3137) 22-210')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('21-525'),
                   child: _ntmContainer(
-                      'ш. Тоҷикобод\nкӯчаи Сомониён 12\n(8-3154) 21-525')),
+                      'ш. Тоҷикобод,\nкӯчаи Сомониён, 12\n(8-3154) 21-525')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('21-358'),
                   child: _ntmContainer(
-                      'ш. Pоғун\nкӯчаи Норакиён 54/1\n(8-3134) 21-358')),
+                      'ш. Pоғун,\nкӯчаи Норакиён 54/1\n(8-3134) 21-358')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('32-106'),
                   child: _ntmContainer(
-                      'ш. Шаҳринав\nкӯчаи М. Турсунзода 71\n(+992 3155) 31-494; 32-106')),
+                      'ш. Шаҳринав,\nкӯчаи М. Турсунзода, 71\n(+992 3155) 31-494; 32-106')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('32-234'),
                   child: _ntmContainer(
-                      'ш. Файзобод\nкӯчаи И. Сомонӣ 40\n(8-3135) 32-234')),
+                      'ш. Файзобод,\nкӯчаи И. Сомонӣ, 40\n(8-3135) 32-234')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('22-534'),
                   child: _ntmContainer(
-                      'ш. Ваҳдат\n кӯчаи Сомониён-33\n(8-3132) 22-534')),
+                      'ш. Ваҳдат,\n кӯчаи Сомониён, 33\n(8-3132) 22-534')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('22-157'),
-                  child: _ntmContainer('н. Сангвор\n кӯчаи Восеъ\n(8-3156) 22-157')),
+                  child: _ntmContainer('н. Сангвор,\n кӯчаи Восеъ\n(8-3156) 22-157')),
               const SizedBox(height: 20),
             ],
           ),

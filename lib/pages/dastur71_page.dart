@@ -1,8 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:lows_app/pages/main_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Dastur71Page extends StatelessWidget {
-  const Dastur71Page({super.key});
+  final Uri _url = Uri.parse(Uri.encodeFull('https://www.ohchr.org/ru/treaty-bodies/cedaw'));
+
+  
+   Dastur71Page({super.key});
+//    void _launchURL() async {
+//   try {
+//     if (await canLaunchUrl(_url)) {
+//       await launchUrl(
+//         _url,
+//         mode: LaunchMode.externalApplication,
+//       );
+//     } else {
+//       print('Cannot launch URL');
+//       throw 'Could not launch $_url';
+//     }
+//   } catch (e) {
+//     print('Error: $e');
+//   }
+// }
+
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -93,15 +116,20 @@ class Dastur71Page extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Theme.of(context).colorScheme.primary,
                     borderRadius: BorderRadius.circular(46)),
-                child: const Center(
-                    child: Text(
-                  textAlign: TextAlign.center,
-                  'https://www.ohchr.org/ru/treaty-bodies/cedaw',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 14,
-                      fontWeight: FontWeight.w800),
-                )),
+                child:  Center(
+                    child: GestureDetector(
+                      child: Text(
+                                        textAlign: TextAlign.center,
+                                        'https://www.ohchr.org/ru/treaty-bodies/cedaw',
+                                        style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w800),
+                                      ),
+                                       onTap: () {
+                                        print('object');
+                                        _launchUrl('https://www.ohchr.org/ru/treaty-bodies/cedaw');} 
+                    )),
               ),
             ),
             const SizedBox(
@@ -111,5 +139,12 @@ class Dastur71Page extends StatelessWidget {
         ),
       ),
     );
+  }
+   _launchUrl(String url) async {
+    if (await canLaunchUrl(_url)) {
+      await launchUrl(_url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }

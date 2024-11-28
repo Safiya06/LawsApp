@@ -65,11 +65,11 @@ class _Vmkb14PageState extends State<Vmkb14Page> {
             children: [
               GestureDetector(
                 onTap: () => _launchDialer('935-01-05-91'),
-                child: _khatlonContainer('ш. Хоруғ\nбинои Раёсати адлияи\nВМКБ, к. Гагарин-14, ошёнаи 3\n935-34-25-99; 935-01-05-91')),
+                child: _khatlonContainer('ш. Хоруғ,\nбинои Раёсати адлияи\nВМКБ, к. Гагарин, 14, ошёнаи 3\n935-34-25-99; 935-01-05-91')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-95-73'),
-                child: _khatlonContainer('н. Ванҷ\nк. М. Раҳмоншо-36 (Фурудгоҳ)\n933-55-95-73')),
+                child: _khatlonContainer('н. Ванҷ,\nк. М. Раҳмоншо, 36 (Фурудгоҳ)\n933-55-95-73')),
               ],
           ),
         ),

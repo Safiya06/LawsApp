@@ -53,17 +53,17 @@ class _Ntm1RuPageState extends State<Ntm1RuPage> {
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/Ntm11Ru');
+                  Navigator.pushNamed(context, '/Ntm14Ru');
                 },
                 child: _ntmContainer(
-                    'ТЕЛЕФОН ДЛЯ СВЯЗИ С СУДАМИ'),
+                    'ИНСТИТУТ УПОЛНОМОЧЕННОГО ПО ПРАВАМ ЧЕЛОВЕКА И ПО ПРАВАМ РЕБЕНКА'),
               ),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Ntm12Ru');
+                    Navigator.pushNamed(context, '/Ntm16Ru');
                   },
-                  child: _ntmContainer('ОТДЕЛЫ ПО ДЕЛАМ ЖЕНЩИН И СЕМЬИ')),
+                  child: _ntmContainer('ГОСУДАРСТВЕННЫЕ ЮРИДИЧЕСКИЕ БЮРО «ЦЕНТРА ПРАВОВОЙ ПОМОЩИ» МИНИСТЕРСТВА ЮСТИЦИИ РТ')),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
@@ -74,10 +74,10 @@ class _Ntm1RuPageState extends State<Ntm1RuPage> {
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Ntm14Ru');
+                    Navigator.pushNamed(context, '/Ntm11Ru');
                   },
                   child: _ntmContainer(
-                      ' ИНСТИТУТ УПОЛНОМОЧЕННОГО ПО ПРАВАМ ЧЕЛОВЕКА И ПО ПРАВАМ РЕБЕНКА')),
+                      ' ТЕЛЕФОН ДЛЯ СВЯЗИ С СУДАМИ')),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
@@ -88,10 +88,10 @@ class _Ntm1RuPageState extends State<Ntm1RuPage> {
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Ntm16Ru');
+                    Navigator.pushNamed(context, '/Ntm12Ru');
                   },
                   child: _ntmContainer(
-                      'ГОСУДАРСТВЕННЫЕ ЮРИДИЧЕСКИЕ БЮРО «ЦЕНТРА ПРАВОВОЙ ПОМОЩИ» МИНИСТЕРСТВА ЮСТИЦИИ РТ')),
+                      'ОТДЕЛЫ ПО ДЕЛАМ ЖЕНЩИН И СЕМЬИ')),
               const SizedBox(height: 10),
             ],
           ),

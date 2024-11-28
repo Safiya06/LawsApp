@@ -1,18 +1,7 @@
-import 'dart:async';
-import 'dart:io';
-
+import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_pdfview/flutter_pdfview.dart';
-import 'dart:async';
-import 'dart:io';
-
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:lows_app/pages/pdf-screen.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:flutter_pdfview/flutter_pdfview.dart';
 
 class HelpPage extends StatefulWidget {
   const HelpPage({super.key});
@@ -21,43 +10,17 @@ class HelpPage extends StatefulWidget {
   State<HelpPage> createState() => _HelpPageState();
 }
 
+void _launchDialer(String phoneNumber) async {
+  final Uri url = Uri(scheme: 'tel', path: phoneNumber);
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
 class _HelpPageState extends State<HelpPage> {
   bool _showPhoneNumbers = false;
-  late String pdf1;
-  late String pdf2;
-
-  Future<File> fromAsset(String asset, String filename) async {
-    // To open from assets, you can copy them to the app storage folder, and the access them "locally"
-    Completer<File> completer = Completer();
-
-    try {
-      var dir = await getApplicationDocumentsDirectory();
-      File file = File("${dir.path}/$filename");
-      var data = await rootBundle.load(asset);
-      var bytes = data.buffer.asUint8List();
-      await file.writeAsBytes(bytes, flush: true);
-      completer.complete(file);
-    } catch (e) {
-      throw Exception('Error parsing asset file!');
-    }
-
-    return completer.future;
-  }
-
-  @override
-  void initState() {
-    fromAsset('assets/file-1.pdf', 'file-1.pdf').then((f) {
-      setState(() {
-        pdf1 = f.path;
-      });
-    });
-    fromAsset('assets/file-2.pdf', 'file-2.pdf').then((f) {
-      setState(() {
-        pdf2 = f.path;
-      });
-    });
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -72,9 +35,12 @@ class _HelpPageState extends State<HelpPage> {
             padding: const EdgeInsets.all(10),
             margin: EdgeInsets.only(bottom: 15),
             color: Color(0xfffea701),
-            child: Text(
-              '92 970-16-66',
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+            child: GestureDetector(
+               onTap: () => _launchDialer('92 970-16-66'),
+              child: Text(
+                '92 970-16-66',
+                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+              ),
             ),
           )
               .animate(
@@ -144,9 +110,12 @@ class _HelpPageState extends State<HelpPage> {
             padding: const EdgeInsets.all(10),
             margin: EdgeInsets.only(top: 15),
             color: Color(0xfffea701),
-            child: Text(
-              '92 970-16-66',
-              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+            child: GestureDetector(
+              onTap: () => _launchDialer('92 970-16-66'),
+              child: Text(
+                '92 970-16-66',
+                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+              ),
             ),
           )
               .animate(
@@ -161,33 +130,6 @@ class _HelpPageState extends State<HelpPage> {
                 end: 0,
                 duration: Duration(milliseconds: 250),
               ),
-          //EXAMPLE how to open PDF
-          TextButton(
-            child: Text("Open PDF 1"),
-            onPressed: () {
-              if (pdf1.isNotEmpty) {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => PDFScreen(path: pdf1),
-                  ),
-                );
-              }
-            },
-          ),
-          TextButton(
-            child: Text("Open PDF 2"),
-            onPressed: () {
-              if (pdf1.isNotEmpty) {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => PDFScreen(path: pdf2),
-                  ),
-                );
-              }
-            },
-          ),
         ],
       ),
     );

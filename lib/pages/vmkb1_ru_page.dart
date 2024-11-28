@@ -53,31 +53,31 @@ class _Vmkb1RuPageState extends State<Vmkb1RuPage> {
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/Vmkb11Ru');
+                  Navigator.pushNamed(context, '/Vmkb13Ru');
                 },
                 child: _khujandContainer(
-                    'КОМНАТЫ ИНСПЕКТОРОВ ПО ПРЕДУПРЕЖДЕНИЮ НАСИЛИЯ В СЕМЬЕ'),
+                    'ИНСТИТУТ УПОЛНОМОЧЕННОГО ПО ПРАВАМ ЧЕЛОВЕКА И ПО ПРАВАМ РЕБЕНКА'),
               ),
-              const SizedBox(height: 10),
-              GestureDetector(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/Vmkb12Ru');
-                  },
-                  child: _khujandContainer('ОТДЕЛЫ ПО ДЕЛАМ ЖЕНЩИН И СЕМЬИ')),
-              const SizedBox(height: 10),
-              GestureDetector(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/Vmkb13Ru');
-                  },
-                  child: _khujandContainer(
-                      ' ИНСТИТУТ УПОЛНОМОЧЕННОГО ПО ПРАВАМ ЧЕЛОВЕКА И ПО ПРАВАМ РЕБЕНКА')),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
                     Navigator.pushNamed(context, '/Vmkb14Ru');
                   },
+                  child: _khujandContainer('ГОСУДАРСТВЕННЫЕ ЮРИДИЧЕСКИЕ БЮРО «ЦЕНТРА ПРАВОВОЙ ПОМОЩИ» МИНИСТЕРСТВА ЮСТИЦИИ РТ')),
+              const SizedBox(height: 10),
+              GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/Vmkb11Ru');
+                  },
                   child: _khujandContainer(
-                      'ГОСУДАРСТВЕННЫЕ ЮРИДИЧЕСКИЕ БЮРО «ЦЕНТРА ПРАВОВОЙ ПОМОЩИ» МИНИСТЕРСТВА ЮСТИЦИИ РТ')),
+                      'КОМНАТЫ ИНСПЕКТОРОВ ПО ПРЕДУПРЕЖДЕНИЮ НАСИЛИЯ В СЕМЬЕ')),
+              const SizedBox(height: 10),
+              GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/Vmkb12Ru');
+                  },
+                  child: _khujandContainer(
+                      'ОТДЕЛЫ ПО ДЕЛАМ ЖЕНЩИН И СЕМЬИ')),
              
             ],
           ),

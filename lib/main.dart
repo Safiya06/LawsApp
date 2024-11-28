@@ -52,6 +52,8 @@ import 'package:lows_app/pages/khatlon14_page.dart';
 import 'package:lows_app/pages/khatlon14_ru_page.dart';
 import 'package:lows_app/pages/khatlon15_page.dart';
 import 'package:lows_app/pages/khatlon15_ru_page.dart';
+import 'package:lows_app/pages/khatlon16_page.dart';
+import 'package:lows_app/pages/khatlon16_ru_page.dart';
 import 'package:lows_app/pages/khatlon1_page.dart';
 import 'package:lows_app/pages/khatlon1_ru_page.dart';
 import 'package:lows_app/pages/khatlon21_page.dart';
@@ -147,7 +149,7 @@ class MainApp extends StatelessWidget {
         '/Dastur61':(context) => const Dastur61Page(),
         '/Dastur62':(context) => const Dastur62Page(),
         '/Dastur7':(context) => const Dastur7Page(),
-        '/Dastur71':(context) => const Dastur71Page(),
+        '/Dastur71':(context) =>  Dastur71Page(),
         '/Dastur72':(context) => const Dastur72Page(),
 
         '/MainRu':(context) => const MainRuPage(),
@@ -191,6 +193,7 @@ class MainApp extends StatelessWidget {
         '/Khatlon13':(context) => const Khatlon13Page(),
         '/Khatlon14':(context) => const Khatlon14Page(),
         '/Khatlon15':(context) => const Khatlon15Page(),
+        '/Khatlon16':(context) => const Khatlon16Page(),
         '/Khatlon2':(context) => const Khatlon2Page(),
         '/Khatlon21':(context) => const Khatlon21Page(),
         '/Khatlon22':(context) => const Khatlon22Page(),
@@ -202,6 +205,7 @@ class MainApp extends StatelessWidget {
         '/Khatlon13Ru':(context) => const Khatlon13RuPage(),
         '/Khatlon14Ru':(context) => const Khatlon14RuPage(),
         '/Khatlon15Ru':(context) => const Khatlon15RuPage(),
+        '/Khatlon16Ru':(context) => const Khatlon16RuPage(),
         '/Khatlon2Ru':(context) => const Khatlon2RuPage(),
         '/Khatlon21Ru':(context) => const Khatlon21RuPage(),
         '/Khatlon22Ru':(context) => const Khatlon22RuPage(),

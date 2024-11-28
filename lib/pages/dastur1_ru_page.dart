@@ -302,7 +302,7 @@ class Dastur1RuPage extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.all(16.0),
                     child: Text(
-                      'Супруг или Ваш сожитель : ',
+                      'Супруг(a) или Ваш(a) сожитель(ница) : ',
                       style: TextStyle(
                           color: Color(0xff654900),
                           fontSize: 29,

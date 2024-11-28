@@ -66,37 +66,42 @@ class _Ntm16RuPageState extends State<Ntm16RuPage> {
               GestureDetector(
                 onTap: () => _launchDialer('933-55-36-39'),
                   child: _ntmnContainer(
-                      'р. Шахринав\nздание Центра юстиции\nул. И.Сомони\n933-55-36-39')),
+                      'р. Шахринав,\nздание Центра юстиции,\nул. И.Сомони\n933-55-36-39')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-59-94'),
                   child: _ntmnContainer(
-                      'г.Вахдат\nздание Центра юстиции\nп.Рудаки\n933-55-59-94')),
+                      'г.Вахдат,\nздание Центра юстиции,\nп.Рудаки\n933-55-59-94')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-78-20'),
                   child: _ntmnContainer(
-                      'р. Нурабад\nздание «Таджиксугурта»\nул. И. Халимов-11\n933-55-78-20')),
+                      'р. Нурабад,\nздание «Таджикгосстрах»\nул. И. Халимовa, 11\n933-55-78-20')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-49-87'),
                   child: _ntmnContainer(
-                      'р. Таджикабад\nздание Микрофинансового банка\nул. Сомони-21\n933-55-49-87')),
+                      'р. Таджикабад,\nздание Микрофинансового банка,\nул. Сомони, 21\n933-55-49-87')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('935-54-32-19'),
                   child: _ntmnContainer(
-                      'р. Файзабад, здание\nИсполнительного органа государственной власти-2\nул. И. Сомони-49\n935-54-32-19')),
+                      'р. Файзабад, здание\nИсполнительного органа государственной власти, 2\nул. И. Сомони, 49\n935-54-32-19')),
+              const SizedBox(height: 20),
+               GestureDetector(
+                onTap: () => _launchDialer('93-355-59-93'),
+                  child: _ntmnContainer(
+                      'г. Турсунзаде,\nздание ЗАГС, м.2\n93-355-59-93')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer(' 933-55-95-72'),
                   child: _ntmnContainer(
-                      'г. Гисар \nздание Исполнительного органа государственной власти\nул. И. Сомони, 1-ый этаж, 10,  933-55-95-72)')),
+                      'г. Гисcар,\nздание Исполнительного органа государственной власти,\nул. И. Сомони, 10, 1-ый этаж,  933-55-95-72)')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('930-10-01-67'),
                   child: _ntmnContainer(
-                      'р. Рудаки\nг. Сомониён, ул. И. Сомони\nздание центра юстиции (1 эаж)\n930-10-01-67')),
+                      'р. Рудаки,\nп. Сомониён, ул. И. Сомони,\nздание центра юстиции, 1 этаж\n930-10-01-67')),
               const SizedBox(height: 20),
             ],
           ),

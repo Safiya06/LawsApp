@@ -66,49 +66,49 @@ class _Khatlon14RuPageState extends State<Khatlon14RuPage> {
               GestureDetector(
                 onTap: () => _launchDialer('832-22-30-63'),
                 child: _khatlonContainer(
-                    'г. Бохтар\nКлиническая больница\nимени Б. Вахидов\n918-69-45-64; 832-22-30-63'),
+                    'г. Бохтар,\nКлиническая больница\nимени Б. Вахидовa\n918-69-45-64; 832-22-30-63'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('985-09-63-20'),
                 child: _khatlonContainer(
-                    'Родильный дом\nг.Куляб\n985-09-63-20'),
+                    'г.Куляб,\nРодильный дом\n985-09-63-20'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('900-60-15-49'),
                 child: _khatlonContainer(
-                    'р. Пяндж\nЦентральная районная больница\n900-60-15-49'),
+                    'р. Пяндж,\nЦентральная районная больница\n900-60-15-49'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('880-38-35-35'),
                 child: _khatlonContainer(
-                    'р. Фархор\nЦентральная районная больница\n900-60-15-49; 880-38-35-35'),
+                    'р. Фархор,\nЦентральная районная больница\n900-60-15-49; 880-38-35-35'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('901-00-99-07'),
                 child: _khatlonContainer(
-                    'р. Яван\nЦентральная районная больница\n901-00-99-07'),
+                    'р. Яван,\nЦентральная районная больница\n901-00-99-07'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('985-37-53-27'),
                 child: _khatlonContainer(
-                    'р. Восе\nЦентральная районная больница\n985-37-53-27'),
+                    'р. Восе,\nЦентральная районная больница\n985-37-53-27'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('935-31-08-50'),
                 child: _khatlonContainer(
-                    'р. А.Джами\nЦентральная районная больница\n935-31-08-50'),
+                    'р. А.Джами,\nЦентральная районная больница\n935-31-08-50'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('934-20-05-07'),
                 child: _khatlonContainer(
-                    'р. Шахритус\nЦентральная районная больница\n934-20-05-07'),
+                    'р. Шахритус,\nЦентральная районная больница\n934-20-05-07'),
               ),
               const SizedBox(height: 20),
               

@@ -60,47 +60,47 @@ class _Khujand13PageState extends State<Khujand13Page> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(25),
+          padding: const EdgeInsets.all(18),
           child: Column(
             children: [
               GestureDetector(
                 onTap: () => _launchDialer('927-73-51-95'),
                 child: _khatlonContainer(
-                    'ш. Хуҷанд\nТаввалудхонаи шаҳрӣ,\nминтақаи Шимолӣ Шарқӣ\n926-00-95-54; 927-73-51-95'),
+                    'ш. Хуҷанд,\nТаввалудхонаи шаҳрӣ,\nминтақаи Шимолӣ Шарқӣ\n926-00-95-54; 927-73-51-95'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('927-08-26-35'),
                 child: _khatlonContainer(
-                    'ш. Гулистон\nБеморхонаи марказии шаҳри\nкуч. Истиқлол-117\n927-08-26-35;'),
+                    'ш. Гулистон,\nБеморхонаи марказии шаҳрӣ,\nк. Истиқлол, 117\n927-08-26-35;'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('989-08-12-31'),
                 child: _khatlonContainer(
-                    'ш. Истаравшан\nБеморхонаи марказии шаҳрӣ\n927-86-33-44; 985-23-82-18; 989-08-12-31'),
+                    'ш. Истаравшан,\nБеморхонаи марказии шаҳрӣ\n927-86-33-44; 985-23-82-18; 989-08-12-31'),
               ),
               const SizedBox(height: 20), GestureDetector(
                 onTap: () => _launchDialer('927-87-87-59'),
                 child: _khatlonContainer(
-                    'Б. Ғафуров\nБеморхонаи марказии ноҳиявӣ\n928-07-88-70; 928-07-82-70;927-87-87-59'),
+                    'Б. Ғафуров,\nБеморхонаи марказии ноҳиявӣ\n928-07-88-70; 928-07-82-70;927-87-87-59'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('927-14-65-00'),
                 child: _khatlonContainer(
-                    'ш. Панҷикент\nБеморхонаи марказии ноҳиявӣ\n933-93-00-55; 927-14-65-00'),
+                    'ш. Панҷaкент,\nБеморхонаи марказии ноҳиявӣ\n933-93-00-55; 927-14-65-00'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('987-99-98-70'),
                 child: _khatlonContainer(
-                    'н. Исфара\nБеморхонаи марказии ноҳиявӣ\n989-09-97-32; 987-99-98-70'),
+                    'н. Исфара,\nБеморхонаи марказии ноҳиявӣ\n989-09-97-32; 987-99-98-70'),
               ),
               const SizedBox(height: 20), GestureDetector(
                 onTap: () => _launchDialer('926-37-99-44'),
                 child: _khatlonContainer(
-                    'н. Айнӣ\nБеморхонаи марказии ноҳиявӣ\n926-20-45-47; 926-37-99-44'),
+                    'н. Айнӣ,\nБеморхонаи марказии ноҳиявӣ\n926-20-45-47; 926-37-99-44'),
               ),
               const SizedBox(height: 20),
             ],

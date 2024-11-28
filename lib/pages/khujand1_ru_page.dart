@@ -53,17 +53,24 @@ class _Khujand1RuPageState extends State<Khujand1RuPage> {
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, '/Khujand11Ru');
+                  Navigator.pushNamed(context, '/Khujand14Ru');
                 },
                 child: _khujandContainer(
-                    'КОМНАТЫ ИНСПЕКТОРОВ ПО ПРЕДУПРЕЖДЕНИЮ НАСИЛИЯ В СЕМЬЕ'),
+                    'ИНСТИТУТ УПОЛНОМОЧЕННОГО ПО ПРАВАМ ЧЕЛОВЕКА И ПО ПРАВАМ РЕБЕНКА'),
               ),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Khujand12Ru');
+                    Navigator.pushNamed(context, '/Khujand15Ru');
                   },
-                  child: _khujandContainer('ОТДЕЛЫ ПО ДЕЛАМ ЖЕНЩИН И СЕМЬИ')),
+                  child: _khujandContainer('ГОСУДАРСТВЕННЫЕ ЮРИДИЧЕСКИЕ БЮРО «ЦЕНТРА ПРАВОВОЙ ПОМОЩИ» МИНИСТЕРСТВА ЮСТИЦИИ РТ')),
+              const SizedBox(height: 10),
+              GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/Khujand11Ru');
+                  },
+                  child: _khujandContainer(
+                      'КОМНАТЫ ИНСПЕКТОРОВ ПО ПРЕДУПРЕЖДЕНИЮ НАСИЛИЯ В СЕМЬЕ')),
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
@@ -74,17 +81,10 @@ class _Khujand1RuPageState extends State<Khujand1RuPage> {
               const SizedBox(height: 10),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/Khujand14Ru');
+                    Navigator.pushNamed(context, '/Khujand12Ru');
                   },
                   child: _khujandContainer(
-                      ' ИНСТИТУТ УПОЛНОМОЧЕННОГО ПО ПРАВАМ ЧЕЛОВЕКА И ПО ПРАВАМ РЕБЕНКА')),
-              const SizedBox(height: 10),
-              GestureDetector(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/Khujand15Ru');
-                  },
-                  child: _khujandContainer(
-                      'ГОСУДАРСТВЕННЫЕ ЮРИДИЧЕСКИЕ БЮРО «ЦЕНТРА ПРАВОВОЙ ПОМОЩИ» МИНИСТЕРСТВА ЮСТИЦИИ РТ')),
+                      'ОТДЕЛЫ ПО ДЕЛАМ ЖЕНЩИН И СЕМЬИ')),
               const SizedBox(height: 10),
             ],
           ),

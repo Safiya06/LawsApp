@@ -64,7 +64,7 @@ class _Vmkb13RuPageState extends State<Vmkb13RuPage> {
             children: [
               GestureDetector(
                 onTap: () => _launchDialer('934-00-74-57'),
-                child: _khatlonContainer('г. Хоруг\nул. Ленин-121\n 222-32-84; 934-00-74-57')),
+                child: _khatlonContainer('г. Хорoг,\nул. Ленин, 121\n (8-3322)222-32-84; 934-00-74-57')),
               const SizedBox(height: 20),
               ],
           ),

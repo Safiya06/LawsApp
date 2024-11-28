@@ -132,7 +132,7 @@ class _Khujand12RuPageState extends State<Khujand12RuPage> {
               GestureDetector(
                 onTap: () => _launchDialer('92-625-84-87'),
                 child: _khatlonContainer(
-                    'г. Зафарабад\n926-25-84-87'),
+                    'р. Зафарабад\n926-25-84-87'),
               ),
               const SizedBox(height: 20),
               GestureDetector(

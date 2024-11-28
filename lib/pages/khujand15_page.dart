@@ -66,67 +66,67 @@ class _Khujand15PageState extends State<Khujand15Page> {
               GestureDetector(
                 onTap: () => _launchDialer('933-55-59-80'),
                 child: _khatlonContainer(
-                    'ш. Панҷакент\nбинои МД «Маҷмааи фархангӣ-эҷодии Кохи Лоиқ»\nх. Рӯдакӣ, ош. 2, ут. 207\n933-55-59-80'),
+                    'ш. Панҷакент,\nбинои МД «Маҷмааи фархангӣ-эҷодии Кохи Лоиқ»\nх. Рӯдакӣ, ош. 2, ут. 207\n933-55-59-80'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-59-82'),
                 child: _khatlonContainer(
-                    'н. Деваштич\nбинои Маркази адлия\nошиёнаи 1, кӯчаи А. Сино\n933-55-59-82'),
+                    'н. Деваштич,\nбинои Маркази адлия\nош. 1, кӯчаи А. Сино\n933-55-59-82'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('987-02-88-60'),
                 child: _khatlonContainer(
-                    'н. Б. Ғафуров\nкӯчаи А.Нозиров-14\nбинои МИҲД (Ҳукумат)\n987-02-88-60'),
+                    'н. Б. Ғафуров,\nкӯчаи А.Нозиров-14\nбинои МИҲД (Ҳукумат)\n987-02-88-60'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-36-41'),
                 child: _khatlonContainer(
-                    'ш. Конибодом\nбинои ПМК-Экология\nкӯчаи К. Хуҷандӣ-5\n933-55-36-41'),
+                    'ш. Конибодом,\nбинои ПМК-Экология\nк. К. Хуҷандӣ-5\n933-55-36-41'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-36-42'),
                 child: _khatlonContainer(
-                    'ш.Конибодом\nҶамоати деҳоти Пӯлотон\nкӯчаи А.Шарипова-109\n933-55-36-42'),
+                    'ш.Конибодом,\nҶамоати деҳоти Пӯлотон\nк. А.Шарипова-109\n933-55-36-42'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-36-40'),
                 child: _khatlonContainer(
-                    'н. Ҷ. Расулов\nбинои Маркази адлия\nкӯчаи Э. Умаров, ош. 1\n927-31-31-92; 933-55-36-40'),
+                    'н. Ҷ. Расулов,\nбинои Маркази адлия\nк. Э. Умаров, ош. 1\n927-31-31-92; 933-55-36-40'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('935-55-04-51'),
                 child: _khatlonContainer(
-                    'н. Спитамен\nбинои Маркази адлияи ҷамоатӣ\nш. Навқат, кӯчаи Р. Турсунов-2\n935-55-04-51'),
+                    'н. Спитамен,\nбинои Маркази адлияи ҷамоатӣ\nш. Навқат, к. Р. Турсунов-2\n935-55-04-51'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-97-05'),
                 child: _khatlonContainer(
-                    'ш. Исфара\nбинои Маркази адлия\n кӯчаи Маркази-27\n933-55-97-05'),
+                    'ш. Исфара,\nбинои Маркази адлия\n к. Маркази-27\n933-55-97-05'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('935-54-28-18'),
                 child: _khatlonContainer(
-                    'ш. Истаравшан\nбинои Маркази адлия кӯчаи Ғ.Абдулоев\n935-54-28-18'),
+                    'ш. Истаравшан,\nбинои Маркази адлия к. Ғ.Абдулоев\n935-54-28-18'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('927-58-19-58'),
                 child: _khatlonContainer(
-                    'н. Ашт\nкӯчаи И. Сомонӣ-6\nбинои МИҲД (Ҳукумат)\n927-58-19-58'),
+                    'н. Ашт,\nкӯчаи И. Сомонӣ-6\nбинои МИҲД (Ҳукумат)\n927-58-19-58'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('927-09-26-09'),
                 child: _khatlonContainer(
-                    'н. Ашт\nҶамоати деҳоти Понғоз кӯчаи Сари бозор\n927-09-26-09'),
+                    'н. Ашт,\nҶамоати деҳоти Понғоз к. Сари бозор\n927-09-26-09'),
               ),
               const SizedBox(height: 20),
               GestureDetector(
@@ -136,7 +136,7 @@ class _Khujand15PageState extends State<Khujand15Page> {
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('93-377-73-40'),
-                child: _khatlonContainer('ш. Хуҷанд\nкӯчаи Р.Набиев-39\nош. 9-ум, ут. 908, бинои\nМИХД (Ҳукумат)\n93-377-73-40'),
+                child: _khatlonContainer('ш. Хуҷанд,\nкӯчаи Р.Набиев-39\nош. 9-ум, ут. 908, бинои\nМИХД (Ҳукумат)\n93-377-73-40'),
               ),
               const SizedBox(height: 20),
             ],

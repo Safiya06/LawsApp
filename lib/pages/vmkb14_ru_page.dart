@@ -65,11 +65,11 @@ class _Vmkb14RuPageState extends State<Vmkb14RuPage> {
             children: [
               GestureDetector(
                 onTap: () => _launchDialer(' 935-01-05-91'),
-                child: _khatlonContainer('г. Хоруг\nздание Управления юстиции\nГБАО, ул. Гагарина-14, 3 этаж\n935-34-25-99; 935-01-05-91')),
+                child: _khatlonContainer('г. Хорoг,\nздание Управления юстиции\nГБАО, ул. Гагарина, 14, 3 этаж\n935-34-25-99; 935-01-05-91')),
               const SizedBox(height: 20),
               GestureDetector(
                 onTap: () => _launchDialer('933-55-95-73'),
-                child: _khatlonContainer('р. Ванч, ул. М. Рахмоншо-36 (Фурудгох)\n933-55-95-73')),
+                child: _khatlonContainer('р. Ванч,\nул. М. Рахмоншо, 36 (Фурудгох)\n933-55-95-73')),
               ],
           ),
         ),
